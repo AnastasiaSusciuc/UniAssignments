@@ -1,0 +1,12 @@
+subalgorithm BucketSort(S, N) is:
+// S – the input Sequence ​
+// use an array B of dimension N​
+
+l = size(S)
+
+For i<-1, l execute
+	InitEmpty(B[i])
+EndFor 
+
+
+end-subalgorithm

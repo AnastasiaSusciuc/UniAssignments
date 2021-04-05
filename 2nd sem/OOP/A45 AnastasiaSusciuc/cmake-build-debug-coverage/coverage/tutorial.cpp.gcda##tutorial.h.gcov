@@ -1,0 +1,63 @@
+        -:    0:Source:C:/Users/susci/Desktop/2nd sem/GA/untitled/Domain/tutorial.h
+        -:    0:Graph:C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Domain\tutorial.cpp.gcno
+        -:    0:Data:C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Domain\tutorial.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by susci on 3/20/2021.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef OOP_TUTORIAL_H
+        -:    6:#define OOP_TUTORIAL_H
+        -:    7:#pragma once
+        -:    8:#include <string>
+        -:    9:
+        -:   10:
+      426:   11:class Tutorial{
+------------------
+_ZN8TutorialD2Ev:
+      306:   11:class Tutorial{
+      306:   11-block  0
+------------------
+_ZN8TutorialC2Ev:
+      120:   11:class Tutorial{
+      120:   11-block  0
+------------------
+        -:   12:
+        -:   13:private:
+        -:   14:    std::string title;
+        -:   15:    std::string presenter;
+        -:   16:    std::pair <int, int> duration;
+        -:   17:    int number_of_likes{};
+        -:   18:    std::string link;
+        -:   19:
+        -:   20:
+        -:   21:public:
+        -:   22:    Tutorial(std::string  title,
+        -:   23:             std::string  presenter,
+        -:   24:             std::pair <int, int>  duration,
+        -:   25:             int likes,
+        -:   26:             std::string  link);
+        -:   27:    Tutorial(const Tutorial& tutorial);
+        -:   28:    Tutorial();
+        -:   29:    ~Tutorial();
+        -:   30:    // ------ setters
+        -:   31:    void set_title(const std::string& tutorial_title);
+        -:   32:    void set_presenter(const std::string& presenter);
+        -:   33:    void set_duration(const std::pair<int, int>& duration);
+        -:   34:    void set_likes(int);
+        -:   35:    void set_link(const std::string& link);
+        -:   36:
+        -:   37:    // ------ getters
+        -:   38:    const std::string& get_title() const;
+        -:   39:    const std::string& get_presenter() const;
+        -:   40:    const std::pair <int, int>& get_duration() const;
+        -:   41:    int get_number_of_likes() const;
+        -:   42:    const std::string& get_link() const;
+        -:   43:
+        -:   44:    // ------ operator overload
+        -:   45:    bool operator==(const Tutorial &tutorial);
+        -:   46:};
+        -:   47:
+        -:   48:
+        -:   49:#endif //OOP_TUTORIAL_H

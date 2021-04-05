@@ -1,0 +1,40 @@
+        -:    0:Source:C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/AdminService.h
+        -:    0:Graph:C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Service\AdminService.cpp.gcno
+        -:    0:Data:C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Service\AdminService.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by susci on 3/21/2021.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef OOP_ADMINSERVICE_H
+        -:    6:#define OOP_ADMINSERVICE_H
+        -:    7:#include "../Repository/TutorialsRepository.h"
+        -:    8:
+        7:    9:class AdminService{
+        -:   10:
+        -:   11:private:
+        -:   12:    Repository& repository;
+        -:   13:
+        -:   14:public:
+        -:   15:    AdminService(Repository& repository);
+        -:   16:    ~AdminService();
+        -:   17:    int add_tutorial_admin_service(const std::string &title,
+        -:   18:                             const std::string &presenter,
+        -:   19:                             const std::pair<int, int> &duration,
+        -:   20:                             int number_of_likes,
+        -:   21:                             const std::string &link);
+        -:   22:    int remove_tutorial_admin_service(const std::string &link);
+        -:   23:    Tutorial get_tutorial_by_position_admin_service(int position);
+        -:   24:    int update_tutorial_admin_service(const std::string &tutorial_to_update_link,
+        -:   25:                                      const std::string& new_tutorial_title,
+        -:   26:                                      const std::string& new_tutorial_presenter,
+        -:   27:                                      const std::pair<int, int>& new_duration,
+        -:   28:                                      int new_number_of_likes);
+        -:   29:    std::vector<Tutorial> all_tutorials_service();
+        -:   30:    std::vector<Tutorial> tutorials_by_presenter_service(const std::string& substring_presenter);
+        -:   31:    int size_repo() const;
+        -:   32:    int increase_likes_tutorial_service(const std::string &link);
+        -:   33:};
+        -:   34:
+        -:   35:#endif //OOP_ADMINSERVICE_H

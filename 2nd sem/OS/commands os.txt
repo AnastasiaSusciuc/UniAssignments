@@ -1,0 +1,77 @@
+/ - search 
+n - shift n - 
+q - exit 
+man - manual => sintaxa instructiunii 
+cd + name of the directory => moves in that directory
+chmod =>  changes the permision of the directory
+ls - list _____
+mkdir - make directory 
+
+r/w - the ability to change stuff of a directory 
+
+'ls -la'  = 'ls -l -a'
+
+'.'  => current directory
+'..' => parent directory of the curent dir
+
+commands - any programm that you want to write
+
+regular expression : filtering 
+
+'cat' - concatenate 
+'grep' - searches a file, tries to match the file with the input, and returns only those files that match
+		'-E' - extended regular expression 
+'.' -> placeholder that can match anything only once
+'*' -> matches 0 or infinity chars 
+'sth.{args}' - matches args chars after sth
+'^' -> beggining of the line 
+'grep "[args]"'
+'\.' ->means the caracter period 
+'+@' at least one 
+'{,2}' - match at most 2 chars
+'grep -E "^[^0-9]*[0-9][^0-9]*[0-9][^0-9]*$"' - matches any line that contains exactly 2 digits 
+ 'sed' - replace   
+
+
+
+'wc' - word count
+'wc' -l - counts the number of lines
+
+'#!' -> directive in shell
+
+'chmod 700' - changes permision
+	700 - octal digits that represent the permisions
+
+
+u - user
+g - group 
+o - other 
+ugo = all;
+
+chmod go+r  -> gives permision on the top of the other ones
+chmod go=x  -> equals permision to execute for group and others
+chmod go-x  -> takes permision to execute
+
+$0 - The name of the command
+$1 - $9 - Command line arguments
+$* or $@ - All the arguments together
+$# - Number of command line arguments
+$? - Exit code of the previous command
+
+variable assignment in bash needs to be done without any whitespaces
+
+LAB 4-------------------
+grep -E --color "^ion" /etc/passwd
+
+
+grep -E -i "^[^:]*([aeiou][^:]*){5,}:"
+grep -E "^[^:]" - find a command that finds the 5 th :
+
+
+awk '{prinf $0, NR, NF}' -> prints the line + its number + number of fields
+
+
+awk -F: '{prinf $0, NR, NF}' -> consider only one token/ field
+
+
+

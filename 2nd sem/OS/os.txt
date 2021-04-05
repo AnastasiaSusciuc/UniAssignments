@@ -1,0 +1,15 @@
+cd   - change directory
+pwd  - the path we are now
+ls   - list + path; it also has a default arg -> it will list the content of the current folder
+.    - the current path
+man  - manual of the command 
+/    - to search in a file
+ssh  - secure shell -  connect to a server
+ctrl+d/ exit - to logout 
+mkdir - make directory 
+touch - create empty files 
+cat - the content of the file 
+nano - opens an editor 
+history -list of all commands executed
+
+while true; do date; sleep 1; done; 

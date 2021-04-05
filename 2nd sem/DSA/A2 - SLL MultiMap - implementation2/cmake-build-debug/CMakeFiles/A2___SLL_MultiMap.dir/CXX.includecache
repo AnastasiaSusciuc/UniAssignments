@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/susci/Desktop/2nd sem/DSA/A2 - SLL MultiMap - implementation2/App.cpp
+iostream
+-
+ShortTest.h
+C:/Users/susci/Desktop/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ShortTest.h
+ExtendedTest.h
+C:/Users/susci/Desktop/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ExtendedTest.h
+
+C:/Users/susci/Desktop/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ExtendedTest.h
+
+C:/Users/susci/Desktop/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ShortTest.h
+

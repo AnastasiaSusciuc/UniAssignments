@@ -1,0 +1,16 @@
+SEM 2.
+whereis 'program' - command that shows where is the 'program'
+pipe | 
+
+___1 ___2 ___3 -> 1 - cine a creat, 2 - user, 3 - others
+
+sistem de operare - un program care gestioneaza user, procese, fisiere si hardware 
+
+fisier - e un bloc continuu de memorie
+
+pointer -> variabila care contine adresa unei alte varibile ( o zona de memorie care contine in
+ interiorul ei un numar care contine zona unei alte zone din memorie)
+
+SEM 3.
+
+

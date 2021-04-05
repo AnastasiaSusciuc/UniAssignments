@@ -1,0 +1,3 @@
+C:/Users/susci/OneDrive/Desktop/2nd Sem/DSA/fixed kmap dsa/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/susci/OneDrive/Desktop/2nd Sem/DSA/fixed kmap dsa/cmake-build-debug/CMakeFiles/fixed_kmap_dsa.dir
+C:/Users/susci/OneDrive/Desktop/2nd Sem/DSA/fixed kmap dsa/cmake-build-debug/CMakeFiles/rebuild_cache.dir

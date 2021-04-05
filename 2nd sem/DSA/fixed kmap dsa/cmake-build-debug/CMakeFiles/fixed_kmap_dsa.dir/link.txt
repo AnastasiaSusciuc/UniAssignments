@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\fixed_kmap_dsa.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\fixed_kmap_dsa.dir/objects.a @CMakeFiles\fixed_kmap_dsa.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\fixed_kmap_dsa.dir/objects.a -Wl,--no-whole-archive  -o fixed_kmap_dsa.exe -Wl,--out-implib,libfixed_kmap_dsa.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\fixed_kmap_dsa.dir\linklibs.rsp

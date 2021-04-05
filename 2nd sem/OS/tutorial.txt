@@ -1,0 +1,20 @@
+mkdir name      -> created a directory 
+rmdir name      -> erases a directory
+cd name 	-> goes in 'name' directory
+cd .. 		-> goes back one directory
+touch 		-> creates an empty file
+rm    		-> erases a file
+cat             -> gets 
+
+Cum deschidem doua console in acelasi timp?
+
+
+vim ->
+	esc -> terminam editarea
+	i   -> incepe editarea
+	wq  -> salvare si iesire
+
+www.scs.ubbcluj.ro 8937
+
+saie3018
+5bd634d2a6	dd

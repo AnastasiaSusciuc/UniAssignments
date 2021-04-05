@@ -1,0 +1,42 @@
+        -:    0:Source:C:/Users/susci/Desktop/2nd sem/GA/untitled/Repository/WatchListRepository.h
+        -:    0:Graph:C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Repository\WatchListRepository.cpp.gcno
+        -:    0:Data:C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Repository\WatchListRepository.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by susci on 3/31/2021.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef UNTITLED_WATCHLISTREPOSITORY_H
+        -:    6:#define UNTITLED_WATCHLISTREPOSITORY_H
+        -:    7:
+        -:    8:#include "TutorialsRepository.h"
+        -:    9:
+       18:   10:class WatchListRepository{
+------------------
+_ZN19WatchListRepositoryD2Ev:
+        9:   10:class WatchListRepository{
+        9:   10-block  0
+------------------
+_ZN19WatchListRepositoryC2Ev:
+        9:   10:class WatchListRepository{
+        9:   10-block  0
+------------------
+        -:   11:private:
+        -:   12:    DynamicVector<Tutorial> tutorials_list;
+        -:   13:
+        -:   14:public:
+        -:   15:    WatchListRepository();
+        -:   16:    ~WatchListRepository();
+        -:   17:    int user_add_tutorial_in_repository(const Tutorial& tutorial);
+        -:   18:    int user_remove_tutorial_in_repository(const std::string &tutorial_link);
+        -:   19://    int user_update_tutorial_in_repository(const std::string &tutorial_to_update_link,
+        -:   20://                                            const std::string& new_tutorial_title,
+        -:   21://                                            const std::string& new_tutorial_presenter,
+        -:   22://                                            const std::pair<int, int>& new_duration,
+        -:   23://                                            int new_number_of_likes);
+        -:   24:    int size_tutorials_list() const;
+        -:   25:    Tutorial get_tutorial_by_position(int position);
+        -:   26:    std::vector<Tutorial> all_tutorials_from_repository();
+        -:   27:};
+        -:   28:#endif //UNTITLED_WATCHLISTREPOSITORY_H

@@ -1,0 +1,99 @@
+        -:    0:Source:C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/AdminService.cpp
+        -:    0:Graph:C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Service\AdminService.cpp.gcno
+        -:    0:Data:C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Service\AdminService.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by susci on 3/21/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include <cstring>
+        -:    6:#include "AdminService.h"
+        -:    7:#include <iostream>
+        -:    8:
+        7:    9:AdminService::AdminService(Repository &repository) : repository{repository} {
+        7:   10:}
+        -:   11:
+        -:   12:AdminService::~AdminService() = default;
+        -:   13:
+        -:   14:
+       21:   15:int AdminService::add_tutorial_admin_service(const std::string &title,
+        -:   16:                                       const std::string &presenter,
+        -:   17:                                       const std::pair<int, int> &duration,
+        -:   18:                                       int number_of_likes,
+        -:   19:                                       const std::string &link) {
+       63:   20:    Tutorial tutorial = {title, presenter, duration, number_of_likes, link};
+       21:   20-block  0
+       21:   20-block  1
+       21:   20-block  2
+       21:   20-block  3
+       21:   20-block  4
+    $$$$$:   20-block  5
+    $$$$$:   20-block  6
+    $$$$$:   20-block  7
+    $$$$$:   20-block  8
+       42:   21:    return repository.admin_add_tutorial_in_repository(tutorial);
+       21:   21-block  0
+       21:   21-block  1
+        -:   22:}
+        -:   23:
+        2:   24:int AdminService::remove_tutorial_admin_service(const std::string &link) {
+        2:   25:    return repository.admin_remove_tutorial_in_repository(link);
+        2:   25-block  0
+        -:   26:}
+        -:   27:
+        2:   28:Tutorial AdminService::get_tutorial_by_position_admin_service(int position) {
+        2:   29:    return repository.get_tutorial_by_position(position);
+        2:   29-block  0
+        -:   30:}
+        -:   31:
+        1:   32:int AdminService::update_tutorial_admin_service(const std::string &tutorial_to_update_link,
+        -:   33:                                                const std::string &new_tutorial_title,
+        -:   34:                                                const std::string &new_tutorial_presenter,
+        -:   35:                                                const std::pair<int, int> &new_duration, int new_number_of_likes) {
+        1:   36:    return repository.admin_update_tutorial_in_repository(tutorial_to_update_link,
+        1:   36-block  0
+        -:   37:                                                          new_tutorial_title,
+        -:   38:                                                          new_tutorial_presenter,
+        -:   39:                                                          new_duration,
+        1:   40:                                                          new_number_of_likes);
+        -:   41:}
+        -:   42:
+        2:   43:std::vector<Tutorial> AdminService::all_tutorials_service() {
+        2:   44:    return repository.all_tutorials_from_repository();
+        2:   44-block  0
+        -:   45:}
+        -:   46:
+        3:   47:int AdminService::size_repo() const {
+        3:   48:    return repository.size_tutorials_list();
+        3:   48-block  0
+        -:   49:}
+        -:   50:
+        2:   51:std::vector<Tutorial> AdminService::tutorials_by_presenter_service(const std::string &substring_presenter) {
+        4:   52:    std::vector <Tutorial> all_tutorial = repository.all_tutorials_from_repository();
+        2:   52-block  0
+        2:   52-block  1
+    $$$$$:   52-block  2
+        2:   53:    std::vector <Tutorial> presenter_tutorial;
+        2:   53-block  0
+        -:   54:
+        -:   55:
+        6:   56:    for (auto & it : all_tutorial)
+        6:   56-block  0
+        4:   56-block  1
+        4:   56-block  2
+        -:   57:    {
+        4:   58:        if (it.get_presenter().find(substring_presenter) != std::string::npos)
+        4:   58-block  0
+        3:   59:            presenter_tutorial.push_back(it);
+        3:   59-block  0
+        -:   60:    }
+        4:   61:    return presenter_tutorial;
+        2:   61-block  0
+        2:   61-block  1
+        -:   62:}
+        -:   63:
+        1:   64:int AdminService::increase_likes_tutorial_service(const std::string &link) {
+        1:   65:    return repository.admin_increase_likes_in_repository(link);
+        1:   65-block  0
+        -:   66:}

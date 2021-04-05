@@ -1,0 +1,795 @@
+        -:    0:Source:C:/Users/susci/Desktop/2nd sem/GA/untitled/UI/UI.cpp
+        -:    0:Graph:C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\UI\UI.cpp.gcno
+        -:    0:Data:C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\UI\UI.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by susci on 3/23/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include "UI.h"
+        -:    6:#include <Windows.h>
+        -:    7:#include <shellapi.h>
+        -:    8:
+        -:    9:
+        1:   10:UITutorial::UITutorial(AdminService &adminService, UserService &userService) :adminService{adminService}, userService {userService} {
+        -:   11:
+        1:   12:}
+        -:   13:
+        -:   14:UITutorial::~UITutorial() = default;
+        -:   15:
+        -:   16:
+        1:   17:void UITutorial::run()
+        -:   18:{
+        2:   19:    std::string mode;
+        1:   19-block  0
+        1:   19-block  1
+    $$$$$:   19-block  2
+        1:   20:    add_items_by_default();
+        -:   21:    while(true)
+        -:   22:    {
+       1*:   23:        std::cout << "Choose mode (a for 'Administrator mode' / u for 'User mode' / e for 'exit'): ";
+        1:   23-block  0
+    %%%%%:   23-block  1
+        1:   24:        std::cin >> mode;
+        1:   24-block  0
+        1:   25:        if (mode == "a")
+        1:   25-block  0
+        -:   26:        {
+    #####:   27:            run_administrator_mode();
+    %%%%%:   27-block  0
+        -:   28:        }
+        1:   29:        else if (mode == "u")
+        1:   29-block  0
+        -:   30:        {
+    #####:   31:            run_user_mode();
+    %%%%%:   31-block  0
+        -:   32:        }
+        1:   33:        else if (mode == "e")
+        1:   33-block  0
+        1:   34:            break;
+        1:   34-block  0
+        -:   35:        else
+    #####:   36:            std::cout << "Invalid mode!\n";
+    %%%%%:   36-block  0
+        -:   37:
+        -:   38:    }
+        1:   39:}
+        -:   40:
+    #####:   41:void UITutorial::run_user_mode() {
+    #####:   42:    std::string mode;
+    %%%%%:   42-block  0
+    %%%%%:   42-block  1
+    $$$$$:   42-block  2
+        -:   43:    while(true)
+        -:   44:    {
+    #####:   45:        std::cout << "Select your option:\n";
+    %%%%%:   45-block  0
+    %%%%%:   45-block  1
+    #####:   46:        std::cout << "s - see the tutorials having a given presenter\n";
+    %%%%%:   46-block  0
+    #####:   47:        std::cout << "a - see all tutorials from the watchlist\n";
+    %%%%%:   47-block  0
+    #####:   48:        std::cout << "d - delete a tutorial from the watchlist\n";
+    %%%%%:   48-block  0
+    #####:   49:        std::cout << "e - exit user mode\n";
+    %%%%%:   49-block  0
+    #####:   50:        std::cin >> mode;
+    %%%%%:   50-block  0
+    #####:   51:        if (mode == "s")
+    %%%%%:   51-block  0
+        -:   52:        {
+    #####:   53:            ui_see_tutorials_by_presenter();
+    %%%%%:   53-block  0
+        -:   54:        }
+    #####:   55:        else if (mode == "a")
+    %%%%%:   55-block  0
+        -:   56:        {
+    #####:   57:            ui_see_watch_list();
+    %%%%%:   57-block  0
+        -:   58:        }
+    #####:   59:        else if (mode == "d")
+    %%%%%:   59-block  0
+        -:   60:        {
+    #####:   61:            ui_delete_tutorial_from_watch_list();
+    %%%%%:   61-block  0
+        -:   62:        }
+    #####:   63:        else if (mode == "e")
+    %%%%%:   63-block  0
+    #####:   64:            break;
+    %%%%%:   64-block  0
+        -:   65:        else
+    #####:   66:            std::cout << "Invalid mode!\n";
+    %%%%%:   66-block  0
+        -:   67:
+        -:   68:    }
+    #####:   69:}
+        -:   70:
+    #####:   71:void UITutorial::ui_admin_add_tutorial() {
+    #####:   72:    std::string input;
+    %%%%%:   72-block  0
+    $$$$$:   72-block  1
+    #####:   73:    std::string title, presenter, link;
+    $$$$$:   73-block  0
+    $$$$$:   73-block  1
+    $$$$$:   73-block  2
+        -:   74:    int likes;
+    #####:   75:    std::pair <int, int> duration;
+        -:   76:
+    #####:   77:    std::cout << "Insert the title of the tutorial:";
+    #####:   78:    std::cin >> title;
+    %%%%%:   78-block  0
+        -:   79:
+        -:   80:
+    #####:   81:    std::cout << "Insert the presenter of the tutorial:";
+    %%%%%:   81-block  0
+    #####:   82:    std::cin >> presenter;
+    %%%%%:   82-block  0
+        -:   83:
+        -:   84:
+    #####:   85:    std::cout << "Insert the minutes the tutorial lasts:";
+    %%%%%:   85-block  0
+    #####:   86:    std::cin >> input;
+    %%%%%:   86-block  0
+        -:   87:
+        -:   88:    try {
+    #####:   89:        duration.first = stoi(input);
+    %%%%%:   89-block  0
+        -:   90:    }
+    =====:   91:    catch(std::exception &err)
+    $$$$$:   91-block  0
+    $$$$$:   91-block  1
+    $$$$$:   91-block  2
+        -:   92:    {
+    =====:   93:        std::cout << "The number of minutes should be an integer\n";
+    =====:   94:        return;
+    $$$$$:   94-block  0
+        -:   95:    }
+        -:   96:
+    #####:   97:    std::cout << "Insert the seconds the tutorial lasts:";
+    %%%%%:   97-block  0
+    #####:   98:    std::cin >> input;
+    %%%%%:   98-block  0
+        -:   99:    try {
+    #####:  100:        duration.second = stoi(input);
+    %%%%%:  100-block  0
+        -:  101:    }
+    =====:  102:    catch(std::exception &err)
+    $$$$$:  102-block  0
+    $$$$$:  102-block  1
+    $$$$$:  102-block  2
+        -:  103:    {
+    =====:  104:        std::cout << "The number of seconds should be an integer between 0 and 59\n";
+    =====:  105:        return;
+    $$$$$:  105-block  0
+        -:  106:    }
+        -:  107:
+    #####:  108:    if (duration.second < 0 || duration.second >= 60)
+    %%%%%:  108-block  0
+    %%%%%:  108-block  1
+        -:  109:    {
+    #####:  110:        std::cout << "The number of seconds should be an integer between 0 and 59\n";
+    %%%%%:  110-block  0
+    #####:  111:        return;
+    %%%%%:  111-block  0
+        -:  112:    }
+        -:  113:
+        -:  114:
+    #####:  115:    std::cout << "Insert the number of likes of the tutorial:";
+    %%%%%:  115-block  0
+    #####:  116:    std::cin >> input;
+    %%%%%:  116-block  0
+        -:  117:
+        -:  118:    try {
+    #####:  119:        likes = stoi(input);
+    %%%%%:  119-block  0
+        -:  120:    }
+    =====:  121:    catch(std::exception &err)
+    $$$$$:  121-block  0
+    $$$$$:  121-block  1
+    $$$$$:  121-block  2
+        -:  122:    {
+    =====:  123:        std::cout << "The number of likes should be an integer\n";
+    =====:  124:        return;
+    $$$$$:  124-block  0
+        -:  125:    }
+        -:  126:
+    #####:  127:    std::cout << "Insert the link of the tutorial:";
+    %%%%%:  127-block  0
+    #####:  128:    std::cin >> link;
+    %%%%%:  128-block  0
+        -:  129:
+    #####:  130:    int success = adminService.add_tutorial_admin_service(title, presenter, duration, likes, link);
+    %%%%%:  130-block  0
+        -:  131:
+    #####:  132:    if (success == 0)
+    %%%%%:  132-block  0
+    #####:  133:        std::cout << "Tutorial added successfully!\n";
+    %%%%%:  133-block  0
+        -:  134:    else
+    #####:  135:        std::cout << "The tutorial wasn't added! It is already in the repository :)\n";
+    %%%%%:  135-block  0
+        -:  136:
+        -:  137:}
+        -:  138:
+    #####:  139:void UITutorial::ui_admin_remove_tutorial() {
+    #####:  140:    std::string link;
+    %%%%%:  140-block  0
+    %%%%%:  140-block  1
+    $$$$$:  140-block  2
+    #####:  141:    std::cout << "Insert the link of the tutorial to be removed:";
+    #####:  142:    std::cin >> link;
+    %%%%%:  142-block  0
+        -:  143:
+    #####:  144:    int success = adminService.remove_tutorial_admin_service(link);
+    %%%%%:  144-block  0
+        -:  145:
+    #####:  146:    if (success == 0)
+    %%%%%:  146-block  0
+    #####:  147:        std::cout << "Tutorial removed successfully!\n";
+    %%%%%:  147-block  0
+        -:  148:    else
+    #####:  149:        std::cout << "The tutorial wasn't removed! It was not in the repository :)\n";
+    %%%%%:  149-block  0
+    #####:  150:}
+        -:  151:
+    #####:  152:void UITutorial::ui_admin_update_tutorial() {
+    #####:  153:    std::string old_link, title, presenter, input;
+    %%%%%:  153-block  0
+    $$$$$:  153-block  1
+    $$$$$:  153-block  2
+    $$$$$:  153-block  3
+    $$$$$:  153-block  4
+        -:  154:    int likes;
+    #####:  155:    std::pair <int, int> duration;
+        -:  156:
+    #####:  157:    std::cout << "Insert the link of the tutorial to be updated:";
+    #####:  158:    std::cin >> old_link;
+    %%%%%:  158-block  0
+        -:  159:
+    #####:  160:    std::cout << "Insert the new title of the tutorial:";
+    %%%%%:  160-block  0
+    #####:  161:    std::cin >> title;
+    %%%%%:  161-block  0
+        -:  162:
+    #####:  163:    std::cout << "Insert the new presenter of the tutorial:";
+    %%%%%:  163-block  0
+    #####:  164:    std::cin >> presenter;
+    %%%%%:  164-block  0
+        -:  165:
+    #####:  166:    std::cout << "Insert the new minutes the tutorial lasts:";
+    %%%%%:  166-block  0
+    #####:  167:    std::cin >> input;
+    %%%%%:  167-block  0
+        -:  168:
+        -:  169:    try {
+    #####:  170:        duration.first = stoi(input);
+    %%%%%:  170-block  0
+        -:  171:    }
+    =====:  172:    catch(std::exception &err)
+    $$$$$:  172-block  0
+    $$$$$:  172-block  1
+    $$$$$:  172-block  2
+        -:  173:    {
+    =====:  174:        std::cout << "The number of minutes should be an integer\n";
+    =====:  175:        return;
+    $$$$$:  175-block  0
+        -:  176:    }
+        -:  177:
+    #####:  178:    std::cout << "Insert the new seconds the tutorial lasts:";
+    %%%%%:  178-block  0
+    #####:  179:    std::cin >> input;
+    %%%%%:  179-block  0
+        -:  180:
+        -:  181:    try {
+    #####:  182:        duration.second = stoi(input);
+    %%%%%:  182-block  0
+        -:  183:    }
+    =====:  184:    catch(std::exception &err)
+    $$$$$:  184-block  0
+    $$$$$:  184-block  1
+    $$$$$:  184-block  2
+        -:  185:    {
+    =====:  186:        std::cout << "The number of seconds should be an integer between 0 and 59\n";
+    =====:  187:        return;
+    $$$$$:  187-block  0
+        -:  188:    }
+        -:  189:
+    #####:  190:    if (duration.second < 0 || duration.second >= 60)
+    %%%%%:  190-block  0
+    %%%%%:  190-block  1
+        -:  191:    {
+    #####:  192:        std::cout << "The number of seconds should be an integer between 0 and 59\n";
+    %%%%%:  192-block  0
+    #####:  193:        return;
+    %%%%%:  193-block  0
+        -:  194:    }
+        -:  195:
+    #####:  196:    std::cout << "Insert the new number of likes of the tutorial:";
+    %%%%%:  196-block  0
+    #####:  197:    std::cin >> input;
+    %%%%%:  197-block  0
+        -:  198:    try {
+    #####:  199:        likes = stoi(input);
+    %%%%%:  199-block  0
+        -:  200:    }
+    =====:  201:    catch(std::exception &err)
+    $$$$$:  201-block  0
+    $$$$$:  201-block  1
+    $$$$$:  201-block  2
+        -:  202:    {
+    =====:  203:        std::cout << "The number of likes should be an integer\n";
+    =====:  204:        return;
+    $$$$$:  204-block  0
+        -:  205:    }
+        -:  206:
+    #####:  207:    int success = adminService.update_tutorial_admin_service(old_link, title, presenter, duration, likes);
+    %%%%%:  207-block  0
+        -:  208:
+    #####:  209:    if (success == 0)
+    %%%%%:  209-block  0
+    #####:  210:        std::cout << "Tutorial updated successfully!\n";
+    %%%%%:  210-block  0
+        -:  211:    else
+    #####:  212:        std::cout << "The tutorial wasn't updated! It was not in the repository :)\n";
+    %%%%%:  212-block  0
+        -:  213:}
+        -:  214:
+        -:  215:
+    #####:  216:void UITutorial::ui_print_all_tutorials_in_repo() {
+    #####:  217:    std::vector<Tutorial> all_tutorials = adminService.all_tutorials_service();
+    %%%%%:  217-block  0
+    %%%%%:  217-block  1
+    $$$$$:  217-block  2
+        -:  218:
+    #####:  219:    for (int i = 0; i < adminService.size_repo(); i++)
+    %%%%%:  219-block  0
+    %%%%%:  219-block  1
+    %%%%%:  219-block  2
+        -:  220:    {
+    #####:  221:        Tutorial tutorial_i = all_tutorials[i];
+    %%%%%:  221-block  0
+    %%%%%:  221-block  1
+    $$$$$:  221-block  2
+    #####:  222:        std::cout << "Tutorial no. " << i << '\n';
+    %%%%%:  222-block  0
+    %%%%%:  222-block  1
+    %%%%%:  222-block  2
+    #####:  223:        std::cout << "\tTitle: " << tutorial_i.get_title() << '\n';
+    %%%%%:  223-block  0
+    %%%%%:  223-block  1
+    %%%%%:  223-block  2
+    %%%%%:  223-block  3
+    #####:  224:        std::cout << "\tPresenter: " << tutorial_i.get_presenter() << '\n';
+    %%%%%:  224-block  0
+    %%%%%:  224-block  1
+    %%%%%:  224-block  2
+    %%%%%:  224-block  3
+    #####:  225:        std::cout << "\tDuration: " << tutorial_i.get_duration().first << " minutes " << tutorial_i.get_duration().second << " seconds\n";
+    %%%%%:  225-block  0
+    %%%%%:  225-block  1
+    %%%%%:  225-block  2
+    %%%%%:  225-block  3
+    %%%%%:  225-block  4
+    %%%%%:  225-block  5
+    %%%%%:  225-block  6
+    #####:  226:        std::cout << "\tNo. likes: " << tutorial_i.get_number_of_likes() << '\n';
+    %%%%%:  226-block  0
+    %%%%%:  226-block  1
+    %%%%%:  226-block  2
+    %%%%%:  226-block  3
+    #####:  227:        std::cout << "\tLink: " << tutorial_i.get_link() << '\n';
+    %%%%%:  227-block  0
+    %%%%%:  227-block  1
+    %%%%%:  227-block  2
+    %%%%%:  227-block  3
+        -:  228:    }
+        -:  229:
+    #####:  230:}
+        -:  231:
+    #####:  232:void UITutorial::run_administrator_mode() {
+        -:  233:
+    #####:  234:    std::string option;
+    %%%%%:  234-block  0
+    %%%%%:  234-block  1
+    $$$$$:  234-block  2
+        -:  235:
+        -:  236:    while(1)
+        -:  237:    {
+    #####:  238:        std::cout << "Choose an option: \n";
+    %%%%%:  238-block  0
+    %%%%%:  238-block  1
+    #####:  239:        std::cout << "\t a - to add a tutorial\n";
+    %%%%%:  239-block  0
+    #####:  240:        std::cout << "\t r - to remove a tutorial\n";
+    %%%%%:  240-block  0
+    #####:  241:        std::cout << "\t u - to update a tutorial\n";
+    %%%%%:  241-block  0
+    #####:  242:        std::cout << "\t all - to print all tutorial in the repository\n";
+    %%%%%:  242-block  0
+    #####:  243:        std::cout << "\t e - to exit 'Admin mode'\n";
+    %%%%%:  243-block  0
+        -:  244:
+    #####:  245:        std::cin >> option;
+    %%%%%:  245-block  0
+    #####:  246:        if (option == "a")
+    %%%%%:  246-block  0
+    #####:  247:            ui_admin_add_tutorial();
+    %%%%%:  247-block  0
+    #####:  248:        else if (option == "r")
+    %%%%%:  248-block  0
+    #####:  249:            ui_admin_remove_tutorial();
+    %%%%%:  249-block  0
+    #####:  250:        else if (option == "u")
+    %%%%%:  250-block  0
+    #####:  251:            ui_admin_update_tutorial();
+    %%%%%:  251-block  0
+    #####:  252:        else if (option == "e")
+    %%%%%:  252-block  0
+    #####:  253:            break;
+    %%%%%:  253-block  0
+    #####:  254:        else if (option == "all")
+    %%%%%:  254-block  0
+    #####:  255:            ui_print_all_tutorials_in_repo();
+    %%%%%:  255-block  0
+        -:  256:        else
+    #####:  257:            std::cout << "Invalid option\n";
+    %%%%%:  257-block  0
+        -:  258:    }
+    #####:  259:}
+        -:  260:
+        1:  261:void UITutorial::add_items_by_default() {
+        -:  262:
+        1:  263:    adminService.add_tutorial_admin_service("Afterglow", "Wilkinson", std::make_pair(2, 51), 438000, "https://www.youtube.com/watch?v=I9QGpHScGug");
+        1:  263-block  0
+        1:  263-block  1
+        1:  263-block  2
+        1:  263-block  3
+        1:  263-block  4
+        1:  263-block  5
+    $$$$$:  263-block  6
+    $$$$$:  263-block  7
+    $$$$$:  263-block  8
+    $$$$$:  263-block  9
+    $$$$$:  263-block 10
+    $$$$$:  263-block 11
+    $$$$$:  263-block 12
+    $$$$$:  263-block 13
+    $$$$$:  263-block 14
+    $$$$$:  263-block 15
+    $$$$$:  263-block 16
+    $$$$$:  263-block 17
+    $$$$$:  263-block 18
+    $$$$$:  263-block 19
+    $$$$$:  263-block 20
+        1:  264:    adminService.add_tutorial_admin_service("Waiting All Night", "Rudimental", std::make_pair(5, 15), 981000, "https://www.youtube.com/watch?v=M97vR2V4vTs");
+        1:  264-block  0
+        1:  264-block  1
+        1:  264-block  2
+        1:  264-block  3
+        1:  264-block  4
+    $$$$$:  264-block  5
+    $$$$$:  264-block  6
+    $$$$$:  264-block  7
+    $$$$$:  264-block  8
+    $$$$$:  264-block  9
+    $$$$$:  264-block 10
+    $$$$$:  264-block 11
+    $$$$$:  264-block 12
+    $$$$$:  264-block 13
+    $$$$$:  264-block 14
+    $$$$$:  264-block 15
+    $$$$$:  264-block 16
+    $$$$$:  264-block 17
+    $$$$$:  264-block 18
+    $$$$$:  264-block 19
+        1:  265:    adminService.add_tutorial_admin_service("Nobody to love", "Sigma", std::make_pair(4, 02), 845000, "https://www.youtube.com/watch?v=KD5fLb-WgBU");
+        1:  265-block  0
+        1:  265-block  1
+        1:  265-block  2
+        1:  265-block  3
+        1:  265-block  4
+    $$$$$:  265-block  5
+    $$$$$:  265-block  6
+    $$$$$:  265-block  7
+    $$$$$:  265-block  8
+    $$$$$:  265-block  9
+    $$$$$:  265-block 10
+    $$$$$:  265-block 11
+    $$$$$:  265-block 12
+    $$$$$:  265-block 13
+    $$$$$:  265-block 14
+    $$$$$:  265-block 15
+    $$$$$:  265-block 16
+    $$$$$:  265-block 17
+    $$$$$:  265-block 18
+    $$$$$:  265-block 19
+        1:  266:    adminService.add_tutorial_admin_service("Kill the silence", "The Prototypes", std::make_pair(4, 04), 13000, "https://www.youtube.com/watch?v=2YLtT_evCNg");
+        1:  266-block  0
+        1:  266-block  1
+        1:  266-block  2
+        1:  266-block  3
+        1:  266-block  4
+    $$$$$:  266-block  5
+    $$$$$:  266-block  6
+    $$$$$:  266-block  7
+    $$$$$:  266-block  8
+    $$$$$:  266-block  9
+    $$$$$:  266-block 10
+    $$$$$:  266-block 11
+    $$$$$:  266-block 12
+    $$$$$:  266-block 13
+    $$$$$:  266-block 14
+    $$$$$:  266-block 15
+    $$$$$:  266-block 16
+    $$$$$:  266-block 17
+    $$$$$:  266-block 18
+    $$$$$:  266-block 19
+        1:  267:    adminService.add_tutorial_admin_service("Sweet lies", "Wilkinson", std::make_pair(3, 51), 85000, "https://www.youtube.com/watch?v=OYzCe1T_Gpg&list=RDOYzCe1T_Gpg&start_radio=1");
+        1:  267-block  0
+        1:  267-block  1
+        1:  267-block  2
+        1:  267-block  3
+        1:  267-block  4
+    $$$$$:  267-block  5
+    $$$$$:  267-block  6
+    $$$$$:  267-block  7
+    $$$$$:  267-block  8
+    $$$$$:  267-block  9
+    $$$$$:  267-block 10
+    $$$$$:  267-block 11
+    $$$$$:  267-block 12
+    $$$$$:  267-block 13
+    $$$$$:  267-block 14
+    $$$$$:  267-block 15
+    $$$$$:  267-block 16
+    $$$$$:  267-block 17
+    $$$$$:  267-block 18
+    $$$$$:  267-block 19
+        1:  268:    adminService.add_tutorial_admin_service("Hold On", "Rusko", std::make_pair(5, 51), 41000, "https://www.youtube.com/watch?v=8RVKLcaIAE8");
+        1:  268-block  0
+        1:  268-block  1
+        1:  268-block  2
+        1:  268-block  3
+        1:  268-block  4
+    $$$$$:  268-block  5
+    $$$$$:  268-block  6
+    $$$$$:  268-block  7
+    $$$$$:  268-block  8
+    $$$$$:  268-block  9
+    $$$$$:  268-block 10
+    $$$$$:  268-block 11
+    $$$$$:  268-block 12
+    $$$$$:  268-block 13
+    $$$$$:  268-block 14
+    $$$$$:  268-block 15
+    $$$$$:  268-block 16
+    $$$$$:  268-block 17
+    $$$$$:  268-block 18
+    $$$$$:  268-block 19
+        1:  269:    adminService.add_tutorial_admin_service("All for you", "Wilkinson", std::make_pair(3, 28), 104000, "https://www.youtube.com/watch?v=kU15AzJI648");
+        1:  269-block  0
+        1:  269-block  1
+        1:  269-block  2
+        1:  269-block  3
+        1:  269-block  4
+    $$$$$:  269-block  5
+    $$$$$:  269-block  6
+    $$$$$:  269-block  7
+    $$$$$:  269-block  8
+    $$$$$:  269-block  9
+    $$$$$:  269-block 10
+    $$$$$:  269-block 11
+    $$$$$:  269-block 12
+    $$$$$:  269-block 13
+    $$$$$:  269-block 14
+    $$$$$:  269-block 15
+    $$$$$:  269-block 16
+    $$$$$:  269-block 17
+    $$$$$:  269-block 18
+    $$$$$:  269-block 19
+        1:  270:    adminService.add_tutorial_admin_service("Would I Lie To You?", "Charles & Eddie", std::make_pair(3, 11), 562000, "https://www.youtube.com/watch?v=dgh4T3VuXCc");
+        1:  270-block  0
+        1:  270-block  1
+        1:  270-block  2
+        1:  270-block  3
+        1:  270-block  4
+    $$$$$:  270-block  5
+    $$$$$:  270-block  6
+    $$$$$:  270-block  7
+    $$$$$:  270-block  8
+    $$$$$:  270-block  9
+    $$$$$:  270-block 10
+    $$$$$:  270-block 11
+    $$$$$:  270-block 12
+    $$$$$:  270-block 13
+    $$$$$:  270-block 14
+    $$$$$:  270-block 15
+    $$$$$:  270-block 16
+    $$$$$:  270-block 17
+    $$$$$:  270-block 18
+    $$$$$:  270-block 19
+        1:  271:    adminService.add_tutorial_admin_service("Love the way you lie", "Eminem feat. Rihanna", std::make_pair(4, 26), 10000000, "https://www.youtube.com/watch?v=uelHwf8o7_U");
+        1:  271-block  0
+        1:  271-block  1
+        1:  271-block  2
+        1:  271-block  3
+        1:  271-block  4
+    $$$$$:  271-block  5
+    $$$$$:  271-block  6
+    $$$$$:  271-block  7
+    $$$$$:  271-block  8
+    $$$$$:  271-block  9
+    $$$$$:  271-block 10
+    $$$$$:  271-block 11
+    $$$$$:  271-block 12
+    $$$$$:  271-block 13
+    $$$$$:  271-block 14
+    $$$$$:  271-block 15
+    $$$$$:  271-block 16
+    $$$$$:  271-block 17
+    $$$$$:  271-block 18
+    $$$$$:  271-block 19
+        1:  272:    adminService.add_tutorial_admin_service("One more night", "Maroon 5", std::make_pair(3, 43), 3600000, "https://www.youtube.com/watch?v=fwK7ggA3-bU");
+        1:  272-block  0
+        1:  272-block  1
+        1:  272-block  2
+        1:  272-block  3
+        1:  272-block  4
+    $$$$$:  272-block  5
+    $$$$$:  272-block  6
+    $$$$$:  272-block  7
+    $$$$$:  272-block  8
+    $$$$$:  272-block  9
+    $$$$$:  272-block 10
+    $$$$$:  272-block 11
+    $$$$$:  272-block 12
+    $$$$$:  272-block 13
+    $$$$$:  272-block 14
+    $$$$$:  272-block 15
+    $$$$$:  272-block 16
+    $$$$$:  272-block 17
+    $$$$$:  272-block 18
+        1:  273:}
+        -:  274:
+    #####:  275:void UITutorial::ui_see_tutorials_by_presenter() {
+    #####:  276:    std::string presenter, answer, cont;
+    %%%%%:  276-block  0
+    $$$$$:  276-block  1
+    $$$$$:  276-block  2
+    $$$$$:  276-block  3
+    #####:  277:    std::cout << "Insert a substring to filter the tutorials with respect to the presenter by:";
+        -:  278:    //getline(std::cin, presenter);
+    #####:  279:    std::cin >> presenter;
+    %%%%%:  279-block  0
+        -:  280:
+    #####:  281:    std::vector <Tutorial> tutorials_by_presenter = adminService.tutorials_by_presenter_service(presenter);
+    %%%%%:  281-block  0
+    %%%%%:  281-block  1
+    $$$$$:  281-block  2
+        -:  282:
+        -:  283:    while(true) {
+        -:  284:
+    #####:  285:        for (auto & it : tutorials_by_presenter)
+    %%%%%:  285-block  0
+    %%%%%:  285-block  1
+    %%%%%:  285-block  2
+    %%%%%:  285-block  3
+        -:  286:        {
+    #####:  287:            std::string link = it.get_link();
+    %%%%%:  287-block  0
+    $$$$$:  287-block  1
+    #####:  288:            ShellExecuteA(NULL, NULL, "chrome.exe", (it.get_link()).c_str(), NULL, SW_SHOWMAXIMIZED);
+    %%%%%:  288-block  0
+    %%%%%:  288-block  1
+    #####:  289:            std::cout << it.get_title() << " " << it.get_presenter() << " "
+    %%%%%:  289-block  0
+    %%%%%:  289-block  1
+    %%%%%:  289-block  2
+    %%%%%:  289-block  3
+    %%%%%:  289-block  4
+    %%%%%:  289-block  5
+    #####:  290:                      << it.get_duration().first << " " << it.get_duration().second << " "
+    %%%%%:  290-block  0
+    %%%%%:  290-block  1
+    %%%%%:  290-block  2
+    %%%%%:  290-block  3
+    %%%%%:  290-block  4
+    %%%%%:  290-block  5
+    #####:  291:                      << it.get_number_of_likes() << " " << it.get_link() << '\n';
+    %%%%%:  291-block  0
+    %%%%%:  291-block  1
+    %%%%%:  291-block  2
+    %%%%%:  291-block  3
+    %%%%%:  291-block  4
+    %%%%%:  291-block  5
+        -:  292:
+    #####:  293:            std::cout << "Do you want to add this tutorial to the watchlist? y/n ";
+    %%%%%:  293-block  0
+    #####:  294:            std::cin >> answer;
+    %%%%%:  294-block  0
+    #####:  295:            if (answer == "y")
+    %%%%%:  295-block  0
+    #####:  296:                userService.add_tutorial_watch_list_user_service(it);
+    %%%%%:  296-block  0
+        -:  297:
+    #####:  298:            std::cout << "Do you want to see another tutorial? y/n";
+    %%%%%:  298-block  0
+    #####:  299:            std::cin >> cont;
+    %%%%%:  299-block  0
+    #####:  300:            if (cont == "n")
+    %%%%%:  300-block  0
+    #####:  301:                break;
+    %%%%%:  301-block  0
+        -:  302:
+        -:  303:        }
+    #####:  304:        if (cont == "n")
+    %%%%%:  304-block  0
+    #####:  305:            break;
+    %%%%%:  305-block  0
+    #####:  306:    }
+    %%%%%:  306-block  0
+    #####:  307:}
+        -:  308:
+    #####:  309:void UITutorial::ui_see_watch_list() {
+    #####:  310:    std::vector <Tutorial> watchlist = userService.all_tutorials_watch_list_service();
+    %%%%%:  310-block  0
+    %%%%%:  310-block  1
+    $$$$$:  310-block  2
+        -:  311:
+    #####:  312:    for (auto & it : watchlist)
+    %%%%%:  312-block  0
+    %%%%%:  312-block  1
+    %%%%%:  312-block  2
+    %%%%%:  312-block  3
+        -:  313:    {
+    #####:  314:        std::cout << it.get_title() << " " << it.get_presenter() << " "
+    %%%%%:  314-block  0
+    %%%%%:  314-block  1
+    %%%%%:  314-block  2
+    %%%%%:  314-block  3
+    %%%%%:  314-block  4
+    #####:  315:                  << it.get_duration().first << " " << it.get_duration().second << " "
+    %%%%%:  315-block  0
+    %%%%%:  315-block  1
+    %%%%%:  315-block  2
+    %%%%%:  315-block  3
+    %%%%%:  315-block  4
+    %%%%%:  315-block  5
+    #####:  316:                  << it.get_number_of_likes() << " " << it.get_link() << '\n';
+    %%%%%:  316-block  0
+    %%%%%:  316-block  1
+    %%%%%:  316-block  2
+    %%%%%:  316-block  3
+    %%%%%:  316-block  4
+    %%%%%:  316-block  5
+        -:  317:    }
+        -:  318:
+    #####:  319:}
+        -:  320:
+    #####:  321:void UITutorial::ui_delete_tutorial_from_watch_list() {
+    #####:  322:    std::string link;
+    %%%%%:  322-block  0
+    $$$$$:  322-block  1
+    #####:  323:    std::cout << "Insert the link of the tutorial to erase:";
+    #####:  324:    std::cin >> link;
+    %%%%%:  324-block  0
+        -:  325:
+    #####:  326:    userService.remove_tutorial_watch_list_user_service(link);
+    %%%%%:  326-block  0
+        -:  327:
+    #####:  328:    std::string answer;
+    %%%%%:  328-block  0
+    %%%%%:  328-block  1
+    $$$$$:  328-block  2
+    #####:  329:    std::cout << "Did you like the tutorial? y/n";
+    #####:  330:    std::cin >> answer;
+    %%%%%:  330-block  0
+        -:  331:
+    #####:  332:    if (answer == "y")
+    %%%%%:  332-block  0
+    #####:  333:        adminService.increase_likes_tutorial_service(link);
+    %%%%%:  333-block  0
+    #####:  334:}
+        -:  335:
+        -:  336:

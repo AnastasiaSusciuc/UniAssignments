@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/Set/Set.h
+cstdlib
+-
+cstdio
+-
+
+../src/SetIterator/SetIterator.h
+src/Set/Set.h
+../src/SetIterator/src/Set/Set.h
+exception
+-
+
+C:/Users/susci/Desktop/2nd sem/DSA/A1 - DynamicVector SET/src/Set/Set.cpp
+iostream
+-
+Set.h
+C:/Users/susci/Desktop/2nd sem/DSA/A1 - DynamicVector SET/src/Set/Set.h
+src/SetIterator/SetIterator.h
+C:/Users/susci/Desktop/2nd sem/DSA/A1 - DynamicVector SET/src/Set/src/SetIterator/SetIterator.h
+
+C:/Users/susci/Desktop/2nd sem/DSA/A1 - DynamicVector SET/src/Set/Set.h
+cstdlib
+-
+cstdio
+-
+

@@ -1,0 +1,200 @@
+        -:    0:Source:C:/Users/susci/Desktop/2nd sem/GA/untitled/DynamicVector/DynamicVector.h
+        -:    0:Graph:C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Repository\TutorialsRepository.cpp.gcno
+        -:    0:Data:C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\Repository\TutorialsRepository.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by susci on 3/20/2021.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef OOP_DYNAMICVECTOR_H
+        -:    6:#define OOP_DYNAMICVECTOR_H
+        -:    7:#pragma once
+        -:    8:
+        -:    9:#include <stdexcept>
+        -:   10:#include "../Domain/tutorial.h"
+        -:   11:
+        -:   12:typedef Tutorial TElem;
+        -:   13:
+        -:   14:
+        -:   15:template <typename TElem>
+        -:   16:
+        -:   17:class DynamicVector{
+        -:   18:
+        -:   19:private:
+        -:   20:    TElem* elements_list;
+        -:   21:    int size_vector;
+        -:   22:    int capacity_vector;
+        -:   23:
+        -:   24:public:
+        -:   25:    explicit DynamicVector(int capacity = 5);
+        -:   26:
+        -:   27:    ~DynamicVector();
+        -:   28:    void resize_dynamic_vector();
+        -:   29:    int search_element(const TElem& element);
+        -:   30:    void append(TElem element);
+        -:   31:    void remove(const TElem& element);
+        -:   32:    void update(const TElem& old_element, const TElem& new_element);
+        -:   33:    TElem& operator[](int position) const;
+        -:   34:    int size() const;
+        -:   35:    int capacity();
+        -:   36:    DynamicVector& operator=(const DynamicVector& vector);
+        -:   37:};
+        -:   38:
+        -:   39:
+        -:   40:template<typename TElem>
+       22:   41:DynamicVector<TElem>::DynamicVector(int capacity) {
+       22:   42:    capacity_vector = capacity;
+       22:   43:    size_vector = 0;
+     132*:   44:    elements_list = new TElem[capacity];
+       22:   44-block  0
+       22:   44-block  1
+    %%%%%:   44-block  2
+       22:   44-block  3
+      132:   44-block  4
+      110:   44-block  5
+      110:   44-block  6
+    $$$$$:   44-block  7
+    $$$$$:   44-block  8
+    $$$$$:   44-block  9
+    $$$$$:   44-block 10
+    $$$$$:   44-block 11
+    $$$$$:   44-block 12
+       22:   45:}
+       22:   45-block  0
+        -:   46:
+        -:   47:template<typename TElem>
+       22:   48:DynamicVector<TElem>::~DynamicVector() {
+      137:   49:    delete[] elements_list;
+       22:   49-block  0
+       22:   49-block  1
+      137:   49-block  2
+      115:   49-block  3
+       22:   49-block  4
+       22:   50:}
+        -:   51:
+        -:   52:template<typename TElem>
+        1:   53:void DynamicVector<TElem>::resize_dynamic_vector() {
+        -:   54:
+      11*:   55:    auto* new_list = new TElem[capacity_vector*2];
+        1:   55-block  0
+        1:   55-block  1
+    %%%%%:   55-block  2
+        1:   55-block  3
+       11:   55-block  4
+       10:   55-block  5
+       10:   55-block  6
+    $$$$$:   55-block  7
+    $$$$$:   55-block  8
+    $$$$$:   55-block  9
+    $$$$$:   55-block 10
+    $$$$$:   55-block 11
+    $$$$$:   55-block 12
+        6:   56:    for (int i = 0; i < size_vector; i++)
+        1:   56-block  0
+        6:   56-block  1
+        5:   57:        new_list[i] = elements_list[i];
+        5:   57-block  0
+        -:   58:
+        1:   59:    capacity_vector *= 2;
+        6:   60:    delete[] elements_list;
+        1:   60-block  0
+        1:   60-block  1
+        6:   60-block  2
+        5:   60-block  3
+        1:   60-block  4
+        1:   61:    elements_list = new_list;
+        1:   62:}
+        1:   62-block  0
+        -:   63:
+        -:   64:template<typename TElem>
+        4:   65:int DynamicVector<TElem>::search_element(const TElem &element) {
+        5:   66:    for (int i = 0; i < size_vector; i++) {
+        4:   66-block  0
+        5:   66-block  1
+        1:   66-block  2
+        5:   67:        if (elements_list[i] == element)
+        5:   67-block  0
+        4:   68:            return i;
+        4:   68-block  0
+        -:   69:    }
+    #####:   70:    return -1;
+    %%%%%:   70-block  0
+        -:   71:}
+        -:   72:
+        -:   73:template<typename TElem>
+       41:   74:void DynamicVector<TElem>::append(TElem element) {
+       41:   75:    if (size_vector == capacity_vector)
+       41:   75-block  0
+        1:   76:        resize_dynamic_vector();
+        1:   76-block  0
+       41:   77:    elements_list[size_vector++] = element;
+       41:   77-block  0
+       41:   78:}
+        -:   79:
+        -:   80:template<typename TElem>
+        4:   81:void DynamicVector<TElem>::remove(const TElem &element) {
+        -:   82:
+        4:   83:    int position = search_element(element);
+        4:   83-block  0
+        4:   84:    if (position != -1) {
+        7:   85:        for (int i = position; i < size_vector - 1; ++i) {
+        4:   85-block  0
+        7:   85-block  1
+        3:   86:            elements_list[i] = elements_list[i + 1];
+        3:   86-block  0
+        -:   87:        }
+        4:   88:        --size_vector;
+        4:   88-block  0
+        -:   89:    }
+        4:   90:}
+        -:   91:
+        -:   92:template<typename TElem>
+        -:   93:void DynamicVector<TElem>::update(const TElem &old_element, const TElem &new_element) {
+        -:   94:    int position = search_element(old_element);
+        -:   95:    if (position != -1) {
+        -:   96:        elements_list[position] = new_element;
+        -:   97:    }
+        -:   98:}
+        -:   99:
+        -:  100:template<typename TElem>
+      113:  101:TElem &DynamicVector<TElem>::operator[](int position) const{
+      113:  102:    if (position < 0 || position >= size_vector)
+      113:  102-block  0
+      113:  102-block  1
+    #####:  103:        throw std::runtime_error("Invalid position");
+    %%%%%:  103-block  0
+    %%%%%:  103-block  1
+    $$$$$:  103-block  2
+      113:  104:    return elements_list[position];
+      113:  104-block  0
+      113:  104-block  1
+        -:  105:}
+        -:  106:
+        -:  107:template<typename TElem>
+      179:  108:inline int DynamicVector<TElem>::size() const{
+      179:  109:    return size_vector;
+      179:  109-block  0
+        -:  110:}
+        -:  111:
+        -:  112:template<typename TElem>
+        -:  113:inline int DynamicVector<TElem>::capacity() {
+        -:  114:    return capacity_vector;
+        -:  115:}
+        -:  116:
+        -:  117:template<typename TElem>
+        -:  118:DynamicVector<TElem>& DynamicVector<TElem>::operator=(const DynamicVector& vectorUsed){
+        -:  119:    if (this != &vectorUsed) {
+        -:  120:        if (capacity_vector < vectorUsed.size_vector) {
+        -:  121:            delete[] elements_list;
+        -:  122:            elements_list = new TElem[vectorUsed.capacityOfVector];
+        -:  123:        }
+        -:  124:        size_vector = vectorUsed.size_vector;
+        -:  125:        capacity_vector = vectorUsed.capacityOfVector;
+        -:  126:        for (int i = 0; i < size_vector; ++i)
+        -:  127:            elements_list[i] = vectorUsed.elementsList[i];
+        -:  128:    }
+        -:  129:    return *this;
+        -:  130:}
+        -:  131:
+        -:  132:#endif //OOP_DYNAMICVECTOR_H

@@ -1,0 +1,37 @@
+        -:    0:Source:C:/Users/susci/Desktop/2nd sem/GA/untitled/UI/UI.h
+        -:    0:Graph:C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\UI\UI.cpp.gcno
+        -:    0:Data:C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\UI\UI.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by susci on 3/23/2021.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef OOP_UI_H
+        -:    6:#define OOP_UI_H
+        -:    7:#include "../Service/AdminService.h"
+        -:    8:#include "../Service/UserService.h"
+        -:    9:#include <iostream>
+        -:   10:
+        1:   11:class UITutorial{
+        -:   12:private:
+        -:   13:    AdminService& adminService;
+        -:   14:    UserService& userService;
+        -:   15:
+        -:   16:public:
+        -:   17:    UITutorial(AdminService& adminService, UserService& userService);
+        -:   18:    ~UITutorial();
+        -:   19:    void run();
+        -:   20:    void run_administrator_mode();
+        -:   21:    void run_user_mode();
+        -:   22:    void ui_admin_add_tutorial();
+        -:   23:    void ui_admin_remove_tutorial();
+        -:   24:    void ui_admin_update_tutorial();
+        -:   25:    void ui_print_all_tutorials_in_repo();
+        -:   26:    void add_items_by_default();
+        -:   27:    void ui_see_tutorials_by_presenter();
+        -:   28:    void ui_see_watch_list();
+        -:   29:    void ui_delete_tutorial_from_watch_list();
+        -:   30:};
+        -:   31:
+        -:   32:#endif //OOP_UI_H

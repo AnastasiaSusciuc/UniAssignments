@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/susci/OneDrive/Desktop/2nd Sem/DSA/fixed kmap dsa/App.cpp
+ExtendedTest.h
+C:/Users/susci/OneDrive/Desktop/2nd Sem/DSA/fixed kmap dsa/ExtendedTest.h
+ShortTest.h
+C:/Users/susci/OneDrive/Desktop/2nd Sem/DSA/fixed kmap dsa/ShortTest.h
+FixedCapBiMap.h
+C:/Users/susci/OneDrive/Desktop/2nd Sem/DSA/fixed kmap dsa/FixedCapBiMap.h
+iostream
+-
+
+C:/Users/susci/OneDrive/Desktop/2nd Sem/DSA/fixed kmap dsa/ExtendedTest.h
+
+C:/Users/susci/OneDrive/Desktop/2nd Sem/DSA/fixed kmap dsa/FixedCapBiMap.h
+utility
+-
+
+C:/Users/susci/OneDrive/Desktop/2nd Sem/DSA/fixed kmap dsa/ShortTest.h
+

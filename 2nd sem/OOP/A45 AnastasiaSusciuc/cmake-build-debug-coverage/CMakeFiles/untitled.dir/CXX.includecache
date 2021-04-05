@@ -1,0 +1,110 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Domain/tutorial.cpp
+tutorial.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Domain/tutorial.h
+utility
+-
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Domain/tutorial.h
+string
+-
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/DynamicVector/DynamicVector.cpp
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/DynamicVector/DynamicVector.h
+stdexcept
+-
+../Domain/tutorial.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Domain/tutorial.h
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Repository/TutorialsRepository.cpp
+stdexcept
+-
+TutorialsRepository.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Repository/TutorialsRepository.h
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Repository/TutorialsRepository.h
+vector
+-
+algorithm
+-
+string
+-
+../Domain/tutorial.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Domain/tutorial.h
+../DynamicVector/DynamicVector.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/DynamicVector/DynamicVector.h
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Repository/WatchListRepository.cpp
+WatchListRepository.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Repository/WatchListRepository.h
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Repository/WatchListRepository.h
+TutorialsRepository.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Repository/TutorialsRepository.h
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/AdminService.cpp
+cstring
+-
+AdminService.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/AdminService.h
+iostream
+-
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/AdminService.h
+../Repository/TutorialsRepository.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Repository/TutorialsRepository.h
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/UserService.cpp
+UserService.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/UserService.h
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/UserService.h
+../Repository/WatchListRepository.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Repository/WatchListRepository.h
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Tests/tests.cpp
+tests.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Tests/tests.h
+../DynamicVector/DynamicVector.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/DynamicVector/DynamicVector.h
+../Service/AdminService.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/AdminService.h
+../Repository/WatchListRepository.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Repository/WatchListRepository.h
+../Service/UserService.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/UserService.h
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Tests/tests.h
+cassert
+-
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/UI/UI.cpp
+UI.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/UI/UI.h
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/UI/UI.h
+../Service/AdminService.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/AdminService.h
+../Service/UserService.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/UserService.h
+iostream
+-
+
+C:/Users/susci/Desktop/2nd sem/GA/untitled/main.cpp
+Tests/tests.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Tests/tests.h
+Service/AdminService.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/AdminService.h
+Service/UserService.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/UserService.h
+UI/UI.h
+C:/Users/susci/Desktop/2nd sem/GA/untitled/UI/UI.h
+
