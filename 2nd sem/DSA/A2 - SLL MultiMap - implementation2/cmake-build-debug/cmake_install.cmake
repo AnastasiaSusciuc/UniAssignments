@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/susci/Desktop/2nd sem/DSA/A2 - SLL MultiMap - implementation2
+# Install script for directory: C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/susci/Desktop/2nd sem/DSA/A2 - SLL MultiMap - implementation2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
