@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/App.cpp
+iostream
+-
+Matrix.h
+/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/Matrix.h
+MatrixIterator.h
+/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/MatrixIterator.h
+ExtendedTest.h
+/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/ExtendedTest.h
+ShortTest.h
+/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/ShortTest.h
+vector
+-
+stdexcept
+-
+cassert
+-
+
+/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/ExtendedTest.h
+ExtendedTest.h
+/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/ExtendedTest.h
+
+/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/Matrix.cpp
+MatrixIterator.h
+/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/MatrixIterator.h
+exception
+-
+
+/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/Matrix.h
+
+/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/MatrixIterator.h
+Matrix.h
+/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/Matrix.h
+
+/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/ShortTest.h
+

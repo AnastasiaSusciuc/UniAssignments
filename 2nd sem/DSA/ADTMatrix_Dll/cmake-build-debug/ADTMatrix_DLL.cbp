@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ADTMatrix_DLL"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ADTMatrix_DLL">
+				<Option output="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/ADTMatrix_DLL" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 ADTMatrix_DLL"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ADTMatrix_DLL/fast">
+				<Option output="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/ADTMatrix_DLL" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 ADTMatrix_DLL/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/App.cpp">
+			<Option target="ADTMatrix_DLL"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/ExtendedTest.cpp">
+			<Option target="ADTMatrix_DLL"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/ExtendedTest.h">
+			<Option target="ADTMatrix_DLL"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/Matrix.cpp">
+			<Option target="ADTMatrix_DLL"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/Matrix.h">
+			<Option target="ADTMatrix_DLL"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/MatrixIterator.cpp">
+			<Option target="ADTMatrix_DLL"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/MatrixIterator.h">
+			<Option target="ADTMatrix_DLL"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/ShortTest.cpp">
+			<Option target="ADTMatrix_DLL"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/ShortTest.h">
+			<Option target="ADTMatrix_DLL"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/susci/Desktop/ADTMatrix_Dll/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

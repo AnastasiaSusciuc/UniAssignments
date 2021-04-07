@@ -8,13 +8,17 @@ SMMIterator::SMMIterator(const SortedMultiMap& d) : map(d){
 	    this->current_value = this->current_key->head;
 }
 
-void SMMIterator::first(){
+void SMMIterator::first()
+// theta(1)
+{
     this->current_key = map.head;
     if (this->current_key != nullptr)
         this->current_value = this->current_key->head;
 }
 
-void SMMIterator::next(){
+void SMMIterator::next()
+// theta(1)
+{
     if (this->current_key == nullptr)
         throw std::exception();
 
@@ -26,17 +30,19 @@ void SMMIterator::next(){
         if (this->current_key != nullptr)
             this->current_value = this->current_key->head;
     }
-
 }
 
-bool SMMIterator::valid() const {
+bool SMMIterator::valid() const
+//theta(1)
+{
     if (this->current_key == nullptr)
 	    return false;
     return true;
 }
 
-TElem SMMIterator::getCurrent() const{
-
+TElem SMMIterator::getCurrent() const
+// theta(1)
+{
     if (this->current_key == nullptr)
         throw std::exception();
     return std::make_pair(this->current_key->key, this->current_value->value);

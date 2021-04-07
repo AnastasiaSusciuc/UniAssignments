@@ -6,75 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/App.cpp
+/mnt/c/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/App.cpp
 iostream
 -
 ShortTest.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ShortTest.h
+/mnt/c/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ShortTest.h
 ExtendedTest.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ExtendedTest.h
-
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ExtendedTest.cpp
-exception
--
-assert.h
--
-algorithm
--
-vector
--
-iostream
--
-SMMIterator.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SMMIterator.h
+/mnt/c/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ExtendedTest.h
 SortedMultiMap.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SortedMultiMap.h
-ExtendedTest.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ExtendedTest.h
-
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ExtendedTest.h
-
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SMMIterator.cpp
-SMMIterator.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SMMIterator.h
-SortedMultiMap.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SortedMultiMap.h
-exception
+/mnt/c/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SortedMultiMap.h
+cassert
 -
 
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SMMIterator.h
-SortedMultiMap.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SortedMultiMap.h
+/mnt/c/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ExtendedTest.h
 
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ShortTest.cpp
-assert.h
--
-SortedMultiMap.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SortedMultiMap.h
-SMMIterator.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SMMIterator.h
-exception
--
-iostream
--
-vector
--
+/mnt/c/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ShortTest.h
 
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ShortTest.h
-
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SortedMultiMap.cpp
-SMMIterator.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SMMIterator.h
-SortedMultiMap.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SortedMultiMap.h
-iostream
--
-vector
--
-exception
--
-
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SortedMultiMap.h
+/mnt/c/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SortedMultiMap.h
 vector
 -
 utility

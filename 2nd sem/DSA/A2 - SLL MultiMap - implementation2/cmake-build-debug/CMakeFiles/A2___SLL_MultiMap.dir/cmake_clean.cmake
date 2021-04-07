@@ -1,13 +1,11 @@
 file(REMOVE_RECURSE
-  "A2___SLL_MultiMap.exe"
-  "A2___SLL_MultiMap.exe.manifest"
+  "A2___SLL_MultiMap"
   "A2___SLL_MultiMap.pdb"
-  "CMakeFiles/A2___SLL_MultiMap.dir/App.cpp.obj"
-  "CMakeFiles/A2___SLL_MultiMap.dir/ExtendedTest.cpp.obj"
-  "CMakeFiles/A2___SLL_MultiMap.dir/SMMIterator.cpp.obj"
-  "CMakeFiles/A2___SLL_MultiMap.dir/ShortTest.cpp.obj"
-  "CMakeFiles/A2___SLL_MultiMap.dir/SortedMultiMap.cpp.obj"
-  "libA2___SLL_MultiMap.dll.a"
+  "CMakeFiles/A2___SLL_MultiMap.dir/App.cpp.o"
+  "CMakeFiles/A2___SLL_MultiMap.dir/ExtendedTest.cpp.o"
+  "CMakeFiles/A2___SLL_MultiMap.dir/SMMIterator.cpp.o"
+  "CMakeFiles/A2___SLL_MultiMap.dir/ShortTest.cpp.o"
+  "CMakeFiles/A2___SLL_MultiMap.dir/SortedMultiMap.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,6 +1,8 @@
 #include <iostream>
 #include "ShortTest.h"
 #include "ExtendedTest.h"
+#include "SortedMultiMap.h"
+#include <cassert>
 
 /*
 ADT SortedMultiMap – using a SLL with unique keys ordered based on a relation on the
@@ -12,7 +14,6 @@ int main(){
     testAll();
     testAllExtended();
 
-    std::cout<< "Finished SMM Tests!" <<std::endl;
-
-	return 0;
+    std::cout << "Finished SMM Tests!" << std::endl;
+    return 0;
 }

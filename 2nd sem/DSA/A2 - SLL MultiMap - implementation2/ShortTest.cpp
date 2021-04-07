@@ -45,5 +45,18 @@ void testAll(){
     assert(smm.remove(1, 3) == true);
     assert(smm.remove(2, 1) == false);
     assert(smm.isEmpty());
+
+    smm.add(1,3);
+    smm.add(1,2);
+    smm.add(1,4);
+    smm.add(2,5);
+    smm.add(3,3);
+    smm.add(2,10);
+
+    std::vector <TValue> values_key_2 = smm.removeKey(2);
+    assert(values_key_2.size() == 2);
+    assert(values_key_2[0] == 10);
+    assert(values_key_2[1] == 5);
+
 }
 

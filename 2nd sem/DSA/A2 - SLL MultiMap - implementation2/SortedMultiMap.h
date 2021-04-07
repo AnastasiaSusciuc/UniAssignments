@@ -52,8 +52,13 @@ class SortedMultiMap {
     //verifies if the sorted multi map is empty
     bool isEmpty() const;
 
+    //removes a key together with all its values
+    //returns a vector with the values that were previously associated to this value (and were removed)
+    std::vector<TValue> removeKey(TKey key);
+
     // returns an iterator for the sorted multimap. The iterator will returns the pairs as required by the relation (given to the constructor)	
     SMMIterator iterator() const;
+
 
     // destructor
     ~SortedMultiMap();

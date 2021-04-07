@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\A2___SLL_MultiMap.dir/objects.a
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\A2___SLL_MultiMap.dir/objects.a @CMakeFiles\A2___SLL_MultiMap.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\A2___SLL_MultiMap.dir/objects.a -Wl,--no-whole-archive  -o A2___SLL_MultiMap.exe -Wl,--out-implib,libA2___SLL_MultiMap.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\A2___SLL_MultiMap.dir\linklibs.rsp
+/usr/bin/c++  -g   CMakeFiles/A2___SLL_MultiMap.dir/App.cpp.o CMakeFiles/A2___SLL_MultiMap.dir/ExtendedTest.cpp.o CMakeFiles/A2___SLL_MultiMap.dir/ShortTest.cpp.o CMakeFiles/A2___SLL_MultiMap.dir/SMMIterator.cpp.o CMakeFiles/A2___SLL_MultiMap.dir/SortedMultiMap.cpp.o  -o A2___SLL_MultiMap 

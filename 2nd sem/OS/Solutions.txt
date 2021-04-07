@@ -1,0 +1,330 @@
+1. Să se scrie un script bash care primeşte ca argument un număr natural N şi generează N fişiere de tip text, astfel:
+- numele fişierelor vor fi de forma: file_X.txt, unde X = {1, 2, ..., N}
+- fiecare fişier generat va conţine doar liniile de la X la X + 5 ale fişierului passwd.fake
+
+
+NUME="file_"
+
+for N in $(seq 1 $1); do
+        touch $NUME$N.txt
+        echo `cat passwd.fake | tail -n +$N | head -n 5` > $NUME$N.txt
+done
+
+
+2. Să se scrie un script bash care primeşte ca argument un nume de director şi afişează primele 3 linii ale fiecărui fişier de tip text din acel director.
+
+
+#2
+if [ -d $1 ]; then
+        for X in `find $1 -type f -name "*.txt"` ; do
+                cat $X | head -n3
+        done
+else
+        echo not dir
+fi
+
+
+3. Să se scrie un script bash care calculează numărul mediu de linii ale fișierelor de tip text dintr-un director dat ca parametru.
+(comenzi: find, file, wc)
+
+
+CNT=0
+SUM=0
+
+if [ -d $1 ]; then
+        for X in `find $1 -type f -name "*.txt"` ; do
+                LNS=`cat $X | wc -l`
+                echo $LNS for file $X
+                SUM=`expr $SUM + $LNS`
+                CNT=`expr $CNT + 1`
+        done
+        echo `expr $SUM / $CNT`
+else
+        echo not dir
+fi
+
+
+4. Să se scrie un script bash care afișează numele fișierelor dintr-un director dat ca parametru care conțin numere de peste 5 cifre.
+
+
+if [ -d $1 ]; then
+        for X in `find $1 -type f` ; do
+                grep -E -q "[0-9]{5}" $X
+                if [ $? -eq 0 ]; then
+                        echo $X
+                fi
+        done
+else
+        echo not dir
+fi
+
+
+5. Să se scrie un script bash care afișează primele 5 linii și ultimele 5 linii ale fișierelor de tip text din directorul curent. Dacă un fișier are mai puțin de 10 linii, atunci va fi afişat în întregime.
+(comenzi: head, tail, find, file, wc)
+
+
+for X in `find . -type f` ; do
+                LN=`cat $X | wc -l `
+                if [ $LN -lt 10 ]; then
+                        cat $X
+                else
+                        cat $X | head -n5
+                        cat $X | tail -n5
+                fi
+done
+
+
+6. Să se scrie un script bash care pentru fiecare parametru din linia de comandă:
+- dacă e fișier, se vor afișa numele, numărul de caractere și de linii din el (în această ordine)
+- dacă e director, numele și câte fișiere conține (inclusiv în subdirectoare).
+(comenzi: test, wc, awk, find)
+
+for A; do
+        if [ -f $A ] ; then
+                echo "name: " $A "nr chars: " `cat $A | wc -c` "nr lines: " `cat $A | wc -l`
+        elif [ -d $A ] ; then
+                CNT=0
+                for B in `find $A -type f` ; do
+                        CNT=`expr $CNT + 1`
+                done
+                echo $A $CNT
+        fi
+
+done
+
+7. Să se scrie un script bash care are ca argumente triplete formate dintr-un nume de fisier, un cuvant si un numar k. Pentru fiecare astfel de triplet, se vor afişa toate liniile fişierului care contin cuvăntul respectiv exact de k ori.
+(comenzi: shift, awk)
+
+8. Să se scrie un script bash care afişează, pentru fiecare fişier dat ca argument, linia care apare de cele mai multe ori. Afişarea se va face în ordinea descrescătoare a numărului de apariţii.
+(comenzi: sort, uniq, head)
+
+9. Să se scrie un script bash care va afişa toate numele de fişiere dintr-un director dat ca parametru şi din subdirectoarele sale, care au numele mai scurte de 8 caractere. Pentru acestea, dacă sunt fişiere text, li se vor afişa primele 10 linii.
+
+10. Să se scrie un script bash care pentru fiecare fişier cu drepturile 755 dintr-un director (şi subdirectoarele sale) dat ca parametru îi va modifica drepturile de acces în 744. Înainte de a modifica drepturile de acces, script-ul va cere confirmarea din partea utilizatorului (pentru fiecare fişier în parte).
+(comenzi: find, chmod, read)
+
+#!/bin/bash
+
+D=$1
+
+if [ "$D" == "" ]; then
+        echo "Directory not found"
+        exit 1
+fi
+
+if [ ! -d $D ]; then
+        echo "Directory not found"
+        exit 1
+fi
+
+for fil in `find $D -type f`; do
+        details=`ls -l $fil`
+
+        if `echo $details| grep -E -q "^-rwxr-xr-x"`; then
+                echo "Are you sure you want to modify $fil 's permissions? y/n"
+
+                valid=0
+
+                while [ $valid == 0 ]; do
+                        read input
+
+                        if [ "$input" == "y" ]; then
+                                `chmod 744 $fil`
+                                valid=1
+                        elif [ "$input" == "n" ]; then
+				valid=1
+                        else
+                                echo "Invalid input given"
+                        fi
+                done
+        fi
+
+done
+
+echo "Done"
+
+
+
+
+
+
+__________________________________________________________________________________________________________________________________________
+Teaching solved exercises
+
+
+1. Display a report showing the full name of all the users currently connected, and the number of processes belonging to each of them.
+
+#!/bin/bash
+IFS="
+"
+str=""
+for line in `cat ps.fake` ; do
+        u=$(echo $line | tr -s ' ' | awk -F " " '{print $1}')
+        str="$str$u
+"
+done
+
+str=$(echo "$str" | sort | uniq -c | tr -s ' ')
+for l in `cat who.fake` ; do
+        uid=$(echo $l | awk '{print $1}')
+        for lala in `echo "$str"` ; do
+                name=$(echo $lala | awk '{print $2}')
+                if [ "$name" == "$uid" ] ; then
+                        echo "$lala"
+                fi
+        done
+done
+unset IFS
+
+
+2. Find recursively in a directory all ".c" files having more than 500 lines. Stop after finding 2 such files.
+
+dir=dir
+cnt=0
+find $dir -type f -name "*.c" | while read filename ; do
+        if [ $cnt -eq 2 ] ; then
+                break
+        fi
+
+        lines=$(cat $filename | wc -l)
+
+        if [ $lines -gt 500 ] ; then
+                echo $filename
+                cnt=`expr $cnt + 1`
+        fi
+done
+
+3. Find recursively in a directory, all the files with the extension ".log" and sort their lines (replace the original file with the sorted content). 
+
+4. Find recursively in a given directory all the symbolic links, and report those that point to files/directories that no longer exist.
+ Use operator -L to test if a path is a symbolic link, and operator -e to test if it exists (will return false if the target to which the link points does not exist)
+
+
+dir=$1
+find $dir -type l 2> /dev/null | while read path ; do
+        if [ -L $path ] ; then
+                if [ ! -e $path ] ; then
+                        echo "This path ($path) is not valid!"
+                else
+                        echo $path 2> /dev/null
+                fi
+        fi
+done
+
+
+5. Write a script that receives dangerous program names as command line arguments. The script will monitor all the processes in the system, 
+and whenever a program known to be dangerous is run, the script will kill it and display a message.
+
+if [ $# -eq 0 ] ; then
+        echo "No arguments were given. Exiting..."
+        exit 1
+fi
+while true ; do
+        pss=$(cat ps.fake | awk '{print $2, $8}') # 2 is PID, 8 is name
+        for dg in $@ ; do
+                if echo "$pss" | grep -Eqi "$dg" ; then
+                        pid1=$(echo "$pss" | awk '{print $1}')
+                        kill -9 $pid1 2>/dev/null
+                        echo "Dangerous process stopped!"
+                fi
+        done
+        sleep 3
+done
+
+
+6. Find recursively in a directory, all the files that have write permissions for everyone. Display their names, and the permissions before 
+and after removing the write permission for everybody. You will need to use chmod's symbolic permissions mode, instead of the octal mode we have used in class. The the chmod manual for details.
+
+#!/bin/bash
+dir=dir
+find $dir -type f | while read filename ; do
+        perm=$(ls -l $filename | awk '{print $1}')
+        if echo $perm | grep -Eq "([^w]w[^w]){3}" ; then
+                echo "$perm $filename"
+                chmod a-w $filename
+                perm2=$(ls -l $filename | awk '{print $1}')
+                echo "$perm2 $filename"
+        fi
+done 
+
+7. Consider a file containing a username on each line. Generate a comma-separated string with email addresses of the users that exist. 
+The email address will be obtained by appending "@scs.ubbcluj.ro" at the end of each username. Make sure the generated string does NOT end in a comma.
+
+str=""
+while read line ; do
+        str="$str$line@scs.ubbcluj.ro,"
+done < usernames.txt
+str=$(echo $str | sed "s/,$//")
+echo "$str"
+
+
+
+8. Display all the mounted file systems who are either smaller than than 1GB or have less than 20% free space.
+
+str=$(cat df.fake | awk '{print $3,$5,$6}'| sed '1d' | sed "s/M//g" | sed "s/%//g")
+echo "$str"
+IFS="
+"
+for line in `echo "$str"` ; do
+        used=$(echo "$line" | awk '{print $1}')
+        percentage_used=$(echo "$line" | awk '{print $2}')
+        name=$(echo "$line" | awk '{print $3}')
+        if [[ $used -lt 1024 || $percentage_used -gt 80 ]] ; then
+                echo "$name"
+        fi
+done
+unset IFS
+
+9.  monitors 
+#!/bin/bash
+
+if [ -z "$1" ]; then
+        echo "string is empty! Add sth!"
+        exit 1
+fi
+
+if [ !-d $1 ]; then
+        echo "no such dirctory"
+        exit 0
+fi
+
+while true; do
+
+        for X in `find $1 `; do
+                if [ -d $X ]; then
+                        C=`ls -l $X| sha1sum`
+                        D=`ls -ld $X| shasum`
+                elif [ -f $X ]; then
+                        C=`sha1sum $X`
+                        D=`ls -l $X|sha1sum`
+                fi
+                echo $X $C $D
+
+        done
+
+done
+
+
+
+10. details of a file (ls -l);
+    details of a directory (ls -ld)
+    content of a directory (ls -l)
+
+
+11. all files from $1 that have extension .txt  -> for A in $1/*.txt; do
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -59,7 +59,6 @@ void SortedMultiMap::add(TKey c, TValue v)
         new_value->next = current_node->head;
         new_value->value = v;
         current_node->head = new_value;
-
     }
     else
     {
@@ -138,13 +137,11 @@ bool SortedMultiMap::remove(TKey c, TValue v)
 
     while (current_value != nullptr)
     {
-        //std::cout << "KEY" << current_node->key << " Value " << current_value->value << '\n';
         auto next = current_value->next;
         if (current_value->value == v)
         {
             if (prev_value == nullptr)
             {
-                // std::cout << "CURRENT VALUE IN IF " << current_value << '\n';
                 current_node->head = current_value->next;
                 delete current_value;
                 current_value = nullptr;
@@ -153,7 +150,6 @@ bool SortedMultiMap::remove(TKey c, TValue v)
             }
             else
             {
-                // std::cout << "NU AICI!\n";
                 prev_value->next=current_value->next;
                 delete current_value;
                 current_value = prev_value;
@@ -168,7 +164,6 @@ bool SortedMultiMap::remove(TKey c, TValue v)
 
     if (copy_current_node->head == nullptr)
     {
-        //std::cout << "Stergem elementul " << copy_current_node->key << '\n';
         if (prev_node == nullptr)
         {
             this->head = copy_current_node->next;
@@ -233,11 +228,75 @@ SMMIterator SortedMultiMap::iterator() const {
 SortedMultiMap::~SortedMultiMap()
 // theta(SLL_size)
 {
-//    auto* current_node = this->head;
-//    while (current_node != nullptr)
-//    {
-//        auto prev = current_node->next;
-//        delete current_node;
-//        current_node = prev;
-//    }
+    auto* current_key = this->head;
+    SLLvalues* current_value;
+    if (current_key != nullptr)
+        current_value = current_key->head;
+
+    while(current_key != nullptr) {
+
+        if (current_value != nullptr)
+        {
+            auto next = current_value->next;
+            delete current_value;
+            current_value = next;
+        }
+        else {
+            auto next = current_key->next;
+            delete current_key;
+            current_key = next;
+
+            if (current_key != nullptr)
+                current_value = current_key->head;
+        }
+    }
+}
+
+std::vector<TValue> SortedMultiMap::removeKey(TKey key)
+//  best case: key is the head and has only one element: theta(1)
+//  worst case: key is the last node of SLL: theta(pairs)
+//  total case: O(pairs)
+{
+
+    std::vector <TValue> removed_values;
+    auto* current_node = this->head;
+    SLLkeys* prev_node;
+
+    while(current_node != nullptr && current_node->key != key)
+    {
+        prev_node = current_node;
+        current_node = current_node->next;
+    }
+
+    if (current_node == nullptr)
+        return removed_values;
+
+    if (prev_node == nullptr)
+    {
+        SLLvalues* current_value = current_node->head;
+        while (current_value != nullptr)
+        {
+            auto next = current_value->next;
+            removed_values.push_back(current_value->value);
+            delete current_value;
+            current_value = next;
+        }
+        this->head = current_node->next;
+        delete current_node;
+    }
+    else
+    {
+        SLLvalues* current_value = current_node->head;
+        while (current_value != nullptr)
+        {
+            auto next = current_value->next;
+            removed_values.push_back(current_value->value);
+            delete current_value;
+            current_value = next;
+        }
+        prev_node->next = current_node->next;
+        delete current_node;
+    }
+
+    return removed_values;
 }
