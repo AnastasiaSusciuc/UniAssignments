@@ -6,16 +6,22 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/Externals/bfs.cpp
-queue
--
-vector
--
-
-C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/Externals/random_graph.cpp
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/Externals/external_functions.h
 ../Graphs/DirectedGraph.h
 C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/Graphs/DirectedGraph.h
+string
+-
+iostream
+-
+fstream
+-
 random
+-
+queue
+-
+stack
+-
+bitset
 -
 
 C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/Graphs/DirectedGraph.h
@@ -24,25 +30,19 @@ map
 vector
 -
 
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/TestDG/testDG.cpp
+testDG.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/TestDG/testDG.h
+
 C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/TestDG/testDG.h
 cassert
+-
+algorithm
 -
 iostream
 -
 ../Graphs/DirectedGraph.h
 C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/Graphs/DirectedGraph.h
-
-C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/main.cpp
-fstream
--
-iostream
--
-TestDG/testDG.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/TestDG/testDG.h
-Externals/random_graph.cpp
-C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/Externals/random_graph.cpp
-Externals/bfs.cpp
-C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/Externals/bfs.cpp
-chrono
--
+../Externals/external_functions.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/Externals/external_functions.h
 

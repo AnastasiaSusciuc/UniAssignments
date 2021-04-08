@@ -140,7 +140,7 @@ public:
      * */
 
     void remove_edge(int source, int target);
-    std::pair< std::vector<int>::const_iterator, std::vector<int>::const_iterator> parse_through_vertices();
+    std::vector <int> parse_through_vertices();
     std::vector <int> parse_edges_out(int node);
     std::vector <int> parse_edges_in(int node);
 

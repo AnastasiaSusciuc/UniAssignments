@@ -121,8 +121,12 @@ void DirectedGraph::remove_edge(int source, int target) {
     edges.erase(edges.find(std::make_pair(source, target)));
 }
 
-std::pair<std::vector<int>::const_iterator, std::vector<int>::const_iterator> DirectedGraph::parse_through_vertices() {
-    return {nodes.begin(), nodes.end()};
+std::vector <int> DirectedGraph::parse_through_vertices() {
+    std::vector <int> all_nodes;
+    for (auto it: nodes)
+        all_nodes.push_back(it);
+
+    return all_nodes;
 }
 
 std::vector<int> DirectedGraph::parse_edges_out(int node) {

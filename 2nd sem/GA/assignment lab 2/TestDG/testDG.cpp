@@ -15,6 +15,9 @@ void TestDG::run_all_tests() {
     test_parse_in_out_edges();
     test_copy_graph();
     test_all_edges();
+    test_backward_bfs();
+    test_Tarjan_SCC();
+    test_biconex_components();
     std::cout << "TESTS FINISHED!\n";
 }
 
@@ -31,7 +34,7 @@ void TestDG::test_add_node() {
         g.add_node(5);
         assert(false);
     }
-    catch (std::runtime_error)
+    catch (std::runtime_error&)
     {
         assert(true);
     }
@@ -52,7 +55,7 @@ void TestDG::test_add_edge() {
         g.add_edge(1, 2, 10);
         assert(false);
     }
-    catch (std::runtime_error)
+    catch (std::runtime_error&)
     {
         assert(true);
     }
@@ -61,7 +64,7 @@ void TestDG::test_add_edge() {
         g.add_edge(100, 2, 10);
         assert(false);
     }
-    catch (std::runtime_error)
+    catch (std::runtime_error&)
     {
         assert(true);
     }
@@ -70,7 +73,7 @@ void TestDG::test_add_edge() {
         g.add_edge(1, 200, 10);
         assert(false);
     }
-    catch (std::runtime_error)
+    catch (std::runtime_error&)
     {
         assert(true);
     }
@@ -81,7 +84,7 @@ void TestDG::test_add_edge() {
         g.get_edge_cost(1, 200);
         assert(false);
     }
-    catch (std::runtime_error)
+    catch (std::runtime_error&)
     {
         assert(true);
     }
@@ -112,7 +115,7 @@ void TestDG::test_change_cost_edge() {
         g.change_edge_cost(1, 200, 20);
         assert(false);
     }
-    catch (std::runtime_error)
+    catch (std::runtime_error&)
     {
         assert(true);
     }
@@ -287,7 +290,68 @@ void TestDG::test_backward_bfs() {
     g.add_edge(2, 3, 6);
     g.add_edge(3, 5, 2);
 
-    // assert(find_lowest_length_path())
+    assert(find_lowest_length_path(g, 1, 5) == 13);
+
+    g.add_edge(1, 5, 12);
+
+    assert(find_lowest_length_path(g, 1, 5) == 12);
+
+}
+
+void TestDG::test_Tarjan_SCC() {
+    DirectedGraph g;
+    for (int i = 1; i <= 8; i++)
+        g.add_node(i);
+
+    g.add_edge(1, 2, 0);
+    g.add_edge(2, 6, 0);
+    g.add_edge(6, 7, 0);
+    g.add_edge(7, 6, 0);
+    g.add_edge(3, 1, 0);
+    g.add_edge(3, 4, 0);
+    g.add_edge(2, 3, 0);
+    g.add_edge(4, 5, 0);
+    g.add_edge(5, 4, 0);
+    g.add_edge(6, 5, 0);
+    g.add_edge(5, 8, 0);
+    g.add_edge(8, 7, 0);
+
+    SCCTarjanAlgorithm tarjan(g) ;
+
+    std::vector <int> expected_result[3];
+    for (int i = 1; i <= 3; i++)
+        expected_result[2].push_back(i);
+
+    for (int i = 4; i <= 8; i++)
+        expected_result[1].push_back(i);
+
+    std::vector<std::vector<int>>& SCCs = tarjan.get_SCCs();
+    int number_SCCs = tarjan.get_number_SCCs();
+
+    for (int i = 1; i <= number_SCCs; i++)
+    {
+        std::sort(SCCs[i].begin(), SCCs[i].end());
+
+        assert(SCCs[i].size() == expected_result[i].size());
+        for (int j = 0; j < SCCs[i].size(); j++)
+            assert(SCCs[i][j] == expected_result[i][j]);
+    }
+}
+
+void TestDG::test_biconex_components() {
+/*
+8 9
+1 2
+2 3
+3 4
+4 1
+1 5
+5 6
+6 7
+7 5
+7 8
+ * */
+
 
 }
 

@@ -142,59 +142,32 @@ c__/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\c__.dir\build.make CMakeFiles/c__.dir/build
 .PHONY : c__/fast
 
-Externals/random_graph.obj: Externals/random_graph.cpp.obj
+Externals/external_functions.obj: Externals/external_functions.cpp.obj
 
-.PHONY : Externals/random_graph.obj
-
-# target to build an object file
-Externals/random_graph.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\c__.dir\build.make CMakeFiles/c__.dir/Externals/random_graph.cpp.obj
-.PHONY : Externals/random_graph.cpp.obj
-
-Externals/random_graph.i: Externals/random_graph.cpp.i
-
-.PHONY : Externals/random_graph.i
-
-# target to preprocess a source file
-Externals/random_graph.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\c__.dir\build.make CMakeFiles/c__.dir/Externals/random_graph.cpp.i
-.PHONY : Externals/random_graph.cpp.i
-
-Externals/random_graph.s: Externals/random_graph.cpp.s
-
-.PHONY : Externals/random_graph.s
-
-# target to generate assembly for a file
-Externals/random_graph.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\c__.dir\build.make CMakeFiles/c__.dir/Externals/random_graph.cpp.s
-.PHONY : Externals/random_graph.cpp.s
-
-Externals/read_write.obj: Externals/read_write.cpp.obj
-
-.PHONY : Externals/read_write.obj
+.PHONY : Externals/external_functions.obj
 
 # target to build an object file
-Externals/read_write.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\c__.dir\build.make CMakeFiles/c__.dir/Externals/read_write.cpp.obj
-.PHONY : Externals/read_write.cpp.obj
+Externals/external_functions.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\c__.dir\build.make CMakeFiles/c__.dir/Externals/external_functions.cpp.obj
+.PHONY : Externals/external_functions.cpp.obj
 
-Externals/read_write.i: Externals/read_write.cpp.i
+Externals/external_functions.i: Externals/external_functions.cpp.i
 
-.PHONY : Externals/read_write.i
+.PHONY : Externals/external_functions.i
 
 # target to preprocess a source file
-Externals/read_write.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\c__.dir\build.make CMakeFiles/c__.dir/Externals/read_write.cpp.i
-.PHONY : Externals/read_write.cpp.i
+Externals/external_functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\c__.dir\build.make CMakeFiles/c__.dir/Externals/external_functions.cpp.i
+.PHONY : Externals/external_functions.cpp.i
 
-Externals/read_write.s: Externals/read_write.cpp.s
+Externals/external_functions.s: Externals/external_functions.cpp.s
 
-.PHONY : Externals/read_write.s
+.PHONY : Externals/external_functions.s
 
 # target to generate assembly for a file
-Externals/read_write.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\c__.dir\build.make CMakeFiles/c__.dir/Externals/read_write.cpp.s
-.PHONY : Externals/read_write.cpp.s
+Externals/external_functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\c__.dir\build.make CMakeFiles/c__.dir/Externals/external_functions.cpp.s
+.PHONY : Externals/external_functions.cpp.s
 
 Graphs/DirectedGraph.obj: Graphs/DirectedGraph.cpp.obj
 
@@ -286,12 +259,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... c__
-	@echo ... Externals/random_graph.obj
-	@echo ... Externals/random_graph.i
-	@echo ... Externals/random_graph.s
-	@echo ... Externals/read_write.obj
-	@echo ... Externals/read_write.i
-	@echo ... Externals/read_write.s
+	@echo ... Externals/external_functions.obj
+	@echo ... Externals/external_functions.i
+	@echo ... Externals/external_functions.s
 	@echo ... Graphs/DirectedGraph.obj
 	@echo ... Graphs/DirectedGraph.i
 	@echo ... Graphs/DirectedGraph.s

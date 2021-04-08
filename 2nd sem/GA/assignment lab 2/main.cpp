@@ -1,73 +1,47 @@
 #include <fstream>
 #include <iostream>
 #include "TestDG/testDG.h"
-#include "Externals/random_graph.cpp"
-#include "Externals/bfs.cpp"
 #include <chrono>
 using namespace std::chrono;
-
-
-//int find_lowest_length_path(DirectedGraph& graph, int start, int end)
-//{
-//    int number_nodes = graph.get_number_nodes();
-//    int INF = 0x3f3f3f3f;
-//    std::queue <int> Q;
-//    std::vector <int> distance(number_nodes+5);
-//    std::fill(distance.begin(), distance.end(), INF);
-//
-//    distance[end] = 0;
-//    Q.push(end);
-//
-//    while (!Q.empty() && distance[start] == INF)
-//    {
-//        int node = Q.front();
-//        // std::cout << node << ' ';
-//        Q.pop();
-//
-//        std::vector <std::pair <int, int> > edges_in = graph.parse_edges_in_with_costs(node);
-//
-////        std::cout << "NODE " << node << '\n';
-////        for (auto& neighbour: edges_in)
-////            std::cout << neighbour.first << " " << neighbour.second << '\n';
-//
-//        for (auto& neighbour: edges_in)
-//        {
-//            if (distance[neighbour.first] > distance[node] + neighbour.second)
-//            {
-//                distance[neighbour.first] = distance[node] + neighbour.second;
-//                Q.push(neighbour.first);
-//            }
-//        }
-//
-//    }
-////    std::cout << '\n';
-////
-////    for (int i = 0; i <= 7; i++)
-////        std::cout << i << " " << distance[i] << '\n';
-//
-//    return distance[start];
-//}
 
 int main() {
 
     TestDG::run_all_tests();
-
+/*
+8 12
+1 2
+2 6
+6 7
+7 6
+3 1
+3 4
+2 3
+4 5
+5 4
+6 5
+5 8
+8 7
+ * */
     DirectedGraph g;
-    g.add_node(1);
-    g.add_node(2);
-    g.add_node(3);
-    g.add_node(4);
-    g.add_node(5);
+    for (int i = 1; i <= 8; i++)
+        g.add_node(i);
 
-    g.add_edge(1, 2, 5);
-    g.add_edge(2, 4, 9);
-    g.add_edge(1, 4, 10);
-    g.add_edge(2, 3, 6);
-    g.add_edge(3, 5, 2);
+    g.add_edge(1, 2, 0);
+    g.add_edge(2, 6, 0);
+    g.add_edge(6, 7, 0);
+    g.add_edge(7, 6, 0);
+    g.add_edge(3, 1, 0);
+    g.add_edge(3, 4, 0);
+    g.add_edge(2, 3, 0);
+    g.add_edge(4, 5, 0);
+    g.add_edge(5, 4, 0);
+    g.add_edge(6, 5, 0);
+    g.add_edge(5, 8, 0);
+    g.add_edge(8, 7, 0);
 
-    // std::cout << find_lowest_length_path(g, 1, 5);
-    assert(find_lowest_length_path(g, 1, 5) == 13);
-
+    SCCTarjanAlgorithm tarjan(g) ;
+    tarjan.findSCCs();
+    tarjan.print_SCCs();
 
     return 0;
 }

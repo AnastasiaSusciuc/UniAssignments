@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/c__.dir/Externals/random_graph.cpp.obj"
-  "CMakeFiles/c__.dir/Externals/read_write.cpp.obj"
+  "CMakeFiles/c__.dir/Externals/external_functions.cpp.obj"
   "CMakeFiles/c__.dir/Graphs/DirectedGraph.cpp.obj"
   "CMakeFiles/c__.dir/TestDG/testDG.cpp.obj"
   "CMakeFiles/c__.dir/main.cpp.obj"

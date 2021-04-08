@@ -6,13 +6,13 @@
 #define C___TESTDG_H
 
 #include <cassert>
+#include <algorithm>
 #include <iostream>
 #include "../Graphs/DirectedGraph.h"
+#include "../Externals/external_functions.h"
 
 class TestDG{
-
-public:
-    static void run_all_tests();
+private:
     static void test_add_node();
     static void test_add_edge();
     static void test_change_cost_edge();
@@ -24,6 +24,12 @@ public:
     static void test_copy_graph();
     static void test_all_edges();
     static void test_backward_bfs();
+    static void test_Tarjan_SCC();
+    static void test_biconex_components();
+
+public:
+    static void run_all_tests();
+
 };
 
 #endif //C___TESTDG_H

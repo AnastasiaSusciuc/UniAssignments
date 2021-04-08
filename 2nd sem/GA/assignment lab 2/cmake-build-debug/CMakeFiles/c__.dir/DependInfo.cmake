@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/Externals/random_graph.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/cmake-build-debug/CMakeFiles/c__.dir/Externals/random_graph.cpp.obj"
-  "C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/Externals/read_write.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/cmake-build-debug/CMakeFiles/c__.dir/Externals/read_write.cpp.obj"
+  "C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/Externals/external_functions.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/cmake-build-debug/CMakeFiles/c__.dir/Externals/external_functions.cpp.obj"
   "C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/Graphs/DirectedGraph.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/cmake-build-debug/CMakeFiles/c__.dir/Graphs/DirectedGraph.cpp.obj"
   "C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/TestDG/testDG.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/cmake-build-debug/CMakeFiles/c__.dir/TestDG/testDG.cpp.obj"
   "C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/main.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/assignment lab 2/cmake-build-debug/CMakeFiles/c__.dir/main.cpp.obj"
