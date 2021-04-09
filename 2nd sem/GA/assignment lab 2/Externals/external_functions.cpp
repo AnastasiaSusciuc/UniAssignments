@@ -220,3 +220,11 @@ void BiconexAlgorithm::dfs(int node, int level) {
         }
     }
 }
+
+int BiconexAlgorithm::get_number_biconex_components() const {
+    return this->counter_biconex_components;
+}
+
+std::vector<std::vector<int> > &BiconexAlgorithm::get_biconex_components() {
+    return biconex_components;
+}

@@ -351,8 +351,38 @@ void TestDG::test_biconex_components() {
 7 5
 7 8
  * */
+    DirectedGraph g;
+    for (int i = 1; i <= 8; i++)
+        g.add_node(i);
 
+    g.add_edge(1, 2, 0);
+    g.add_edge(2, 3, 0);
+    g.add_edge(3, 4, 0);
+    g.add_edge(4, 1, 0);
+    g.add_edge(1, 5, 0);
+    g.add_edge(5, 6, 0);
+    g.add_edge(6, 7, 0);
+    g.add_edge(7, 5, 0);
+    g.add_edge(7, 8, 0);
 
+    BiconexAlgorithm biconex(g);
+
+    int number_biconex_comp = biconex.get_number_biconex_components();
+    std::vector<std::vector<int>>& biconex_components = biconex.get_biconex_components();
+
+    std::cout << number_biconex_comp << "\n";
+
+    for (int i = 1; i <= number_biconex_comp; i++)
+    {
+        std::sort(biconex_components[i].begin(), biconex_components[i].end());
+
+        // assert(SCCs[i].size() == expected_result[i].size());
+        for (int j = 0; j < biconex_components[i].size(); j++)
+            std::cout << biconex_components[i][j] << " ";
+
+        std::cout << '\n';
+            // assert(SCCs[i][j] == expected_result[i][j]);
+    }
 }
 
 

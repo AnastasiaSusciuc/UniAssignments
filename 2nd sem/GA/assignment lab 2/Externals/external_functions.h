@@ -152,7 +152,8 @@ private:
 
 public:
     explicit BiconexAlgorithm(DirectedGraph& ref_graph);
-
+    int get_number_biconex_components() const;
+    std::vector < std::vector <int> >& get_biconex_components();
 };
 
 //class DijkstraAlgorithm{
