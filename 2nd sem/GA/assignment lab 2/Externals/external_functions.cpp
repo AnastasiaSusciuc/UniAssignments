@@ -106,6 +106,7 @@ SCCTarjanAlgorithm::SCCTarjanAlgorithm(DirectedGraph& gr): graph{gr} {
     this->low_link_value.resize(number_nodes+2);
 
     SCC.resize(number_nodes+2);
+    findSCCs();
 }
 
 void SCCTarjanAlgorithm::findSCCs() {
@@ -177,6 +178,7 @@ BiconexAlgorithm::BiconexAlgorithm(DirectedGraph& ref_graph) : graph{ref_graph} 
     this->lvl.resize(number_nodes+5);
     this->used.resize(number_nodes+5);
     this->biconex_components.resize(number_nodes+5);
+    find_biconex_component();
 }
 
 void BiconexAlgorithm::find_biconex_component() {
@@ -222,7 +224,7 @@ void BiconexAlgorithm::dfs(int node, int level) {
 }
 
 int BiconexAlgorithm::get_number_biconex_components(){
-    find_biconex_component();
+
     return this->counter_biconex_components;
 }
 

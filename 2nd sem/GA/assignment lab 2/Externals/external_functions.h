@@ -139,16 +139,19 @@ public:
 
 class BiconexAlgorithm{
 private:
-    DirectedGraph& graph;
-    std::stack  <int> stack;
-    std::vector <int> lvl;
-    std::vector <int> lowest_lvl;
-    std::vector <bool> used;
-    std::vector <std::vector <int> > biconex_components;
-    int counter_biconex_components = 0;
+    DirectedGraph& graph;                       // reference to a graph object
+    std::stack  <int> stack;                    // to keep track of the order of the nodes traversed in the DFS
+    std::vector <int> lvl;                      // the level of a node with respect to the start node of the DFS
+    std::vector <int> lowest_lvl;               // the lowest level we can reach from a node
+    std::vector <bool> used;                    // node was visited or not
+    std::vector <std::vector <int> > biconex_components; // each line represents a biconex component
+    int counter_biconex_components = 0;         // the number of biconex components
 
-    void find_biconex_component();
+    void find_biconex_component();              // starts all the DFS s
     void dfs(int node, int level);
+    /*
+     *
+     * */
 
 public:
     explicit BiconexAlgorithm(DirectedGraph& ref_graph);

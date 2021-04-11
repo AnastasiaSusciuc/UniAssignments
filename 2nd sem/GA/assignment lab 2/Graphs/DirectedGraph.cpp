@@ -29,9 +29,9 @@ bool DirectedGraph::exists_node(int node){
 }
 
 bool DirectedGraph::exists_edge(int source, int target){
-//    if (!exists_node(source) || !exists_node(target))
-//        throw std::runtime_error{"given nodes are invalid!\n"};
-//    else
+    if (!exists_node(source) || !exists_node(target))
+        throw std::runtime_error{"given nodes are invalid!\n"};
+    else
     return std::find(directDG[source].begin(), directDG[source].end(), target) != directDG[source].end();
 }
 
@@ -194,22 +194,3 @@ std::vector<std::pair<int, int> > DirectedGraph::parse_edges_in_with_costs(int n
 
     return edges_in;
 }
-
-
-//std::pair<std::vector<int>::const_iterator, std::vector<int>::const_iterator> DirectedGraph::parse_through_edges() {
-//    return {edges.begin(), edges.end()};
-//}
-
-//std::pair<std::vector<int>::const_iterator, std::vector<int>::const_iterator> DirectedGraph::parse_edges_out(int node) {
-//    if (!exists_node(node))
-//        throw std::runtime_error{"invalid given node!\n"};
-//    return std::make_pair(directDG[node].begin(), directDG[node].end());
-//}
-//
-//std::pair<std::vector<int>::const_iterator, std::vector<int>::const_iterator> DirectedGraph::parse_edges_in(int node) {
-//    if (!exists_node(node))
-//        throw std::runtime_error{"invalid given node!\n"};
-//    return std::make_pair(transposedDG[node].begin(), transposedDG[node].end());
-//}
-
-

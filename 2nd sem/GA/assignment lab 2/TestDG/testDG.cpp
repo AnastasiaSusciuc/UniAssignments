@@ -375,7 +375,6 @@ void TestDG::test_biconex_components() {
     expected_result[2].push_back(7); expected_result[2].push_back(8);
     expected_result[3].push_back(5); expected_result[3].push_back(6); expected_result[3].push_back(7);
     expected_result[4].push_back(1); expected_result[4].push_back(5);
-    std::cout << number_biconex_comp << "\n";
 
     for (int i = 1; i <= number_biconex_comp; i++)
     {
@@ -385,7 +384,6 @@ void TestDG::test_biconex_components() {
         for (int j = 0; j < biconex_components[i].size(); j++) {
             assert(biconex_components[i][j] == expected_result[i][j]);
         }
-        
     }
 }
 
