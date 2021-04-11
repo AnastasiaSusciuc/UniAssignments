@@ -221,7 +221,8 @@ void BiconexAlgorithm::dfs(int node, int level) {
     }
 }
 
-int BiconexAlgorithm::get_number_biconex_components() const {
+int BiconexAlgorithm::get_number_biconex_components(){
+    find_biconex_component();
     return this->counter_biconex_components;
 }
 

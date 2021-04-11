@@ -3,7 +3,8 @@
 //
 
 #include "UI.h"
-
+#include <Windows.h>
+#include <shellapi.h>
 
 
 UITutorial::UITutorial(AdminService &adminService, UserService &userService) :adminService{adminService}, userService {userService} {
@@ -284,7 +285,7 @@ void UITutorial::ui_see_tutorials_by_presenter() {
         for (auto & it : tutorials_by_presenter)
         {
             std::string link = it.get_link();
-            // ShellExecuteA(NULL, NULL, "chrome.exe", (it.get_link()).c_str(), NULL, SW_SHOWMAXIMIZED);
+            ShellExecuteA(NULL, NULL, "chrome.exe", (it.get_link()).c_str(), NULL, SW_SHOWMAXIMIZED);
             std::cout << it.get_title() << " " << it.get_presenter() << " "
                       << it.get_duration().first << " " << it.get_duration().second << " "
                       << it.get_number_of_likes() << " " << it.get_link() << '\n';

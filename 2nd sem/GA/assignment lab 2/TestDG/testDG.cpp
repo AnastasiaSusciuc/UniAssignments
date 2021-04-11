@@ -370,18 +370,22 @@ void TestDG::test_biconex_components() {
     int number_biconex_comp = biconex.get_number_biconex_components();
     std::vector<std::vector<int>>& biconex_components = biconex.get_biconex_components();
 
+    std::vector <int> expected_result[5];
+    expected_result[1].push_back(1); expected_result[1].push_back(2); expected_result[1].push_back(3); expected_result[1].push_back(4);
+    expected_result[2].push_back(7); expected_result[2].push_back(8);
+    expected_result[3].push_back(5); expected_result[3].push_back(6); expected_result[3].push_back(7);
+    expected_result[4].push_back(1); expected_result[4].push_back(5);
     std::cout << number_biconex_comp << "\n";
 
     for (int i = 1; i <= number_biconex_comp; i++)
     {
         std::sort(biconex_components[i].begin(), biconex_components[i].end());
 
-        // assert(SCCs[i].size() == expected_result[i].size());
-        for (int j = 0; j < biconex_components[i].size(); j++)
-            std::cout << biconex_components[i][j] << " ";
-
-        std::cout << '\n';
-            // assert(SCCs[i][j] == expected_result[i][j]);
+        assert(biconex_components[i].size() == expected_result[i].size());
+        for (int j = 0; j < biconex_components[i].size(); j++) {
+            assert(biconex_components[i][j] == expected_result[i][j]);
+        }
+        
     }
 }
 

@@ -1,0 +1,58 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Domain/tutorial.h
+string
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/DynamicVector/DynamicVector.h
+stdexcept
+-
+../Domain/tutorial.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Domain/tutorial.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Repository/TutorialsRepository.h
+vector
+-
+algorithm
+-
+string
+-
+../Domain/tutorial.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Domain/tutorial.h
+../DynamicVector/DynamicVector.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/DynamicVector/DynamicVector.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Repository/WatchListRepository.h
+TutorialsRepository.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Repository/TutorialsRepository.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Service/AdminService.h
+../Repository/TutorialsRepository.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Repository/TutorialsRepository.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Service/UserService.h
+../Repository/WatchListRepository.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Repository/WatchListRepository.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/UI/UI.cpp
+UI.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/UI/UI.h
+Windows.h
+-
+shellapi.h
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/UI/UI.h
+../Service/AdminService.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Service/AdminService.h
+../Service/UserService.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Service/UserService.h
+iostream
+-
+

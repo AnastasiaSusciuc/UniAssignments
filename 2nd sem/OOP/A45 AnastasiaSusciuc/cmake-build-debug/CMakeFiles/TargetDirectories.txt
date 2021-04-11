@@ -1,3 +1,3 @@
-C:/Users/susci/Desktop/2nd sem/GA/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/susci/Desktop/2nd sem/GA/untitled/cmake-build-debug/CMakeFiles/untitled.dir
-C:/Users/susci/Desktop/2nd sem/GA/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/cmake-build-debug/CMakeFiles/untitled.dir
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/cmake-build-debug/CMakeFiles/rebuild_cache.dir

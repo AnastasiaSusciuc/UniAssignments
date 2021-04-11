@@ -1,3 +1,6 @@
+_____________________________________________________________________________________
+Practice Bota's website
+
 1. Să se scrie un script bash care primeşte ca argument un număr natural N şi generează N fişiere de tip text, astfel:
 - numele fişierelor vor fi de forma: file_X.txt, unde X = {1, 2, ..., N}
 - fiecare fişier generat va conţine doar liniile de la X la X + 5 ale fişierului passwd.fake
@@ -149,7 +152,7 @@ echo "Done"
 
 
 __________________________________________________________________________________________________________________________________________
-Teaching solved exercises
+Practice Boian's website
 
 
 1. Display a report showing the full name of all the users currently connected, and the number of processes belonging to each of them.

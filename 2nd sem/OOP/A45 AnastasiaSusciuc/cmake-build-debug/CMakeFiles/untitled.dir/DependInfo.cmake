@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/susci/Desktop/2nd sem/GA/untitled/Domain/tutorial.cpp" "C:/Users/susci/Desktop/2nd sem/GA/untitled/cmake-build-debug/CMakeFiles/untitled.dir/Domain/tutorial.cpp.obj"
-  "C:/Users/susci/Desktop/2nd sem/GA/untitled/DynamicVector/DynamicVector.cpp" "C:/Users/susci/Desktop/2nd sem/GA/untitled/cmake-build-debug/CMakeFiles/untitled.dir/DynamicVector/DynamicVector.cpp.obj"
-  "C:/Users/susci/Desktop/2nd sem/GA/untitled/Repository/TutorialsRepository.cpp" "C:/Users/susci/Desktop/2nd sem/GA/untitled/cmake-build-debug/CMakeFiles/untitled.dir/Repository/TutorialsRepository.cpp.obj"
-  "C:/Users/susci/Desktop/2nd sem/GA/untitled/Repository/WatchListRepository.cpp" "C:/Users/susci/Desktop/2nd sem/GA/untitled/cmake-build-debug/CMakeFiles/untitled.dir/Repository/WatchListRepository.cpp.obj"
-  "C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/AdminService.cpp" "C:/Users/susci/Desktop/2nd sem/GA/untitled/cmake-build-debug/CMakeFiles/untitled.dir/Service/AdminService.cpp.obj"
-  "C:/Users/susci/Desktop/2nd sem/GA/untitled/Service/UserService.cpp" "C:/Users/susci/Desktop/2nd sem/GA/untitled/cmake-build-debug/CMakeFiles/untitled.dir/Service/UserService.cpp.obj"
-  "C:/Users/susci/Desktop/2nd sem/GA/untitled/Tests/tests.cpp" "C:/Users/susci/Desktop/2nd sem/GA/untitled/cmake-build-debug/CMakeFiles/untitled.dir/Tests/tests.cpp.obj"
-  "C:/Users/susci/Desktop/2nd sem/GA/untitled/UI/UI.cpp" "C:/Users/susci/Desktop/2nd sem/GA/untitled/cmake-build-debug/CMakeFiles/untitled.dir/UI/UI.cpp.obj"
-  "C:/Users/susci/Desktop/2nd sem/GA/untitled/main.cpp" "C:/Users/susci/Desktop/2nd sem/GA/untitled/cmake-build-debug/CMakeFiles/untitled.dir/main.cpp.obj"
+  "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Domain/tutorial.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/cmake-build-debug/CMakeFiles/untitled.dir/Domain/tutorial.cpp.obj"
+  "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/DynamicVector/DynamicVector.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/cmake-build-debug/CMakeFiles/untitled.dir/DynamicVector/DynamicVector.cpp.obj"
+  "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Repository/TutorialsRepository.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/cmake-build-debug/CMakeFiles/untitled.dir/Repository/TutorialsRepository.cpp.obj"
+  "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Repository/WatchListRepository.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/cmake-build-debug/CMakeFiles/untitled.dir/Repository/WatchListRepository.cpp.obj"
+  "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Service/AdminService.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/cmake-build-debug/CMakeFiles/untitled.dir/Service/AdminService.cpp.obj"
+  "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Service/UserService.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/cmake-build-debug/CMakeFiles/untitled.dir/Service/UserService.cpp.obj"
+  "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/Tests/tests.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/cmake-build-debug/CMakeFiles/untitled.dir/Tests/tests.cpp.obj"
+  "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/UI/UI.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/cmake-build-debug/CMakeFiles/untitled.dir/UI/UI.cpp.obj"
+  "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/main.cpp" "C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/A45 AnastasiaSusciuc/cmake-build-debug/CMakeFiles/untitled.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

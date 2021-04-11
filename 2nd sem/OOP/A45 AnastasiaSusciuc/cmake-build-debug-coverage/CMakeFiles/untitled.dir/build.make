@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\susci\Desktop\2nd sem\GA\untitled"
+CMAKE_SOURCE_DIR = "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage"
+CMAKE_BINARY_DIR = "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\cmake-build-debug-coverage"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/untitled.dir/depend.make
@@ -78,120 +78,120 @@ include CMakeFiles/untitled.dir/flags.make
 
 CMakeFiles/untitled.dir/main.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled.dir/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\main.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\GA\untitled\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled.dir/main.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\main.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\main.cpp"
 
 CMakeFiles/untitled.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\GA\untitled\main.cpp" > CMakeFiles\untitled.dir\main.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\main.cpp" > CMakeFiles\untitled.dir\main.cpp.i
 
 CMakeFiles/untitled.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\GA\untitled\main.cpp" -o CMakeFiles\untitled.dir\main.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\main.cpp" -o CMakeFiles\untitled.dir\main.cpp.s
 
 CMakeFiles/untitled.dir/UI/UI.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/UI/UI.cpp.obj: ../UI/UI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled.dir/UI/UI.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\UI\UI.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\GA\untitled\UI\UI.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled.dir/UI/UI.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\UI\UI.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\UI\UI.cpp"
 
 CMakeFiles/untitled.dir/UI/UI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/UI/UI.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\GA\untitled\UI\UI.cpp" > CMakeFiles\untitled.dir\UI\UI.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\UI\UI.cpp" > CMakeFiles\untitled.dir\UI\UI.cpp.i
 
 CMakeFiles/untitled.dir/UI/UI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/UI/UI.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\GA\untitled\UI\UI.cpp" -o CMakeFiles\untitled.dir\UI\UI.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\UI\UI.cpp" -o CMakeFiles\untitled.dir\UI\UI.cpp.s
 
 CMakeFiles/untitled.dir/Tests/tests.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/Tests/tests.cpp.obj: ../Tests/tests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/Tests/tests.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Tests\tests.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\GA\untitled\Tests\tests.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/Tests/tests.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Tests\tests.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Tests\tests.cpp"
 
 CMakeFiles/untitled.dir/Tests/tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Tests/tests.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\GA\untitled\Tests\tests.cpp" > CMakeFiles\untitled.dir\Tests\tests.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Tests\tests.cpp" > CMakeFiles\untitled.dir\Tests\tests.cpp.i
 
 CMakeFiles/untitled.dir/Tests/tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Tests/tests.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\GA\untitled\Tests\tests.cpp" -o CMakeFiles\untitled.dir\Tests\tests.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Tests\tests.cpp" -o CMakeFiles\untitled.dir\Tests\tests.cpp.s
 
 CMakeFiles/untitled.dir/Service/AdminService.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/Service/AdminService.cpp.obj: ../Service/AdminService.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled.dir/Service/AdminService.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Service\AdminService.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\GA\untitled\Service\AdminService.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled.dir/Service/AdminService.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Service\AdminService.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Service\AdminService.cpp"
 
 CMakeFiles/untitled.dir/Service/AdminService.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Service/AdminService.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\GA\untitled\Service\AdminService.cpp" > CMakeFiles\untitled.dir\Service\AdminService.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Service\AdminService.cpp" > CMakeFiles\untitled.dir\Service\AdminService.cpp.i
 
 CMakeFiles/untitled.dir/Service/AdminService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Service/AdminService.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\GA\untitled\Service\AdminService.cpp" -o CMakeFiles\untitled.dir\Service\AdminService.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Service\AdminService.cpp" -o CMakeFiles\untitled.dir\Service\AdminService.cpp.s
 
 CMakeFiles/untitled.dir/Repository/TutorialsRepository.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/Repository/TutorialsRepository.cpp.obj: ../Repository/TutorialsRepository.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled.dir/Repository/TutorialsRepository.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Repository\TutorialsRepository.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\GA\untitled\Repository\TutorialsRepository.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled.dir/Repository/TutorialsRepository.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Repository\TutorialsRepository.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Repository\TutorialsRepository.cpp"
 
 CMakeFiles/untitled.dir/Repository/TutorialsRepository.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Repository/TutorialsRepository.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\GA\untitled\Repository\TutorialsRepository.cpp" > CMakeFiles\untitled.dir\Repository\TutorialsRepository.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Repository\TutorialsRepository.cpp" > CMakeFiles\untitled.dir\Repository\TutorialsRepository.cpp.i
 
 CMakeFiles/untitled.dir/Repository/TutorialsRepository.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Repository/TutorialsRepository.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\GA\untitled\Repository\TutorialsRepository.cpp" -o CMakeFiles\untitled.dir\Repository\TutorialsRepository.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Repository\TutorialsRepository.cpp" -o CMakeFiles\untitled.dir\Repository\TutorialsRepository.cpp.s
 
 CMakeFiles/untitled.dir/DynamicVector/DynamicVector.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/DynamicVector/DynamicVector.cpp.obj: ../DynamicVector/DynamicVector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled.dir/DynamicVector/DynamicVector.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\DynamicVector\DynamicVector.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\GA\untitled\DynamicVector\DynamicVector.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled.dir/DynamicVector/DynamicVector.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\DynamicVector\DynamicVector.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\DynamicVector\DynamicVector.cpp"
 
 CMakeFiles/untitled.dir/DynamicVector/DynamicVector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/DynamicVector/DynamicVector.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\GA\untitled\DynamicVector\DynamicVector.cpp" > CMakeFiles\untitled.dir\DynamicVector\DynamicVector.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\DynamicVector\DynamicVector.cpp" > CMakeFiles\untitled.dir\DynamicVector\DynamicVector.cpp.i
 
 CMakeFiles/untitled.dir/DynamicVector/DynamicVector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/DynamicVector/DynamicVector.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\GA\untitled\DynamicVector\DynamicVector.cpp" -o CMakeFiles\untitled.dir\DynamicVector\DynamicVector.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\DynamicVector\DynamicVector.cpp" -o CMakeFiles\untitled.dir\DynamicVector\DynamicVector.cpp.s
 
 CMakeFiles/untitled.dir/Domain/tutorial.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/Domain/tutorial.cpp.obj: ../Domain/tutorial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/untitled.dir/Domain/tutorial.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Domain\tutorial.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\GA\untitled\Domain\tutorial.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/untitled.dir/Domain/tutorial.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Domain\tutorial.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Domain\tutorial.cpp"
 
 CMakeFiles/untitled.dir/Domain/tutorial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Domain/tutorial.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\GA\untitled\Domain\tutorial.cpp" > CMakeFiles\untitled.dir\Domain\tutorial.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Domain\tutorial.cpp" > CMakeFiles\untitled.dir\Domain\tutorial.cpp.i
 
 CMakeFiles/untitled.dir/Domain/tutorial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Domain/tutorial.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\GA\untitled\Domain\tutorial.cpp" -o CMakeFiles\untitled.dir\Domain\tutorial.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Domain\tutorial.cpp" -o CMakeFiles\untitled.dir\Domain\tutorial.cpp.s
 
 CMakeFiles/untitled.dir/Service/UserService.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/Service/UserService.cpp.obj: ../Service/UserService.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/untitled.dir/Service/UserService.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Service\UserService.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\GA\untitled\Service\UserService.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/untitled.dir/Service/UserService.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Service\UserService.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Service\UserService.cpp"
 
 CMakeFiles/untitled.dir/Service/UserService.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Service/UserService.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\GA\untitled\Service\UserService.cpp" > CMakeFiles\untitled.dir\Service\UserService.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Service\UserService.cpp" > CMakeFiles\untitled.dir\Service\UserService.cpp.i
 
 CMakeFiles/untitled.dir/Service/UserService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Service/UserService.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\GA\untitled\Service\UserService.cpp" -o CMakeFiles\untitled.dir\Service\UserService.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Service\UserService.cpp" -o CMakeFiles\untitled.dir\Service\UserService.cpp.s
 
 CMakeFiles/untitled.dir/Repository/WatchListRepository.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/Repository/WatchListRepository.cpp.obj: ../Repository/WatchListRepository.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/untitled.dir/Repository/WatchListRepository.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Repository\WatchListRepository.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\GA\untitled\Repository\WatchListRepository.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/untitled.dir/Repository/WatchListRepository.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Repository\WatchListRepository.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Repository\WatchListRepository.cpp"
 
 CMakeFiles/untitled.dir/Repository/WatchListRepository.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Repository/WatchListRepository.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\GA\untitled\Repository\WatchListRepository.cpp" > CMakeFiles\untitled.dir\Repository\WatchListRepository.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Repository\WatchListRepository.cpp" > CMakeFiles\untitled.dir\Repository\WatchListRepository.cpp.i
 
 CMakeFiles/untitled.dir/Repository/WatchListRepository.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Repository/WatchListRepository.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\GA\untitled\Repository\WatchListRepository.cpp" -o CMakeFiles\untitled.dir\Repository\WatchListRepository.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\Repository\WatchListRepository.cpp" -o CMakeFiles\untitled.dir\Repository\WatchListRepository.cpp.s
 
 # Object files for target untitled
 untitled_OBJECTS = \
@@ -221,7 +221,7 @@ untitled.exe: CMakeFiles/untitled.dir/build.make
 untitled.exe: CMakeFiles/untitled.dir/linklibs.rsp
 untitled.exe: CMakeFiles/untitled.dir/objects1.rsp
 untitled.exe: CMakeFiles/untitled.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable untitled.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\cmake-build-debug-coverage\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable untitled.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\untitled.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -234,6 +234,6 @@ CMakeFiles/untitled.dir/clean:
 .PHONY : CMakeFiles/untitled.dir/clean
 
 CMakeFiles/untitled.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\susci\Desktop\2nd sem\GA\untitled" "C:\Users\susci\Desktop\2nd sem\GA\untitled" "C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage" "C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage" "C:\Users\susci\Desktop\2nd sem\GA\untitled\cmake-build-debug-coverage\CMakeFiles\untitled.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc" "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc" "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\cmake-build-debug-coverage" "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\cmake-build-debug-coverage" "C:\Users\susci\Desktop\UniAssignments\2nd sem\OOP\A45 AnastasiaSusciuc\cmake-build-debug-coverage\CMakeFiles\untitled.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/untitled.dir/depend
 
