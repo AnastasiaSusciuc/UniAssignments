@@ -103,6 +103,30 @@ done
 
 9. Să se scrie un script bash care va afişa toate numele de fişiere dintr-un director dat ca parametru şi din subdirectoarele sale, care au numele mai scurte de 8 caractere. Pentru acestea, dacă sunt fişiere text, li se vor afişa primele 10 linii.
 
+1   # 9. Să se scrie un script bash care va afişa toate numele de fişiere dintr-un director dat ca
+  2 # parametru şi din subdirectoarele sale, care au numele mai scurte de 8 caractere. Pentru
+  3 # acestea, dacă sunt fişiere text, li se vor afişa primele 10 linii.
+  4
+  5 dir=$1:w$
+  6
+  7 if [ "$dir" == "" ] || [ ! -d $dir ] ; then
+  8     echo "Directory not found."
+  9     exit 1
+ 10 fi
+ 11
+ 12 for file in `find $dir` ; do
+ 13     if [ -f $file ] ; then
+ 14         name_of_file=`echo $file | grep -E -o "[^/]+$"`
+ 15         if `echo $name_of_file | grep -E -q "^.{,8}$"` ; then
+ 16             echo -e "\n$name_of_file"
+ 17             if `echo $name_of_file | grep -E -q ".txt$"` ; then
+ 18                 echo -e "`cat "$file" | head -n10`"
+ 19             fi
+ 20         fi
+ 21     fi
+ 22 done
+
+
 10. Să se scrie un script bash care pentru fiecare fişier cu drepturile 755 dintr-un director (şi subdirectoarele sale) dat ca parametru îi va modifica drepturile de acces în 744. Înainte de a modifica drepturile de acces, script-ul va cere confirmarea din partea utilizatorului (pentru fiecare fişier în parte).
 (comenzi: find, chmod, read)
 

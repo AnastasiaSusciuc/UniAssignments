@@ -1,3 +1,0 @@
-C:/Users/susci/Desktop/2nd sem/GA/nouc++/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/susci/Desktop/2nd sem/GA/nouc++/cmake-build-debug/CMakeFiles/nouc__.dir
-C:/Users/susci/Desktop/2nd sem/GA/nouc++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
