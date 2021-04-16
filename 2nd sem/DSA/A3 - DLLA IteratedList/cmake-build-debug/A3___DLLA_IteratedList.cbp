@@ -80,7 +80,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedList/main.cpp">
+		<Unit filename="C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedList/App.cpp">
+			<Option target="A3___DLLA_IteratedList"/>
+		</Unit>
+		<Unit filename="C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedList/ExtendedTest.cpp">
+			<Option target="A3___DLLA_IteratedList"/>
+		</Unit>
+		<Unit filename="C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedList/ExtendedTest.h">
+			<Option target="A3___DLLA_IteratedList"/>
+		</Unit>
+		<Unit filename="C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedList/IteratedList.cpp">
+			<Option target="A3___DLLA_IteratedList"/>
+		</Unit>
+		<Unit filename="C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedList/IteratedList.h">
+			<Option target="A3___DLLA_IteratedList"/>
+		</Unit>
+		<Unit filename="C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedList/ListIterator.cpp">
+			<Option target="A3___DLLA_IteratedList"/>
+		</Unit>
+		<Unit filename="C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedList/ListIterator.h">
+			<Option target="A3___DLLA_IteratedList"/>
+		</Unit>
+		<Unit filename="C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedList/ShortTest.cpp">
+			<Option target="A3___DLLA_IteratedList"/>
+		</Unit>
+		<Unit filename="C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedList/ShortTest.h">
 			<Option target="A3___DLLA_IteratedList"/>
 		</Unit>
 		<Unit filename="C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedList/CMakeLists.txt">

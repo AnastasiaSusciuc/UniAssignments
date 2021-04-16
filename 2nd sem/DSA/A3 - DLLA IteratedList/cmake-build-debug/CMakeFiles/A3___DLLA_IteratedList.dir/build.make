@@ -76,32 +76,92 @@ include CMakeFiles/A3___DLLA_IteratedList.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/A3___DLLA_IteratedList.dir/flags.make
 
-CMakeFiles/A3___DLLA_IteratedList.dir/main.cpp.obj: CMakeFiles/A3___DLLA_IteratedList.dir/flags.make
-CMakeFiles/A3___DLLA_IteratedList.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/A3___DLLA_IteratedList.dir/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A3___DLLA_IteratedList.dir\main.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\main.cpp"
+CMakeFiles/A3___DLLA_IteratedList.dir/App.cpp.obj: CMakeFiles/A3___DLLA_IteratedList.dir/flags.make
+CMakeFiles/A3___DLLA_IteratedList.dir/App.cpp.obj: ../App.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/A3___DLLA_IteratedList.dir/App.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A3___DLLA_IteratedList.dir\App.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\App.cpp"
 
-CMakeFiles/A3___DLLA_IteratedList.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A3___DLLA_IteratedList.dir/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\main.cpp" > CMakeFiles\A3___DLLA_IteratedList.dir\main.cpp.i
+CMakeFiles/A3___DLLA_IteratedList.dir/App.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A3___DLLA_IteratedList.dir/App.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\App.cpp" > CMakeFiles\A3___DLLA_IteratedList.dir\App.cpp.i
 
-CMakeFiles/A3___DLLA_IteratedList.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A3___DLLA_IteratedList.dir/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\main.cpp" -o CMakeFiles\A3___DLLA_IteratedList.dir\main.cpp.s
+CMakeFiles/A3___DLLA_IteratedList.dir/App.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A3___DLLA_IteratedList.dir/App.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\App.cpp" -o CMakeFiles\A3___DLLA_IteratedList.dir\App.cpp.s
+
+CMakeFiles/A3___DLLA_IteratedList.dir/ExtendedTest.cpp.obj: CMakeFiles/A3___DLLA_IteratedList.dir/flags.make
+CMakeFiles/A3___DLLA_IteratedList.dir/ExtendedTest.cpp.obj: ../ExtendedTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/A3___DLLA_IteratedList.dir/ExtendedTest.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A3___DLLA_IteratedList.dir\ExtendedTest.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\ExtendedTest.cpp"
+
+CMakeFiles/A3___DLLA_IteratedList.dir/ExtendedTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A3___DLLA_IteratedList.dir/ExtendedTest.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\ExtendedTest.cpp" > CMakeFiles\A3___DLLA_IteratedList.dir\ExtendedTest.cpp.i
+
+CMakeFiles/A3___DLLA_IteratedList.dir/ExtendedTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A3___DLLA_IteratedList.dir/ExtendedTest.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\ExtendedTest.cpp" -o CMakeFiles\A3___DLLA_IteratedList.dir\ExtendedTest.cpp.s
+
+CMakeFiles/A3___DLLA_IteratedList.dir/IteratedList.cpp.obj: CMakeFiles/A3___DLLA_IteratedList.dir/flags.make
+CMakeFiles/A3___DLLA_IteratedList.dir/IteratedList.cpp.obj: ../IteratedList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/A3___DLLA_IteratedList.dir/IteratedList.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A3___DLLA_IteratedList.dir\IteratedList.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\IteratedList.cpp"
+
+CMakeFiles/A3___DLLA_IteratedList.dir/IteratedList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A3___DLLA_IteratedList.dir/IteratedList.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\IteratedList.cpp" > CMakeFiles\A3___DLLA_IteratedList.dir\IteratedList.cpp.i
+
+CMakeFiles/A3___DLLA_IteratedList.dir/IteratedList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A3___DLLA_IteratedList.dir/IteratedList.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\IteratedList.cpp" -o CMakeFiles\A3___DLLA_IteratedList.dir\IteratedList.cpp.s
+
+CMakeFiles/A3___DLLA_IteratedList.dir/ListIterator.cpp.obj: CMakeFiles/A3___DLLA_IteratedList.dir/flags.make
+CMakeFiles/A3___DLLA_IteratedList.dir/ListIterator.cpp.obj: ../ListIterator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/A3___DLLA_IteratedList.dir/ListIterator.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A3___DLLA_IteratedList.dir\ListIterator.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\ListIterator.cpp"
+
+CMakeFiles/A3___DLLA_IteratedList.dir/ListIterator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A3___DLLA_IteratedList.dir/ListIterator.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\ListIterator.cpp" > CMakeFiles\A3___DLLA_IteratedList.dir\ListIterator.cpp.i
+
+CMakeFiles/A3___DLLA_IteratedList.dir/ListIterator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A3___DLLA_IteratedList.dir/ListIterator.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\ListIterator.cpp" -o CMakeFiles\A3___DLLA_IteratedList.dir\ListIterator.cpp.s
+
+CMakeFiles/A3___DLLA_IteratedList.dir/ShortTest.cpp.obj: CMakeFiles/A3___DLLA_IteratedList.dir/flags.make
+CMakeFiles/A3___DLLA_IteratedList.dir/ShortTest.cpp.obj: ../ShortTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/A3___DLLA_IteratedList.dir/ShortTest.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A3___DLLA_IteratedList.dir\ShortTest.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\ShortTest.cpp"
+
+CMakeFiles/A3___DLLA_IteratedList.dir/ShortTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A3___DLLA_IteratedList.dir/ShortTest.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\ShortTest.cpp" > CMakeFiles\A3___DLLA_IteratedList.dir\ShortTest.cpp.i
+
+CMakeFiles/A3___DLLA_IteratedList.dir/ShortTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A3___DLLA_IteratedList.dir/ShortTest.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\ShortTest.cpp" -o CMakeFiles\A3___DLLA_IteratedList.dir\ShortTest.cpp.s
 
 # Object files for target A3___DLLA_IteratedList
 A3___DLLA_IteratedList_OBJECTS = \
-"CMakeFiles/A3___DLLA_IteratedList.dir/main.cpp.obj"
+"CMakeFiles/A3___DLLA_IteratedList.dir/App.cpp.obj" \
+"CMakeFiles/A3___DLLA_IteratedList.dir/ExtendedTest.cpp.obj" \
+"CMakeFiles/A3___DLLA_IteratedList.dir/IteratedList.cpp.obj" \
+"CMakeFiles/A3___DLLA_IteratedList.dir/ListIterator.cpp.obj" \
+"CMakeFiles/A3___DLLA_IteratedList.dir/ShortTest.cpp.obj"
 
 # External object files for target A3___DLLA_IteratedList
 A3___DLLA_IteratedList_EXTERNAL_OBJECTS =
 
-A3___DLLA_IteratedList.exe: CMakeFiles/A3___DLLA_IteratedList.dir/main.cpp.obj
+A3___DLLA_IteratedList.exe: CMakeFiles/A3___DLLA_IteratedList.dir/App.cpp.obj
+A3___DLLA_IteratedList.exe: CMakeFiles/A3___DLLA_IteratedList.dir/ExtendedTest.cpp.obj
+A3___DLLA_IteratedList.exe: CMakeFiles/A3___DLLA_IteratedList.dir/IteratedList.cpp.obj
+A3___DLLA_IteratedList.exe: CMakeFiles/A3___DLLA_IteratedList.dir/ListIterator.cpp.obj
+A3___DLLA_IteratedList.exe: CMakeFiles/A3___DLLA_IteratedList.dir/ShortTest.cpp.obj
 A3___DLLA_IteratedList.exe: CMakeFiles/A3___DLLA_IteratedList.dir/build.make
 A3___DLLA_IteratedList.exe: CMakeFiles/A3___DLLA_IteratedList.dir/linklibs.rsp
 A3___DLLA_IteratedList.exe: CMakeFiles/A3___DLLA_IteratedList.dir/objects1.rsp
 A3___DLLA_IteratedList.exe: CMakeFiles/A3___DLLA_IteratedList.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable A3___DLLA_IteratedList.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A3 - DLLA IteratedList\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable A3___DLLA_IteratedList.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\A3___DLLA_IteratedList.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

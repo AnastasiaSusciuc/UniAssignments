@@ -4,15 +4,36 @@
 //DO NOT CHANGE THIS PART
 class ListIterator;
 #define NULL_TELEM -11111;
+#define MAX_CAP 10000
 typedef int TElem;
+
+struct DLLANode{
+    TElem info;
+    int next;
+    int prev;
+};
+
+struct DLLA{
+    int head;
+    int tail;
+    int capacity;
+    int first_empty;
+    int size_list;
+    DLLANode nodes[MAX_CAP];
+};
 
 class IteratedList {
 private:
-	//TODO - Representation
 
+    DLLA dlla{};
+
+
+    int allocate();
+    void free(int poz);
 
 	//DO NOT CHANGE THIS PART
 	friend class ListIterator;
+
 public:
 
 	// constructor

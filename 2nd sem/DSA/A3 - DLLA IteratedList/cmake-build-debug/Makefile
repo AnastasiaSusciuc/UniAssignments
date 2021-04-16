@@ -142,32 +142,140 @@ A3___DLLA_IteratedList/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/build
 .PHONY : A3___DLLA_IteratedList/fast
 
-main.obj: main.cpp.obj
+App.obj: App.cpp.obj
 
-.PHONY : main.obj
+.PHONY : App.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+App.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/App.cpp.obj
+.PHONY : App.cpp.obj
 
-main.i: main.cpp.i
+App.i: App.cpp.i
 
-.PHONY : main.i
+.PHONY : App.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/main.cpp.i
-.PHONY : main.cpp.i
+App.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/App.cpp.i
+.PHONY : App.cpp.i
 
-main.s: main.cpp.s
+App.s: App.cpp.s
 
-.PHONY : main.s
+.PHONY : App.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/main.cpp.s
-.PHONY : main.cpp.s
+App.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/App.cpp.s
+.PHONY : App.cpp.s
+
+ExtendedTest.obj: ExtendedTest.cpp.obj
+
+.PHONY : ExtendedTest.obj
+
+# target to build an object file
+ExtendedTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/ExtendedTest.cpp.obj
+.PHONY : ExtendedTest.cpp.obj
+
+ExtendedTest.i: ExtendedTest.cpp.i
+
+.PHONY : ExtendedTest.i
+
+# target to preprocess a source file
+ExtendedTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/ExtendedTest.cpp.i
+.PHONY : ExtendedTest.cpp.i
+
+ExtendedTest.s: ExtendedTest.cpp.s
+
+.PHONY : ExtendedTest.s
+
+# target to generate assembly for a file
+ExtendedTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/ExtendedTest.cpp.s
+.PHONY : ExtendedTest.cpp.s
+
+IteratedList.obj: IteratedList.cpp.obj
+
+.PHONY : IteratedList.obj
+
+# target to build an object file
+IteratedList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/IteratedList.cpp.obj
+.PHONY : IteratedList.cpp.obj
+
+IteratedList.i: IteratedList.cpp.i
+
+.PHONY : IteratedList.i
+
+# target to preprocess a source file
+IteratedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/IteratedList.cpp.i
+.PHONY : IteratedList.cpp.i
+
+IteratedList.s: IteratedList.cpp.s
+
+.PHONY : IteratedList.s
+
+# target to generate assembly for a file
+IteratedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/IteratedList.cpp.s
+.PHONY : IteratedList.cpp.s
+
+ListIterator.obj: ListIterator.cpp.obj
+
+.PHONY : ListIterator.obj
+
+# target to build an object file
+ListIterator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/ListIterator.cpp.obj
+.PHONY : ListIterator.cpp.obj
+
+ListIterator.i: ListIterator.cpp.i
+
+.PHONY : ListIterator.i
+
+# target to preprocess a source file
+ListIterator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/ListIterator.cpp.i
+.PHONY : ListIterator.cpp.i
+
+ListIterator.s: ListIterator.cpp.s
+
+.PHONY : ListIterator.s
+
+# target to generate assembly for a file
+ListIterator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/ListIterator.cpp.s
+.PHONY : ListIterator.cpp.s
+
+ShortTest.obj: ShortTest.cpp.obj
+
+.PHONY : ShortTest.obj
+
+# target to build an object file
+ShortTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/ShortTest.cpp.obj
+.PHONY : ShortTest.cpp.obj
+
+ShortTest.i: ShortTest.cpp.i
+
+.PHONY : ShortTest.i
+
+# target to preprocess a source file
+ShortTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/ShortTest.cpp.i
+.PHONY : ShortTest.cpp.i
+
+ShortTest.s: ShortTest.cpp.s
+
+.PHONY : ShortTest.s
+
+# target to generate assembly for a file
+ShortTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A3___DLLA_IteratedList.dir\build.make CMakeFiles/A3___DLLA_IteratedList.dir/ShortTest.cpp.s
+.PHONY : ShortTest.cpp.s
 
 # Help Target
 help:
@@ -178,9 +286,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... A3___DLLA_IteratedList
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... App.obj
+	@echo ... App.i
+	@echo ... App.s
+	@echo ... ExtendedTest.obj
+	@echo ... ExtendedTest.i
+	@echo ... ExtendedTest.s
+	@echo ... IteratedList.obj
+	@echo ... IteratedList.i
+	@echo ... IteratedList.s
+	@echo ... ListIterator.obj
+	@echo ... ListIterator.i
+	@echo ... ListIterator.s
+	@echo ... ShortTest.obj
+	@echo ... ShortTest.i
+	@echo ... ShortTest.s
 .PHONY : help
 
 

@@ -1,5 +1,5 @@
 #pragma once
-#include "IteratedList.h"
+#include "../A3 - DLLA IteratedList/IteratedList.h"
 
 //DO NOT CHANGE THIS PART
 class IteratedList;
@@ -8,11 +8,10 @@ typedef int TElem;
 class ListIterator{
 	friend class IteratedList;
 private:
-	//TODO - Representation 
-
+	int iterator;
 	//DO NOT CHANGE THIS PART
 	const IteratedList& list;
-	ListIterator(const IteratedList& lista);
+	explicit ListIterator(const IteratedList& lista);
 public:
 	void first();
 	void next();
