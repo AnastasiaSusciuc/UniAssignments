@@ -3,6 +3,7 @@
 #include <iostream>
 
 SortedSet::SortedSet(Relation r): relation{r} {
+
 }
 
 int SortedSet::hashFunction(TElem elem) const
@@ -10,6 +11,26 @@ int SortedSet::hashFunction(TElem elem) const
 {
     if (elem < 0) elem*=-1;
     return elem % MOD;
+}
+
+double SortedSet::get_loaded_factor() const
+// theta(1)
+{
+    return (double(no_elements)/MOD);
+}
+
+void SortedSet::resize()
+{
+    int* all_values = new int[this->MOD];
+
+    this->MOD *= 2;
+    this->MOD += 1;
+    SortedSetIterator it(*this);
+    it.first();
+    while (it.valid())
+    {
+
+    }
 }
 
 bool SortedSet::add(TComp elem)
@@ -44,6 +65,9 @@ bool SortedSet::add(TComp elem)
             new_node->next = previous->next;
             previous->next = new_node;
         }
+
+	    if (get_loaded_factor() > this->load_factor)
+	        resize();
 
         return true;
     }

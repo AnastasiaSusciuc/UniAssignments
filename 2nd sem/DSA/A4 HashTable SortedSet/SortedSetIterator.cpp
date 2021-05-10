@@ -5,6 +5,7 @@ using namespace std;
 
 SortedSetIterator::SortedSetIterator(const SortedSet& m) : multime(m)
 {
+    current = new Node* [multime.MOD];
 	for (int i = 0; i < multime.MOD; i++)
 	    current[i] = multime.hashTable[i];
 	first();
@@ -21,7 +22,6 @@ void SortedSetIterator::first()
     for (int i = 0; i < multime.MOD; i++)
     {
         if (current[i] == nullptr) continue;
-
 
         if (first == nullptr || multime.relation(current[i]->value, first->value))
         {
@@ -80,5 +80,9 @@ bool SortedSetIterator::valid() const
 // theta(1)
 {
     return (current_element != NULL_TELEM);
+}
+
+SortedSetIterator::~SortedSetIterator() {
+    delete current[multime.MOD];
 }
 
