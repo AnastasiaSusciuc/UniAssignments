@@ -6,36 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/ExtendedTest.cpp
-SortedSet.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSet.h
-cassert
--
-SortedSetIterator.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSetIterator.h
-exception
--
-ExtendedTest.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/ExtendedTest.h
-iostream
--
-
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/ExtendedTest.h
-
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/ShortTest.cpp
-ShortTest.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/ShortTest.h
-SortedSet.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSet.h
-SortedSetIterator.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSetIterator.h
-cassert
--
-iostream
--
-
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/ShortTest.h
-
 C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSet.cpp
 SortedSet.h
 C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSet.h
@@ -45,12 +15,6 @@ iostream
 -
 
 C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSet.h
-
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSetIterator.cpp
-SortedSetIterator.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSetIterator.h
-exception
--
 
 C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSetIterator.h
 SortedSet.h

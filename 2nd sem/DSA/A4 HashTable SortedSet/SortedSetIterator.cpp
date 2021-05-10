@@ -81,8 +81,8 @@ bool SortedSetIterator::valid() const
 {
     return (current_element != NULL_TELEM);
 }
-
-SortedSetIterator::~SortedSetIterator() {
-    delete current[multime.MOD];
-}
+//
+//SortedSetIterator::~SortedSetIterator() {
+//    delete current[multime.MOD];
+//}
 

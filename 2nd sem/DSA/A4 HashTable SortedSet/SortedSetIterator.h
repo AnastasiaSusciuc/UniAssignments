@@ -11,11 +11,12 @@ private:
     TElem current_element = NULL_TELEM;
 	Node** current;
 
-	~SortedSetIterator();
 public:
 	void first();
 	void next();
 	TElem getCurrent() const;
 	bool valid() const;
+
+    //~SortedSetIterator();
 };
 

@@ -21,16 +21,25 @@ double SortedSet::get_loaded_factor() const
 
 void SortedSet::resize()
 {
-    int* all_values = new int[this->MOD];
+//    int* all_values = new int[this->MOD];
+//    int counter = 0;
+//
+//    SortedSetIterator it(*this);
+//    it.first();
+//    while (it.valid())
+//    {
+//        all_values[++counter] = it.getCurrent();
+//        it.next();
+//    }
+//
+//    delete hashTable[this->MOD];
+//    this->MOD *= 2;
+//    this->MOD += 1;
+//    hashTable = new Node* [MOD];
+//
+//    for (int i = 1; i <= counter; i++)
+//        add(all_values[i]);
 
-    this->MOD *= 2;
-    this->MOD += 1;
-    SortedSetIterator it(*this);
-    it.first();
-    while (it.valid())
-    {
-
-    }
 }
 
 bool SortedSet::add(TComp elem)
@@ -66,8 +75,8 @@ bool SortedSet::add(TComp elem)
             previous->next = new_node;
         }
 
-	    if (get_loaded_factor() > this->load_factor)
-	        resize();
+//	    if (get_loaded_factor() > this->load_factor)
+//	        resize();
 
         return true;
     }
