@@ -71,7 +71,6 @@ void create_random_graph(DirectedGraph& graph, int number_nodes, int number_edge
 int find_lowest_length_path(DirectedGraph& graph, int start, int end)
 {
     int number_nodes = graph.get_number_nodes();
-    int INF = 0x3f3f3f3f;
     std::queue <int> Q;
     std::vector <int> distance(number_nodes+5);
     std::fill(distance.begin(), distance.end(), INF);
@@ -230,4 +229,109 @@ int BiconexAlgorithm::get_number_biconex_components(){
 
 std::vector<std::vector<int> > &BiconexAlgorithm::get_biconex_components() {
     return biconex_components;
+}
+
+DijkstraAlgorithm::DijkstraAlgorithm(DirectedGraph &ref_graph) : graph{ref_graph}  {
+}
+
+int DijkstraAlgorithm::run_Dijkstra(int start, int end) {
+
+    if (!graph.exists_node(start))
+        throw std::runtime_error{"Invalid start node!\n"};
+
+    if (!graph.exists_node(end))
+        throw std::runtime_error{"Invalid end node!\n"};
+
+
+    std::vector <int> all_nodes = graph.parse_through_vertices();
+
+    std::priority_queue <std::pair<int,int> > Q;
+    distance.resize(all_nodes.size() + 5);
+    for (int i = 0; i < all_nodes.size() + 5; i++)
+        distance[i] = INF;
+
+    distance[end] = 0;
+    Q.emplace(0, end);
+
+    while(!Q.empty() && distance[start] == INF)
+    {
+        int cost = -Q.top().first;
+        int node = Q.top().second;
+        Q.pop();
+
+        if (cost != distance[node]) continue;
+
+        std::vector <std::pair <int, int> > edges_in = graph.parse_edges_in_with_costs(node);
+
+        for (auto& edge: edges_in)
+        {
+            int neighbour = edge.first;
+            int edge_len = edge.second;
+
+            if (distance[neighbour] > distance[node] + edge_len)
+            {
+                distance[neighbour] = distance[node] + edge_len;
+                Q.emplace(-distance[neighbour], neighbour);
+            }
+        }
+    }
+    return distance[start];
+}
+
+Walks::Walks(DirectedGraph &ref_graph) : graph{ref_graph} {
+
+}
+
+int Walks::count_different_minimum_walks(int start, int end) {
+    if (!graph.exists_node(start))
+        throw std::runtime_error{"Invalid start node!\n"};
+
+    if (!graph.exists_node(end))
+        throw std::runtime_error{"Invalid end node!\n"};
+
+
+    std::vector <int> all_nodes = graph.parse_through_vertices();
+    std::vector <int> distance;
+    std::vector <int> diff_paths;
+    std::priority_queue <std::pair<int, int> > Q;
+
+    distance.resize(all_nodes.size() + 5); diff_paths.resize(all_nodes.size() + 5);
+    for (int i = 0; i < all_nodes.size() + 5; i++)
+    {
+        distance[i] = INF;
+        diff_paths[i] = 1;
+    }
+
+    distance[end] = 0;
+    Q.emplace(0, end);
+
+
+    while(!Q.empty())
+    {
+        int cost = -Q.top().first;
+        int node = Q.top().second;
+        Q.pop();
+
+        if (cost != distance[node]) continue;
+
+        std::vector <std::pair <int, int> > edges_in = graph.parse_edges_in_with_costs(node);
+
+        for (auto& edge: edges_in)
+        {
+            int neighbour = edge.first;
+            int edge_len = edge.second;
+
+            if (distance[neighbour] > distance[node] + edge_len)
+            {
+                distance[neighbour] = distance[node] + edge_len;
+                diff_paths[neighbour] = diff_paths[node];
+                Q.emplace(-distance[neighbour], neighbour);
+            }
+            else if (distance[neighbour] == distance[node] + edge_len)
+            {
+                diff_paths[neighbour] += diff_paths[node];
+            }
+        }
+    }
+    return diff_paths[start];
 }

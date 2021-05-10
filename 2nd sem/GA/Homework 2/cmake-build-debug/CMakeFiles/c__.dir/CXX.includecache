@@ -45,6 +45,8 @@ algorithm
 -
 iostream
 -
+cstring
+-
 ../Graphs/DirectedGraph.h
 C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 2/Graphs/DirectedGraph.h
 ../Externals/external_functions.h

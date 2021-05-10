@@ -1,12 +1,11 @@
 #include "ShortTest.h"
 
-#include <assert.h>
+#include <cassert>
 #include <exception>
-
+#include <iostream>
 
 #include "../A3 - DLLA IteratedList/IteratedList.h"
 #include "../A3 - DLLA IteratedList/ListIterator.h"
-
 
 
 using namespace std;
@@ -36,11 +35,17 @@ void testAll() {
 	list.addToEnd(1);
 	list.addToEnd(3);
 	list.addToEnd(7);
+
 	ListIterator it3 = list.first();
+
 	list.addToPosition(it3, 77);
 	list.addToPosition(it3, 44);
+
 	assert(list.size() == 5);
 	ListIterator it2 = list.first();
+	it2.next();
+    it2.next();
+	std::cout << it2.getCurrent() << '\n';
 	assert(it2.getCurrent() == 1);
 	it2.next();
 	assert(it2.getCurrent() == 77);
@@ -53,20 +58,20 @@ void testAll() {
 	it2.next();
 	assert(it2.valid() == false);
 
-	IteratedList list2 = IteratedList();
-	list2.addToBeginning(4);
-	list2.addToEnd(5);
-	list2.addToBeginning(3);
-	list2.addToEnd(6);
-	list2.addToBeginning(2);
-	list2.addToEnd(7);
-	int i = 2;
-	ListIterator it4 = list2.first();
-	while (it4.valid()) {
-		assert(it4.getCurrent() == i);
-		i++;
-		it4.next();
-	}
+//	IteratedList list2 = IteratedList();
+//	list2.addToBeginning(4);
+//	list2.addToEnd(5);
+//	list2.addToBeginning(3);
+//	list2.addToEnd(6);
+//	list2.addToBeginning(2);
+//	list2.addToEnd(7);
+//	int i = 2;
+//	ListIterator it4 = list2.first();
+//	while (it4.valid()) {
+//		assert(it4.getCurrent() == i);
+//		i++;
+//		it4.next();
+//	}
 }
 
 

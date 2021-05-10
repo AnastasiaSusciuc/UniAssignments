@@ -13,23 +13,21 @@ struct DLLANode{
     int prev;
 };
 
-struct DLLA{
-    int head;
-    int tail;
-    int capacity;
-    int first_empty;
-    int size_list;
-    DLLANode nodes[MAX_CAP];
+struct freeSlotsNode{
+    int pos;
+    freeSlotsNode* next;
 };
 
 class IteratedList {
 private:
 
-    DLLA dlla{};
-
+    int head, tail;
+    int capacity, _size, buffer_last;
+    DLLANode** buffer;
+    freeSlotsNode* first_empty;
 
     int allocate();
-    void free(int poz);
+    void resize();
 
 	//DO NOT CHANGE THIS PART
 	friend class ListIterator;
@@ -49,7 +47,7 @@ public:
 	ListIterator first() const;
 
 	// returns the element from the given position
-	//throws an exception if the position is not valid
+	// throws an exception if the position is not valid
 	TElem getElement(ListIterator pos) const;
 
 	// changes the element from the current position to the given one.
@@ -63,7 +61,7 @@ public:
 	//adds a new element to the beginning of the list
 	void addToBeginning(TElem e);
 
-	// // adds a new element after the current element from the iterator
+	// adds a new element after the current element from the iterator
 	//after addition, pos points to the newly added element
 	//throws an exception if pos is not valid
 	void addToPosition(ListIterator& pos, TElem e);
@@ -75,7 +73,7 @@ public:
 	TElem remove(ListIterator& pos);
 
 	// searches for the first occurrance of an element 
-	//returns an iterator that points to the element, if it appear in the list, or an invalid iterator if the element is not in the list
+	// returns an iterator that points to the element, if it appears in the list, or an invalid iterator if the element is not in the list
 	ListIterator search(TElem e) const;
 
 	//destructor

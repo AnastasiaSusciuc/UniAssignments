@@ -8,6 +8,7 @@
 #include <cassert>
 #include <algorithm>
 #include <iostream>
+#include <cstring>
 #include "../Graphs/DirectedGraph.h"
 #include "../Externals/external_functions.h"
 
@@ -26,6 +27,8 @@ private:
     static void test_backward_bfs();
     static void test_Tarjan_SCC();
     static void test_biconex_components();
+    static void test_backward_Dijkstra();
+    static void test_count_min_path_walks();
 
 public:
     static void run_all_tests();

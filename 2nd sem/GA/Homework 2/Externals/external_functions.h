@@ -12,6 +12,7 @@
 #include <queue>
 #include <stack>
 #include <bitset>
+#define INF 0x3f3f3f3f
 
 void read_graph_from_file(DirectedGraph& graph);
 /*
@@ -100,6 +101,7 @@ private:
      *
      * params:       -
      *
+
      * returns:      -
      * */
 public:
@@ -156,14 +158,46 @@ public:
     std::vector < std::vector <int> >& get_biconex_components();
 };
 
-//class DijkstraAlgorithm{
-//private:
-//    DirectedGraph& graph;
-//    std::vector <int> distance;
-//public:
-//    DijkstraAlgorithm(DirectedGraph& graph);
-//    void run_Dijkstra(int node);
-//
-//};
+class DijkstraAlgorithm{
+private:
+    DirectedGraph& graph;
+    std::vector <int> distance;
+public:
+    explicit DijkstraAlgorithm(DirectedGraph& graph);
+    int run_Dijkstra(int start, int end);
+    /*
+     * description:  - runs the backwards Dijkstra algorithm starting from node 'end' until it is found the distance to node 'start'
+     *               - it is implemented with a priority queue, where greater elements have the priority, therefore we keep the -distance
+     * param1:       start - int - a node from the graph
+     * param2:       end - int - a node from the graph
+     *
+     * returns:      - integer, the distance from node start to node end
+     *
+     * throws:       - exception if node start or node end are not a valid nodes
+     *
+     * */
+};
+
+class Walks{
+private:
+    DirectedGraph& graph;
+public:
+    Walks(DirectedGraph& graph);
+    int count_different_minimum_walks(int start, int end);
+    /*
+     * description:  - runs a backwards Dijkstra algorithm starting from node 'end'
+     *               - it is implemented with a priority queue, where greater elements have the priority, therefore we keep the -distance
+     *               - we keep track of the number of paths to every node
+     *
+     * param1:       start - int - a node from the graph
+     * param2:       end - int - a node from the graph
+     *
+     * returns:      - integer, the distance from node start to node end
+     *
+     * throws:       - exception if node start or node end are not a valid nodes
+     *
+     * */
+
+};
 
 #endif //C___EXTERNAL_FUNCTIONS_H

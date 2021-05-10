@@ -2,32 +2,39 @@
 #include "../A3 - DLLA IteratedList/IteratedList.h"
 #include <exception>
 
-ListIterator::ListIterator(const IteratedList& list) : list(list) {
-	this->iterator = list.dlla.head;
+ListIterator::ListIterator(const IteratedList& list) : list(list), current{-1} {
+	this->first();
 }
 
 void ListIterator::first() {
-	this->iterator = list.dlla.head;
+
+    if(this->list._size)
+        this->current = this->list.head;
+
+    else this->current = -1;
 }
 
 void ListIterator::next() {
-    if (this->iterator == -1)
+    if(this->valid())
+        this->current = this->list.buffer[this->current]->next;
+    else
         throw std::exception();
-    this->iterator = list.dlla.nodes[this->iterator].next;
 }
 
 bool ListIterator::valid() const {
-	if (this->iterator == -1)
+    if(this->current == -1)
         return false;
-	return true;
 
+    return true;
 }
 
 TElem ListIterator::getCurrent() const {
-	if (this->iterator == -1)
-	    return NULL_TELEM;
-    return list.dlla.nodes[this->iterator].info;
+    if(this->valid())
+        return this->list.buffer[this->current]->info;
+    else
+        throw std::exception();
 }
 
-
-
+int ListIterator::get_position() {
+    return this->current;
+}

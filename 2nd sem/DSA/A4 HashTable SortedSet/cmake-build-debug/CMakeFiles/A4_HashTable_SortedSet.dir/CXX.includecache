@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSet.cpp
+SortedSet.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSet.h
+SortedSetIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSetIterator.h
+iostream
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSet.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSetIterator.h
+SortedSet.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A4 HashTable SortedSet/SortedSet.h
+

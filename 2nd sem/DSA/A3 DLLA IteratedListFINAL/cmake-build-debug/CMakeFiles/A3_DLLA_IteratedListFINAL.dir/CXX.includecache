@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 DLLA IteratedListFINAL/App.cpp
+iostream
+-
+ShortTest.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 DLLA IteratedListFINAL/ShortTest.h
+ExtendedTest.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 DLLA IteratedListFINAL/ExtendedTest.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 DLLA IteratedListFINAL/ExtendedTest.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 DLLA IteratedListFINAL/ShortTest.h
+
