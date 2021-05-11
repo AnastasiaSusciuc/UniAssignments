@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="c__" targetName="c__" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8cc4dfe9-2947-46f4-9068-a921ed87725e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../DSA/untitled/data.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/A3 - DLLA IteratedList/IteratedList.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/A3 - DLLA IteratedList/IteratedList.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/A3 - DLLA IteratedList/IteratedList.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/A3 - DLLA IteratedList/IteratedList.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/A3 - DLLA IteratedList/ListIterator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/A3 - DLLA IteratedList/ListIterator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/A3 - DLLA IteratedList/ListIterator.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/A3 - DLLA IteratedList/ListIterator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA/A3 - DLLA IteratedList/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../DSA/A3 - DLLA IteratedList/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework 2/Externals/external_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework 2/Externals/external_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework 2/Externals/external_functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework 2/Externals/external_functions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework 2/TestDG/testDG.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework 2/TestDG/testDG.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework 2/TestDG/testDG.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework 2/TestDG/testDG.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/CMakeFiles/c__.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/CMakeFiles/c__.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/CMakeFiles/c__.dir/Externals/external_functions.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/CMakeFiles/c__.dir/Externals/external_functions.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/CMakeFiles/c__.dir/TestDG/testDG.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/CMakeFiles/c__.dir/TestDG/testDG.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/CMakeFiles/c__.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/CMakeFiles/c__.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/CMakeFiles/c__.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/CMakeFiles/c__.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/CMakeFiles/c__.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/CMakeFiles/c__.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/CMakeFiles/c__.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/CMakeFiles/c__.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/c__.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework 2/cmake-build-debug/c__.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework 2/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework 2/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="clangTidyViaClangd" value="false" />
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1qOWApG8A1uqYHOjG7uM1Myri45" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../nouc++" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\susci\Desktop\2nd sem\GA\nouc++" />
+      <recent name="C:\Users\susci\Desktop\2nd sem\GA\assignment lab 1\c++" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="c__" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c__" TARGET_NAME="c__" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c__" RUN_TARGET_NAME="c__">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8cc4dfe9-2947-46f4-9068-a921ed87725e" name="Default Changelist" comment="" />
+      <created>1616950976502</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616950976502</updated>
+      <workItem from="1616950978668" duration="13499000" />
+      <workItem from="1617006104529" duration="6915000" />
+      <workItem from="1617019528621" duration="6880000" />
+      <workItem from="1617794793123" duration="553000" />
+      <workItem from="1617796607847" duration="119000" />
+      <workItem from="1617810810207" duration="31000" />
+      <workItem from="1617810893801" duration="7585000" />
+      <workItem from="1617862293561" duration="10000" />
+      <workItem from="1617862365908" duration="19634000" />
+      <workItem from="1617950720782" duration="22000" />
+      <workItem from="1618165345559" duration="1441000" />
+      <workItem from="1618215108867" duration="139000" />
+      <workItem from="1618215407216" duration="63000" />
+      <workItem from="1618215590348" duration="4648000" />
+      <workItem from="1619358130538" duration="51000" />
+      <workItem from="1619429773818" duration="630000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

@@ -76,52 +76,10 @@ include CMakeFiles/A4_HashTable_SortedSet.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/A4_HashTable_SortedSet.dir/flags.make
 
-CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/flags.make
-CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/includes_CXX.rsp
-CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj: ../App.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A4_HashTable_SortedSet.dir\App.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\App.cpp"
-
-CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\App.cpp" > CMakeFiles\A4_HashTable_SortedSet.dir\App.cpp.i
-
-CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\App.cpp" -o CMakeFiles\A4_HashTable_SortedSet.dir\App.cpp.s
-
-CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/flags.make
-CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/includes_CXX.rsp
-CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.obj: ../ExtendedTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A4_HashTable_SortedSet.dir\ExtendedTest.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\ExtendedTest.cpp"
-
-CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\ExtendedTest.cpp" > CMakeFiles\A4_HashTable_SortedSet.dir\ExtendedTest.cpp.i
-
-CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\ExtendedTest.cpp" -o CMakeFiles\A4_HashTable_SortedSet.dir\ExtendedTest.cpp.s
-
-CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/flags.make
-CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/includes_CXX.rsp
-CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.obj: ../ShortTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A4_HashTable_SortedSet.dir\ShortTest.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\ShortTest.cpp"
-
-CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\ShortTest.cpp" > CMakeFiles\A4_HashTable_SortedSet.dir\ShortTest.cpp.i
-
-CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\ShortTest.cpp" -o CMakeFiles\A4_HashTable_SortedSet.dir\ShortTest.cpp.s
-
 CMakeFiles/A4_HashTable_SortedSet.dir/SortedSet.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/flags.make
 CMakeFiles/A4_HashTable_SortedSet.dir/SortedSet.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/includes_CXX.rsp
 CMakeFiles/A4_HashTable_SortedSet.dir/SortedSet.cpp.obj: ../SortedSet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/A4_HashTable_SortedSet.dir/SortedSet.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/A4_HashTable_SortedSet.dir/SortedSet.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A4_HashTable_SortedSet.dir\SortedSet.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\SortedSet.cpp"
 
 CMakeFiles/A4_HashTable_SortedSet.dir/SortedSet.cpp.i: cmake_force
@@ -135,7 +93,7 @@ CMakeFiles/A4_HashTable_SortedSet.dir/SortedSet.cpp.s: cmake_force
 CMakeFiles/A4_HashTable_SortedSet.dir/SortedSetIterator.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/flags.make
 CMakeFiles/A4_HashTable_SortedSet.dir/SortedSetIterator.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/includes_CXX.rsp
 CMakeFiles/A4_HashTable_SortedSet.dir/SortedSetIterator.cpp.obj: ../SortedSetIterator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/A4_HashTable_SortedSet.dir/SortedSetIterator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/A4_HashTable_SortedSet.dir/SortedSetIterator.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A4_HashTable_SortedSet.dir\SortedSetIterator.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\SortedSetIterator.cpp"
 
 CMakeFiles/A4_HashTable_SortedSet.dir/SortedSetIterator.cpp.i: cmake_force
@@ -146,22 +104,64 @@ CMakeFiles/A4_HashTable_SortedSet.dir/SortedSetIterator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A4_HashTable_SortedSet.dir/SortedSetIterator.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\SortedSetIterator.cpp" -o CMakeFiles\A4_HashTable_SortedSet.dir\SortedSetIterator.cpp.s
 
+CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/flags.make
+CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/includes_CXX.rsp
+CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj: ../App.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A4_HashTable_SortedSet.dir\App.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\App.cpp"
+
+CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\App.cpp" > CMakeFiles\A4_HashTable_SortedSet.dir\App.cpp.i
+
+CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\App.cpp" -o CMakeFiles\A4_HashTable_SortedSet.dir\App.cpp.s
+
+CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/flags.make
+CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/includes_CXX.rsp
+CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.obj: ../ExtendedTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A4_HashTable_SortedSet.dir\ExtendedTest.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\ExtendedTest.cpp"
+
+CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\ExtendedTest.cpp" > CMakeFiles\A4_HashTable_SortedSet.dir\ExtendedTest.cpp.i
+
+CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\ExtendedTest.cpp" -o CMakeFiles\A4_HashTable_SortedSet.dir\ExtendedTest.cpp.s
+
+CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/flags.make
+CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.obj: CMakeFiles/A4_HashTable_SortedSet.dir/includes_CXX.rsp
+CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.obj: ../ShortTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A4_HashTable_SortedSet.dir\ShortTest.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\ShortTest.cpp"
+
+CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\ShortTest.cpp" > CMakeFiles\A4_HashTable_SortedSet.dir\ShortTest.cpp.i
+
+CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A4 HashTable SortedSet\ShortTest.cpp" -o CMakeFiles\A4_HashTable_SortedSet.dir\ShortTest.cpp.s
+
 # Object files for target A4_HashTable_SortedSet
 A4_HashTable_SortedSet_OBJECTS = \
+"CMakeFiles/A4_HashTable_SortedSet.dir/SortedSet.cpp.obj" \
+"CMakeFiles/A4_HashTable_SortedSet.dir/SortedSetIterator.cpp.obj" \
 "CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj" \
 "CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.obj" \
-"CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.obj" \
-"CMakeFiles/A4_HashTable_SortedSet.dir/SortedSet.cpp.obj" \
-"CMakeFiles/A4_HashTable_SortedSet.dir/SortedSetIterator.cpp.obj"
+"CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.obj"
 
 # External object files for target A4_HashTable_SortedSet
 A4_HashTable_SortedSet_EXTERNAL_OBJECTS =
 
+A4_HashTable_SortedSet.exe: CMakeFiles/A4_HashTable_SortedSet.dir/SortedSet.cpp.obj
+A4_HashTable_SortedSet.exe: CMakeFiles/A4_HashTable_SortedSet.dir/SortedSetIterator.cpp.obj
 A4_HashTable_SortedSet.exe: CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj
 A4_HashTable_SortedSet.exe: CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.obj
 A4_HashTable_SortedSet.exe: CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.obj
-A4_HashTable_SortedSet.exe: CMakeFiles/A4_HashTable_SortedSet.dir/SortedSet.cpp.obj
-A4_HashTable_SortedSet.exe: CMakeFiles/A4_HashTable_SortedSet.dir/SortedSetIterator.cpp.obj
 A4_HashTable_SortedSet.exe: CMakeFiles/A4_HashTable_SortedSet.dir/build.make
 A4_HashTable_SortedSet.exe: CMakeFiles/A4_HashTable_SortedSet.dir/linklibs.rsp
 A4_HashTable_SortedSet.exe: CMakeFiles/A4_HashTable_SortedSet.dir/objects1.rsp

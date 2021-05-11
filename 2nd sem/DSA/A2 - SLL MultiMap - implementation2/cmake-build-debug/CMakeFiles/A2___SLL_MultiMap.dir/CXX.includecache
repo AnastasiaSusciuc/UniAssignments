@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/App.cpp
+iostream
+-
+ShortTest.h
+/mnt/c/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ShortTest.h
+ExtendedTest.h
+/mnt/c/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ExtendedTest.h
+SortedMultiMap.h
+/mnt/c/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SortedMultiMap.h
+cassert
+-
+
+/mnt/c/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ExtendedTest.h
+
+/mnt/c/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/ShortTest.h
+
+/mnt/c/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A2 - SLL MultiMap - implementation2/SortedMultiMap.h
+vector
+-
+utility
+-
+

@@ -4,6 +4,8 @@
 CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj: ../App.cpp
 CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj: ../ExtendedTest.h
 CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj: ../ShortTest.h
+CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj: ../SortedSet.h
+CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj: ../SortedSetIterator.h
 
 CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.obj: ../ExtendedTest.cpp
 CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.obj: ../ExtendedTest.h

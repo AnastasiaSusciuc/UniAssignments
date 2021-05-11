@@ -2,8 +2,11 @@
 #include "SortedSetIterator.h"
 #include <iostream>
 
-SortedSet::SortedSet(Relation r): relation{r} {
-
+SortedSet::SortedSet(Relation r): relation{r}
+// theta(MOD)
+{
+    for (int i = 0; i < MOD; i++)
+        hashTable[i] = nullptr;
 }
 
 int SortedSet::hashFunction(TElem elem) const
@@ -20,35 +23,54 @@ double SortedSet::get_loaded_factor() const
 }
 
 void SortedSet::resize()
+// theta(number_elements*MOD + (2*MOD+1)) - because of the iterator, next operation taking theta(MOD) time
 {
-//    int* all_values = new int[this->MOD];
-//    int counter = 0;
-//
-//    SortedSetIterator it(*this);
-//    it.first();
-//    while (it.valid())
-//    {
-//        all_values[++counter] = it.getCurrent();
-//        it.next();
-//    }
-//
-//    delete hashTable[this->MOD];
-//    this->MOD *= 2;
-//    this->MOD += 1;
-//    hashTable = new Node* [MOD];
-//
-//    for (int i = 1; i <= counter; i++)
-//        add(all_values[i]);
+    int* all_values = new int[this->MOD];
+    int counter = 0;
 
+    SortedSetIterator it(*this);
+    it.first();
+    while (it.valid())
+    {
+        all_values[++counter] = it.getCurrent();
+        it.next();
+    }
+
+    Node** old_table = hashTable;
+
+    int old_mod = this->MOD;
+    this->MOD *= 2;
+    this->MOD += 1;
+
+    hashTable = new Node* [MOD];
+    for (int i = 0; i < MOD; i++)
+        hashTable[i] = nullptr;
+
+    this->no_elements=0;
+
+    for (int i = 1; i <= counter; i++)
+        add(all_values[i]);
+
+    for (int i = 0; i < old_mod; i++)
+    {
+        Node* node = old_table[i];
+        while (node != nullptr)
+        {
+            Node* next = node->next;
+            delete node;
+            node = next;
+        }
+    }
+
+    delete[] old_table;
 }
 
 bool SortedSet::add(TComp elem)
 // best case: theta(1) - the element is found on the first position in its SLL
-// worst case: theta(n) - all the elements are in collision and we look for the greatest element or for a nonexistent
-//                                                                  elem, where n is the number of elements in the set
-// total complexity: O(n)
+// worst case: theta(1+load_factor) + theta(number_elements*MOD + (2*MOD+1)) - the element is not found on its branch that
+//          has load_factor elements (or it is on the last position) and we also need to resize
+// total complexity: O(1+load_factor) amortized
 {
-
 	if (!search(elem)) // the elem is not in the set therefore we add it and return true
     {
 	    int position = hashFunction(elem);
@@ -75,19 +97,19 @@ bool SortedSet::add(TComp elem)
             previous->next = new_node;
         }
 
-//	    if (get_loaded_factor() > this->load_factor)
-//	        resize();
-
+	    if (get_loaded_factor() > this->load_factor) {
+            // std::cout << "RESIZE\n";
+            resize();
+	    }
         return true;
     }
 	return false;
 }
 
-
 bool SortedSet::remove(TComp elem)
-// best case: theta(1) - there is no element in the SLL of the result of the hash of the element elem
-// worst case: theta(n) - there is no element equal to elem to be removed, where n is the total number of elements and all are in collision
-// total complexity: O(n)
+// best case: theta(1) - there is no element in the SLL with the result of the hash of the element elem
+// worst case: theta(1+load_factor) - there is no element equal to elem to be removed
+// total complexity: O(1+load_factor)
 {
     int position = hashFunction(elem);
     Node* current = hashTable[position];
@@ -124,8 +146,8 @@ bool SortedSet::remove(TComp elem)
 
 bool SortedSet::search(TComp elem) const
 // best case: theta(1)
-// worst case: theta(n) - there is no element equal to elem, where n is the total number of elements and all elements are in collision
-// total complexity: O(n)
+// worst case: theta(1+load_factor)
+// total complexity: O(1+load_factor)
 {
     int position = hashFunction(elem);
     Node* node = hashTable[position];
@@ -156,7 +178,7 @@ SortedSetIterator SortedSet::iterator() const {
 
 
 SortedSet::~SortedSet()
-// theta(MOD + n)
+// theta(MOD + number_elements)
 {
 	for (int i = 0; i < MOD; i++)
     {
@@ -169,6 +191,3 @@ SortedSet::~SortedSet()
         }
     }
 }
-
-
-

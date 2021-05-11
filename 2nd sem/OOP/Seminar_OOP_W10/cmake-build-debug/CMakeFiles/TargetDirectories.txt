@@ -1,3 +1,0 @@
-C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/Seminar_OOP_W10/cmake-build-debug/CMakeFiles/OOP.dir
-C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/Seminar_OOP_W10/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/Seminar_OOP_W10/cmake-build-debug/CMakeFiles/rebuild_cache.dir

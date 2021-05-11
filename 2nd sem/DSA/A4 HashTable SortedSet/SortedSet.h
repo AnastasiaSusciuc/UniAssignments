@@ -19,13 +19,12 @@ class SortedSet {
 
 private:
 	Relation relation;
-    int MOD = 7919;
+    int MOD = 127;
     Node** hashTable = new Node* [MOD];
     int no_elements = 0;
     double load_factor = 0.7;
 
     int hashFunction(int element) const;
-
     double get_loaded_factor() const;
     void resize();
 
@@ -58,6 +57,4 @@ public:
 
 	// destructor
 	~SortedSet();
-
-
 };

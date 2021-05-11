@@ -1,3 +1,0 @@
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/untitled/cmake-build-debug/CMakeFiles/untitled.dir
-C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir

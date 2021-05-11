@@ -18,8 +18,6 @@ void TestDG::run_all_tests() {
     test_backward_bfs();
     test_Tarjan_SCC();
     test_biconex_components();
-    test_backward_Dijkstra();
-    test_count_min_path_walks();
     std::cout << "TESTS FINISHED!\n";
 }
 
@@ -377,69 +375,6 @@ void TestDG::test_biconex_components() {
             assert(biconex_components[i][j] == expected_result[i][j]);
         }
     }
-}
-
-void TestDG::test_backward_Dijkstra() {
-    DirectedGraph g;
-    for (int i = 1; i <= 5; i++)
-        g.add_node(i);
-
-    g.add_edge(1, 2, 1);
-    g.add_edge(1, 4, 2);
-    g.add_edge(4, 3, 4);
-    g.add_edge(2, 3, 2);
-    g.add_edge(4, 5, 3);
-    g.add_edge(3, 5, 6);
-
-    DijkstraAlgorithm dijkstra(g);
-    assert(dijkstra.run_Dijkstra(1, 2) == 1);
-    assert(dijkstra.run_Dijkstra(1, 3) == 3);
-    assert(dijkstra.run_Dijkstra(1, 4) == 2);
-    assert(dijkstra.run_Dijkstra(1, 5) == 5);
-
-    try{
-        dijkstra.run_Dijkstra(8, 1);
-    }catch(std::exception const& e){
-        assert(std::strcmp(e.what(), "Invalid start node!\n") == 0);
-    }
-
-    try{
-        dijkstra.run_Dijkstra(1, 100);
-    }catch(std::exception const& e){
-        assert(std::strcmp(e.what(), "Invalid end node!\n") == 0);
-    }
-}
-
-void TestDG::test_count_min_path_walks() {
-    DirectedGraph g;
-    for (int i = 1; i <= 6; i++)
-        g.add_node(i);
-
-    g.add_edge(1, 2, 1);
-    g.add_edge(1, 3, 3);
-    g.add_edge(2, 5, 2);
-    g.add_edge(2, 4, 10);
-    g.add_edge(3, 4, 2);
-    g.add_edge(5, 6, 3);
-    g.add_edge(4, 6, 1);
-
-    Walks walks(g);
-
-    // std::cout << walks.count_different_minimum_walks(1, 6);
-    assert(walks.count_different_minimum_walks(1, 6) == 2);
-
-    try{
-        walks.count_different_minimum_walks(8, 1);
-    }catch(std::exception const& e){
-        assert(std::strcmp(e.what(), "Invalid start node!\n") == 0);
-    }
-
-    try{
-        walks.count_different_minimum_walks(1, 100);
-    }catch(std::exception const& e){
-        assert(std::strcmp(e.what(), "Invalid end node!\n") == 0);
-    }
-
 }
 
 

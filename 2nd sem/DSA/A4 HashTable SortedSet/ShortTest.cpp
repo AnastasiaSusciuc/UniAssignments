@@ -1,8 +1,7 @@
 #include "ShortTest.h"
 #include "SortedSet.h"
 #include "SortedSetIterator.h"
-#include <cassert>
-#include <iostream>
+#include <assert.h>
 
 bool r2(TComp e1, TComp e2) {
 	if (e1 <= e2) {
@@ -19,28 +18,24 @@ void testAll() {
 	int iverif;
 	TComp e;
 
-//	SortedSet s1(r2);
-//	assert(s1.add(5) == true);
-//	assert(s1.add(1) == true);
-//	assert(s1.add(10) == true);
-//
-//	SortedSetIterator it1 = s1.iterator();
-//
-//	it1.first();
-//
-//	e = it1.getCurrent();
-//
-//	iverif = 0;
-//	vverif[iverif++] = e;
-//	it1.next();
-//
-//	while (it1.valid()) {
-//		assert(e < it1.getCurrent());
-//		e = it1.getCurrent();
-//		vverif[iverif++] = e;
-//		it1.next();
-//	}
-//	assert((vverif[0] == 1) && (vverif[1] == 5) && (vverif[2] == 10));
+	SortedSet s1(r2);
+	assert(s1.add(5) == true);
+	assert(s1.add(1) == true);
+	assert(s1.add(10) == true);
+	SortedSetIterator it1 = s1.iterator();
+	it1.first();
+	e = it1.getCurrent();
+	iverif = 0;
+	vverif[iverif++] = e;
+	it1.next();
+	while (it1.valid()) {
+		assert(e < it1.getCurrent());
+		e = it1.getCurrent();
+		vverif[iverif++] = e;
+		it1.next();
+	}
+	assert((vverif[0] == 1) && (vverif[1] == 5) && (vverif[2] == 10));
+
 
 	SortedSet s(r2);
 	assert(s.isEmpty() == true);
@@ -63,23 +58,11 @@ void testAll() {
 	iverif = 0;
 	it.first();
 	e = it.getCurrent();
-//	std::cout << e << '\n';
-
-//	it.next();
-//	std::cout << it.getCurrent() << '\n';
-//
-//    it.next();
-//    std::cout << it.getCurrent() << '\n';
-//
-//    it.next();
-//    std::cout << it.getCurrent() << '\n';
-
 	vverif[iverif++] = e;
 	it.next();
 	while (it.valid()) {
 		assert(r2(e, it.getCurrent()));
 		e = it.getCurrent();
-		// std::cout << vverif[iverif] << '\n';
 		vverif[iverif++] = e;
 		it.next();
 	}

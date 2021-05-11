@@ -1,5 +1,5 @@
 #include "SortedSet.h"
-#include <cassert>
+#include <assert.h>
 #include "SortedSetIterator.h"
 #include <exception>
 #include "ExtendedTest.h"
@@ -67,7 +67,6 @@ void testCreate(Relation r) {
 	catch (exception&) {
 		assert (true);
 	}
-
 	try {
 		it.getCurrent();
 		assert(false);
@@ -91,7 +90,6 @@ void testAdd() {
 		s2.add(i);
 	}
 	SortedSetIterator it2 = s2.iterator();
-
 	iverif = 0;
 	while (it2.valid()) {
 		vverif[iverif++] = it2.getCurrent();
@@ -143,7 +141,7 @@ void testAdd() {
 			assert(s.search(i) == false);
 		}
 	}
-	for (int i = 10000; i > -10000; i--) { 
+	for (int i = 10000; i > -10000; i--) {
 		s.add(i);
 	}
 	testIteratorSteps(s, rLessEqual);

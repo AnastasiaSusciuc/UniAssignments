@@ -4,7 +4,7 @@
 
 int main() {
 	testAll();
-	// testAllExtended();
+	testAllExtended();
 	std::cout << "Finished LP Tests!" << std::endl;
 	system("pause");
 }
