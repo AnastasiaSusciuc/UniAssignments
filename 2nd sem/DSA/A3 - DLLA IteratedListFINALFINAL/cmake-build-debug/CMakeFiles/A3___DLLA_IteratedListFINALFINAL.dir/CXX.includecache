@@ -1,0 +1,60 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/ExtendedTest.cpp
+assert.h
+-
+exception
+-
+iostream
+-
+ExtendedTest.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/ExtendedTest.h
+ListIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/ListIterator.h
+IteratedList.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/IteratedList.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/ExtendedTest.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/IteratedList.cpp
+exception
+-
+ListIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/ListIterator.h
+IteratedList.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/IteratedList.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/IteratedList.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/ListIterator.cpp
+ListIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/ListIterator.h
+IteratedList.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/IteratedList.h
+exception
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/ListIterator.h
+IteratedList.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/IteratedList.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/ShortTest.cpp
+ShortTest.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/ShortTest.h
+cassert
+-
+exception
+-
+IteratedList.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/IteratedList.h
+ListIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/ListIterator.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A3 - DLLA IteratedListFINALFINAL/ShortTest.h
+
