@@ -336,12 +336,15 @@ int Walks::count_different_minimum_walks(int start, int end) {
     return diff_paths[start];
 }
 
-CriticalActivities::CriticalActivities(DirectedGraph &gr): graph{gr} {
-
+CriticalActivities::CriticalActivities(DirectedGraph &gr, std::vector <int> dur): graph{gr}, duration{dur} {
+    duration.resize(gr.get_number_nodes()+2);
+    get_earliest_latest();
 }
 
-bool CriticalActivities::dfs(int node, bool visited[], bool *recStack) {
-
+bool CriticalActivities::dfs(int node, bool* visited, bool *recStack)
+// true if there are no cycles
+// false if there is a cycle
+{
     std::vector<int> nodes_out = graph.parse_edges_out(node);
     if(visited[node] == false)
     {
@@ -350,14 +353,15 @@ bool CriticalActivities::dfs(int node, bool visited[], bool *recStack) {
 
         for (auto neigh: nodes_out)
         {
-            if ((!visited[neigh] && dfs(neigh, visited, recStack)) || recStack[neigh])
-                return true;
+             if ((!visited[neigh] && !dfs(neigh, visited, recStack)) || recStack[neigh])
+                return false;
         }
     }
-    recStack[node] = false;  // remove the vertex from recursion stack
-    return false;
-}
 
+    recStack[node] = false;  // remove the vertex from recursion stack
+    topological_order.push_back(node);
+    return true;
+}
 
 bool CriticalActivities::is_DAG() {
 
@@ -373,13 +377,127 @@ bool CriticalActivities::is_DAG() {
     std::vector <int> all_nodes = graph.parse_through_vertices();
 
     for (auto node: all_nodes)
-        if (dfs(node, visited, recStack) )
-            return true;
+        if (!visited[node] && !dfs(node, visited, recStack) )
+            return false;
 
-    return false;
+    delete[] visited;
+    delete[] recStack;
+    return true;
 }
 
-bool CriticalActivities::get_earliest_latest() {
-    return false;
+void CriticalActivities::get_earliest_latest() {
+
+
+    if (is_DAG())
+    {
+        std::reverse(topological_order.begin(), topological_order.end());
+
+        int number_nodes = graph.get_number_nodes()+2;
+
+        earliest.resize(number_nodes);
+        latest.resize(number_nodes);
+
+        for (auto node: topological_order)
+        {
+            std::vector<int> nodes_out = graph.parse_edges_out(node);
+            for (auto neigh: nodes_out)
+            {
+//                std::cout << node << " " << neigh << '\n';
+                earliest[neigh] = std::max(earliest[neigh], earliest[node]+duration[node]);
+                earliest_time = std::max(earliest_time, earliest[neigh]+duration[neigh]);
+            }
+        }
+
+        std::reverse(topological_order.begin(), topological_order.end());
+
+//        std::cout << "TOP order: \n";
+//        for (auto i: topological_order)
+//            std::cout << i << ' ';
+//        std::cout << '\n';
+
+        for (auto node: topological_order)
+        {
+            std::vector<int> nodes_in = graph.parse_edges_in(node);
+            for (auto neigh: nodes_in)
+            {
+//                std::cout << node << " " << neigh << '\n';
+                latest[neigh] = std::max(latest[neigh], latest[node]+duration[node]);
+            }
+
+        }
+    }
+//    std::cout << "EARLIEST TIME: " << earliest_time << '\n';
+//    std::cout << "DURATION: \n";
+//    for (auto d:duration)
+//        std::cout << d << ' ';
+//    std::cout << '\n';
+//    std::cout << "EARLIEST \n";
+//    for (auto node:earliest)
+//        std::cout << node << " ";
+//    std::cout << '\n';
+//
+//    std::cout << "LATEST1 \n";
+//
+//    for (auto node:latest)
+//        std::cout << node << " ";
+//    std::cout << '\n';
+//
+//    std::cout << "LATEST2 \n";
+
+    std::vector <int> all_nodes = graph.parse_through_vertices();
+
+    for (int i = 1; i <= all_nodes.size(); i++)
+        latest[i] += duration[i];
+
+//    std::cout << "DEBUG!\n";
+//    for (auto & it : latest)
+//        latest[it] += duration[it];
+
+//    for (auto node:latest)
+//        std::cout << node << " ";
+//    std::cout << '\n';
+//
+//    std::cout << "LATEST3 \n";
+
+    for (int i = 1; i <= all_nodes.size(); i++)
+        latest[i] = earliest_time - latest[i];
+
+//    for (int & it : latest)
+//        latest[it] = earliest_time - latest[it];
+//
+//
+//    for (auto node:latest)
+//        std::cout << node << " ";
+//    std::cout << '\n';
 }
 
+void CriticalActivities::print_earliest() {
+    std::cout << "Earliest time to begin the activities\n";
+    for (auto node:earliest)
+        std::cout << node << " ";
+    std::cout << '\n';
+}
+
+void CriticalActivities::print_latest() {
+    std::cout << "Latest time to begin the activities\n";
+    for (auto node:latest)
+        std::cout << node << " ";
+    std::cout << '\n';
+}
+
+const std::vector<int> &CriticalActivities::get_earliest() {
+    return earliest;
+}
+
+const std::vector<int> &CriticalActivities::get_latest() {
+    return latest;
+}
+
+const std::vector<int> &CriticalActivities::get_critical_nodes() {
+    std::vector <int> all_nodes = graph.parse_through_vertices();
+    for (int i = 1; i <= all_nodes.size(); i++)
+        if (earliest[i] == latest[i])
+            critical_nodes.push_back(i);
+    return critical_nodes;
+
+}

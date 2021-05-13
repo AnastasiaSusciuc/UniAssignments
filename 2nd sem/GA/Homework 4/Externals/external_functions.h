@@ -6,6 +6,7 @@
 #define C___EXTERNAL_FUNCTIONS_H
 #include "../Graphs/DirectedGraph.h"
 #include <string>
+#include <algorithm>
 #include <iostream>
 #include <fstream>
 #include <random>
@@ -203,11 +204,20 @@ private:
     DirectedGraph& graph;
 
     std::vector <int> topological_order;
+    std::vector <int> earliest = {0}, latest = {0};
+    std::vector <int> duration;
+    std::vector <int> critical_nodes;
+    int earliest_time=-1;
     bool dfs(int node, bool visited[], bool *recStack);
+    void get_earliest_latest();
 public:
-    CriticalActivities(DirectedGraph& gr);
+    CriticalActivities(DirectedGraph& gr, std::vector <int> dur);
     bool is_DAG();
-    bool get_earliest_latest();
+    void print_earliest();
+    void print_latest();
+    const std::vector <int>&  get_earliest();
+    const std::vector <int>&  get_latest();
+    const std::vector <int>&  get_critical_nodes();
 
 };
 
