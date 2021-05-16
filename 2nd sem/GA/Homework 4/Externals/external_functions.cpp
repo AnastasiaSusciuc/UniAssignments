@@ -338,7 +338,7 @@ int Walks::count_different_minimum_walks(int start, int end) {
 
 CriticalActivities::CriticalActivities(DirectedGraph &gr, std::vector <int> dur): graph{gr}, duration{dur} {
     duration.resize(gr.get_number_nodes()+2);
-    get_earliest_latest();
+//    get_earliest_latest();
 }
 
 bool CriticalActivities::dfs(int node, bool* visited, bool *recStack)
@@ -387,7 +387,6 @@ bool CriticalActivities::is_DAG() {
 
 void CriticalActivities::get_earliest_latest() {
 
-
     if (is_DAG())
     {
         std::reverse(topological_order.begin(), topological_order.end());
@@ -402,7 +401,6 @@ void CriticalActivities::get_earliest_latest() {
             std::vector<int> nodes_out = graph.parse_edges_out(node);
             for (auto neigh: nodes_out)
             {
-//                std::cout << node << " " << neigh << '\n';
                 earliest[neigh] = std::max(earliest[neigh], earliest[node]+duration[node]);
                 earliest_time = std::max(earliest_time, earliest[neigh]+duration[neigh]);
             }
@@ -410,65 +408,24 @@ void CriticalActivities::get_earliest_latest() {
 
         std::reverse(topological_order.begin(), topological_order.end());
 
-//        std::cout << "TOP order: \n";
-//        for (auto i: topological_order)
-//            std::cout << i << ' ';
-//        std::cout << '\n';
-
         for (auto node: topological_order)
         {
             std::vector<int> nodes_in = graph.parse_edges_in(node);
             for (auto neigh: nodes_in)
             {
-//                std::cout << node << " " << neigh << '\n';
                 latest[neigh] = std::max(latest[neigh], latest[node]+duration[node]);
             }
 
         }
+        std::vector <int> all_nodes = graph.parse_through_vertices();
+
+        for (int i = 1; i <= all_nodes.size(); i++)
+            latest[i] += duration[i];
+
+        for (int i = 1; i <= all_nodes.size(); i++)
+            latest[i] = earliest_time - latest[i];
     }
-//    std::cout << "EARLIEST TIME: " << earliest_time << '\n';
-//    std::cout << "DURATION: \n";
-//    for (auto d:duration)
-//        std::cout << d << ' ';
-//    std::cout << '\n';
-//    std::cout << "EARLIEST \n";
-//    for (auto node:earliest)
-//        std::cout << node << " ";
-//    std::cout << '\n';
-//
-//    std::cout << "LATEST1 \n";
-//
-//    for (auto node:latest)
-//        std::cout << node << " ";
-//    std::cout << '\n';
-//
-//    std::cout << "LATEST2 \n";
 
-    std::vector <int> all_nodes = graph.parse_through_vertices();
-
-    for (int i = 1; i <= all_nodes.size(); i++)
-        latest[i] += duration[i];
-
-//    std::cout << "DEBUG!\n";
-//    for (auto & it : latest)
-//        latest[it] += duration[it];
-
-//    for (auto node:latest)
-//        std::cout << node << " ";
-//    std::cout << '\n';
-//
-//    std::cout << "LATEST3 \n";
-
-    for (int i = 1; i <= all_nodes.size(); i++)
-        latest[i] = earliest_time - latest[i];
-
-//    for (int & it : latest)
-//        latest[it] = earliest_time - latest[it];
-//
-//
-//    for (auto node:latest)
-//        std::cout << node << " ";
-//    std::cout << '\n';
 }
 
 void CriticalActivities::print_earliest() {
@@ -499,5 +456,37 @@ const std::vector<int> &CriticalActivities::get_critical_nodes() {
         if (earliest[i] == latest[i])
             critical_nodes.push_back(i);
     return critical_nodes;
+}
 
+int CriticalActivities::get_different_paths(int start, int end) {
+    if (!graph.exists_node(start))
+        throw std::runtime_error{"Invalid start node!\n"};
+
+    if (!graph.exists_node(end))
+        throw std::runtime_error{"Invalid end node!\n"};
+
+
+    if (is_DAG())
+    {
+        int* dp = new int[graph.get_number_nodes()+5];
+
+        for (int i = 0 ; i < graph.get_number_nodes(); i++)
+            dp[i] = 0;
+
+        dp[end] = 1;
+
+        for (int i = 1; i < topological_order.size(); i++)
+        {
+            std::vector<int> nodes_in = graph.parse_edges_out(topological_order[i]);
+
+            for (int j : nodes_in) {
+                dp[topological_order[i]] += dp[j];
+            }
+        }
+        int rez = dp[start];
+
+        delete[] dp;
+        return rez;
+    }
+   return -1;
 }

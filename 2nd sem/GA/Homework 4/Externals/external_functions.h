@@ -203,21 +203,64 @@ class CriticalActivities{
 private:
     DirectedGraph& graph;
 
-    std::vector <int> topological_order;
-    std::vector <int> earliest = {0}, latest = {0};
-    std::vector <int> duration;
-    std::vector <int> critical_nodes;
-    int earliest_time=-1;
+    std::vector <int> topological_order;                // where we keep the nodes in topological order
+    std::vector <int> earliest = {0}, latest = {0};     // earliest/ latest time an activity can start
+    std::vector <int> duration;                         // how long an activity takes
+    std::vector <int> critical_nodes;                   // the nodes that are critical
+    int earliest_time = -1;                             // earliest time the project can finish
     bool dfs(int node, bool visited[], bool *recStack);
-    void get_earliest_latest();
+    /*
+     * description: - basic dfs that keeps track of the visited nodes in visited[]
+     *              - in recStack we keep the nodes that are on the current branch of the dfs and in case we meet a
+     *              node that has already been placed in the recStack we return true as we have reached a cycle
+     * param1:      node - int - the current node in the dfs
+     * param2:      visited - bool[] - every node that has been visited will be flagged here
+     * param3:      recStack - bool[] - every node that has been visited in the current extension of the dfs is flagged here
+     *
+     * returns:     true - if there are no cycles
+     *              false - otherwise
+     * */
+
 public:
     CriticalActivities(DirectedGraph& gr, std::vector <int> dur);
     bool is_DAG();
     void print_earliest();
+    /*
+     * description: - prints the earliest time every activity can start
+     * */
     void print_latest();
+    /*
+     * description: - prints the latest time every activity can start
+     * */
+    void get_earliest_latest();
+    /*
+     * description: - computes the earliest and the latest time every activity can start
+     *              - checks whether the graph is a DAG
+     * */
     const std::vector <int>&  get_earliest();
+    /*
+     * returns:     - reference to a vector that keeps the earliest time an activity can start
+     * */
     const std::vector <int>&  get_latest();
+    /*
+     * returns:     - reference to a vector that keeps the latest time an activity can start
+     * */
     const std::vector <int>&  get_critical_nodes();
+    /*
+     * returns:     - reference to a vector that keeps the critical activities
+     * */
+    int get_different_paths(int start, int end);
+    /*
+     * description: - counts all the different paths from node 'start' to node 'end'
+     *
+     * param1:      start - node
+     * param2:      end - node
+     *
+     * returns      - the number of different paths between two nodes
+     *
+     * throws:      - std::exception if either 'start' or 'end' are not valid nodes in the graph
+     *
+     * */
 
 };
 
