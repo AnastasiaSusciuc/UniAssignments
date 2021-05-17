@@ -379,72 +379,81 @@ void TestDG::test_biconex_components() {
 }
 
 void TestDG::test_DAG() {
-//    DirectedGraph g;
-//    for (int i = 1; i <= 4; i++)
-//        g.add_node(i);
-//
-//    g.add_edge(1, 2, 0);
-//    g.add_edge(2, 3, 0);
-//    g.add_edge(3, 4, 0);
-//    g.add_edge(4, 1, 0);
-//
-//    std::vector <int> dur;
-//    CriticalActivities cp(g, dur);
-//
-//    assert(cp.is_DAG() == false);
-//
-//    DirectedGraph graph;
-//    for (int i = 1; i <= 6; i++)
-//        graph.add_node(i);
-//
-//    graph.add_edge(1, 2, 0);
-//    graph.add_edge(2, 3, 0);
-//    graph.add_edge(3, 5, 0);
-//    graph.add_edge(1, 4, 0);
-//    graph.add_edge(5, 6, 0);
-//    graph.add_edge(4, 5, 0);
-//
-//    std::vector <int> duration = {0, 2, 3, 4, 2, 5, 1};
-//    CriticalActivities cpm(graph, duration);
-//    cpm.get_earliest_latest();
-//
-//    assert(cpm.get_earliest()[1] == 0);
-//    assert(cpm.get_earliest()[2] == 2);
-//    assert(cpm.get_earliest()[3] == 5);
-//    assert(cpm.get_earliest()[4] == 2);
-//    assert(cpm.get_earliest()[5] == 9);
-//    assert(cpm.get_earliest()[6] == 14);
-//
-//    assert(cpm.get_latest()[1] == 0);
-//    assert(cpm.get_latest()[2] == 2);
-//    assert(cpm.get_latest()[3] == 5);
-//    assert(cpm.get_latest()[4] == 7);
-//    assert(cpm.get_latest()[5] == 9);
-//    assert(cpm.get_latest()[6] == 14);
-//
-//    assert(cpm.get_critical_nodes()[0] == 1);
-//    assert(cpm.get_critical_nodes()[1] == 2);
-//    assert(cpm.get_critical_nodes()[2] == 3);
-//    assert(cpm.get_critical_nodes()[3] == 5);
-//    assert(cpm.get_critical_nodes()[4] == 6);
+    DirectedGraph graph1;
+    for (int i = 1; i <= 4; i++)
+        graph1.add_node(i);
+
+    graph1.add_edge(1, 2, 0);
+    graph1.add_edge(2, 3, 0);
+    graph1.add_edge(3, 4, 0);
+    graph1.add_edge(4, 1, 0);
+
+    std::vector <int> dur;
+    CriticalActivities cp(graph1, dur);
+
+    assert(cp.is_DAG() == false);
+
+    graph1.remove_edge(4, 1);
+    assert(cp.is_DAG() == true);
+
 
     DirectedGraph graph2;
     for (int i = 1; i <= 6; i++)
         graph2.add_node(i);
 
     graph2.add_edge(1, 2, 0);
-    graph2.add_edge(1, 3, 0);
-    graph2.add_edge(1, 6, 0);
-    graph2.add_edge(2, 4, 0);
-    graph2.add_edge(3, 4, 0);
+    graph2.add_edge(2, 3, 0);
     graph2.add_edge(3, 5, 0);
-    graph2.add_edge(4, 6, 0);
+    graph2.add_edge(1, 4, 0);
     graph2.add_edge(5, 6, 0);
+    graph2.add_edge(4, 5, 0);
+
+    std::vector <int> duration = {0, 2, 3, 4, 2, 5, 1};
+    CriticalActivities cpm(graph2, duration);
+    cpm.get_earliest_latest();
+
+    assert(cpm.get_earliest()[1] == 0);
+    assert(cpm.get_earliest()[2] == 2);
+    assert(cpm.get_earliest()[3] == 5);
+    assert(cpm.get_earliest()[4] == 2);
+    assert(cpm.get_earliest()[5] == 9);
+    assert(cpm.get_earliest()[6] == 14);
+
+    assert(cpm.get_latest()[1] == 0);
+    assert(cpm.get_latest()[2] == 2);
+    assert(cpm.get_latest()[3] == 5);
+    assert(cpm.get_latest()[4] == 7);
+    assert(cpm.get_latest()[5] == 9);
+    assert(cpm.get_latest()[6] == 14);
+
+    assert(cpm.get_critical_nodes()[0] == 1);
+    assert(cpm.get_critical_nodes()[1] == 2);
+    assert(cpm.get_critical_nodes()[2] == 3);
+    assert(cpm.get_critical_nodes()[3] == 5);
+    assert(cpm.get_critical_nodes()[4] == 6);
+
+    assert(cpm.earliest_time_finish_project() == 15);
+
+    DirectedGraph graph3;
+    for (int i = 1; i <= 6; i++)
+        graph3.add_node(i);
+
+    graph3.add_edge(1, 2, 0);
+    graph3.add_edge(1, 3, 0);
+    graph3.add_edge(1, 6, 0);
+    graph3.add_edge(2, 4, 0);
+    graph3.add_edge(3, 4, 0);
+    graph3.add_edge(3, 5, 0);
+    graph3.add_edge(4, 6, 0);
+    graph3.add_edge(5, 6, 0);
 
     std::vector <int> duration2 = {0, 0, 0, 0, 0, 0, 0};
-    CriticalActivities cpm2(graph2, duration2);
+    CriticalActivities cpm2(graph3, duration2);
 
     assert(cpm2.get_different_paths(1, 6) == 4);
+    
+    graph3.remove_edge(4, 6);
+    assert(cpm2.get_different_paths(1, 6) == 2);
 
 }
 

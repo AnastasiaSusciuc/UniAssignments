@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 4/Externals/external_functions.cpp
-external_functions.h
-C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 4/Externals/external_functions.h
-
 C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 4/Externals/external_functions.h
 ../Graphs/DirectedGraph.h
 C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 4/Graphs/DirectedGraph.h
@@ -35,4 +31,20 @@ map
 -
 vector
 -
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 4/TestDG/testDG.cpp
+testDG.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 4/TestDG/testDG.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 4/TestDG/testDG.h
+cassert
+-
+algorithm
+-
+iostream
+-
+../Graphs/DirectedGraph.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 4/Graphs/DirectedGraph.h
+../Externals/external_functions.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 4/Externals/external_functions.h
 

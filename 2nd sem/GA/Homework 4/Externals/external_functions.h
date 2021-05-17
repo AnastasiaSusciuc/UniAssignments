@@ -261,6 +261,10 @@ public:
      * throws:      - std::exception if either 'start' or 'end' are not valid nodes in the graph
      *
      * */
+    int earliest_time_finish_project();
+    /*
+     * returns:     - the earliest time to finish the whole project
+     * */
 
 };
 

@@ -338,7 +338,6 @@ int Walks::count_different_minimum_walks(int start, int end) {
 
 CriticalActivities::CriticalActivities(DirectedGraph &gr, std::vector <int> dur): graph{gr}, duration{dur} {
     duration.resize(gr.get_number_nodes()+2);
-//    get_earliest_latest();
 }
 
 bool CriticalActivities::dfs(int node, bool* visited, bool *recStack)
@@ -465,7 +464,7 @@ int CriticalActivities::get_different_paths(int start, int end) {
     if (!graph.exists_node(end))
         throw std::runtime_error{"Invalid end node!\n"};
 
-
+    topological_order.clear();
     if (is_DAG())
     {
         int* dp = new int[graph.get_number_nodes()+5];
@@ -477,9 +476,9 @@ int CriticalActivities::get_different_paths(int start, int end) {
 
         for (int i = 1; i < topological_order.size(); i++)
         {
-            std::vector<int> nodes_in = graph.parse_edges_out(topological_order[i]);
+            std::vector<int> nodes_out = graph.parse_edges_out(topological_order[i]);
 
-            for (int j : nodes_in) {
+            for (int j : nodes_out) {
                 dp[topological_order[i]] += dp[j];
             }
         }
@@ -489,4 +488,9 @@ int CriticalActivities::get_different_paths(int start, int end) {
         return rez;
     }
    return -1;
+}
+
+int CriticalActivities::earliest_time_finish_project() {
+
+    return earliest_time;
 }
