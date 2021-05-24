@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet on array/ExtendedTest.cpp
+SortedSet.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet on array/SortedSet.h
+cassert
+-
+SortedSetIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet on array/SortedSetIterator.h
+exception
+-
+ExtendedTest.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet on array/ExtendedTest.h
+iostream
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet on array/ExtendedTest.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet on array/SortedSet.h
+iostream
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet on array/SortedSetIterator.h
+SortedSet.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet on array/SortedSet.h
+

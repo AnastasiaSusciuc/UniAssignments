@@ -1,0 +1,4 @@
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/OOP exam recap 1/cmake-build-release/CMakeFiles/OOP_exam_recap_1.dir
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/OOP exam recap 1/cmake-build-release/CMakeFiles/edit_cache.dir
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/OOP exam recap 1/cmake-build-release/CMakeFiles/rebuild_cache.dir
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/OOP exam recap 1/cmake-build-release/CMakeFiles/OOP_exam_recap_1_autogen.dir

@@ -12,124 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c461ef68-8686-438b-b730-d1a552b2b23b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../A3 DLLA IteratedListFINAL/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A3 indexedList/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/.idea/A4 HashTable SortedSet.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/App.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/ExtendedTest.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/ExtendedTest.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/ShortTest.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/ShortTest.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/SortedSet.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/SortedSet.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/SortedSetIterator.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/SortedSetIterator.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/A4_HashTable_SortedSet.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/A4_HashTable_SortedSet.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/3.17.5/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/3.17.5/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/3.17.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/3.17.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/3.17.5/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/3.17.5/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdCXX/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/App.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/ExtendedTest.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/ShortTest.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/SortedSet.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/SortedSetIterator.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/includes_CXX.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/linklibs.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/objects.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/objects1.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/A4_HashTable_SortedSet.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A4 HashTable SortedSet/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/.idea/ADTMatrix_Dll.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/App.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/ExtendedTest.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/ExtendedTest.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/Matrix.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/Matrix.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/MatrixIterator.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/MatrixIterator.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/ShortTest.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/ShortTest.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/ADTMatrix_DLL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/ADTMatrix_DLL.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/3.16.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/3.16.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/3.16.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/3.16.3/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/3.16.3/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/ADTMatrix_Dll.dir/App.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/ADTMatrix_Dll.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/ADTMatrix_Dll.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/ADTMatrix_Dll.dir/ExtendedTest.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/ADTMatrix_Dll.dir/Matrix.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/ADTMatrix_Dll.dir/MatrixIterator.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/ADTMatrix_Dll.dir/ShortTest.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/ADTMatrix_Dll.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/ADTMatrix_Dll.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/ADTMatrix_Dll.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/ADTMatrix_Dll.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/ADTMatrix_Dll.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/ADTMatrix_Dll.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/ADTMatrix_Dll.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ADTMatrix_Dll/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SEM3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../GA/Homework 4/TestDG/testDG.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../GA/Homework 4/TestDG/testDG.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,11 +49,6 @@
     <property name="cf.first.check.clang-format" value="false" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="A4_HashTable_SortedSet" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="A4_HashTable_SortedSet" TARGET_NAME="A4_HashTable_SortedSet" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="A4_HashTable_SortedSet" RUN_TARGET_NAME="A4_HashTable_SortedSet">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -193,6 +73,7 @@
       <workItem from="1620677371331" duration="6497000" />
       <workItem from="1620716878298" duration="5073000" />
       <workItem from="1620728671705" duration="5527000" />
+      <workItem from="1621265097380" duration="1560000" />
     </task>
     <servers />
   </component>

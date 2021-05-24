@@ -1,0 +1,4 @@
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/untitled1/cmake-build-release/CMakeFiles/untitled1.dir
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/untitled1/cmake-build-release/CMakeFiles/edit_cache.dir
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/untitled1/cmake-build-release/CMakeFiles/rebuild_cache.dir
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/untitled1/cmake-build-release/CMakeFiles/untitled1_autogen.dir

@@ -451,7 +451,7 @@ void TestDG::test_DAG() {
     CriticalActivities cpm2(graph3, duration2);
 
     assert(cpm2.get_different_paths(1, 6) == 4);
-    
+
     graph3.remove_edge(4, 6);
     assert(cpm2.get_different_paths(1, 6) == 2);
 
