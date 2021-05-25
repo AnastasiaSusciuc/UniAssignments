@@ -1,0 +1,68 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/App.cpp
+ShortTest.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/ShortTest.h
+ExtendedTest.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/ExtendedTest.h
+SortedSet.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/SortedSet.h
+SortedSetIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/SortedSetIterator.h
+iostream
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/ExtendedTest.cpp
+SortedSet.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/SortedSet.h
+assert.h
+-
+SortedSetIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/SortedSetIterator.h
+exception
+-
+ExtendedTest.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/ExtendedTest.h
+iostream
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/ExtendedTest.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/ShortTest.cpp
+ShortTest.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/ShortTest.h
+SortedSet.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/SortedSet.h
+SortedSetIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/SortedSetIterator.h
+assert.h
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/ShortTest.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/SortedSet.cpp
+SortedSet.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/SortedSet.h
+SortedSetIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/SortedSetIterator.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/SortedSet.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/SortedSetIterator.cpp
+SortedSetIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/SortedSetIterator.h
+exception
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/SortedSetIterator.h
+SortedSet.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedSet as SLLA asa da!/SortedSet.h
+stack
+-
+

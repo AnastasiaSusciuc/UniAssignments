@@ -1,0 +1,68 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/App.cpp
+ShortTest.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/ShortTest.h
+ExtendedTest.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/ExtendedTest.h
+SortedSet.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/SortedSet.h
+SortedSetIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/SortedSetIterator.h
+iostream
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/ExtendedTest.cpp
+SortedSet.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/SortedSet.h
+assert.h
+-
+SortedSetIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/SortedSetIterator.h
+exception
+-
+ExtendedTest.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/ExtendedTest.h
+iostream
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/ExtendedTest.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/ShortTest.cpp
+ShortTest.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/ShortTest.h
+SortedSet.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/SortedSet.h
+SortedSetIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/SortedSetIterator.h
+cassert
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/ShortTest.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/SortedSet.cpp
+SortedSet.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/SortedSet.h
+SortedSetIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/SortedSetIterator.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/SortedSet.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/SortedSetIterator.cpp
+SortedSetIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/SortedSetIterator.h
+exception
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/SortedSetIterator.h
+SortedSet.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 FINAL/SortedSet.h
+stack
+-
+

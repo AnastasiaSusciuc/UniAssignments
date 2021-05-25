@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedBag/ExtendedTest.cpp
+ShortTest.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedBag/ShortTest.h
+SortedBag.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedBag/SortedBag.h
+SortedBagIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedBag/SortedBagIterator.h
+assert.h
+-
+iostream
+-
+exception
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedBag/ShortTest.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedBag/SortedBag.cpp
+exception
+-
+SortedBag.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedBag/SortedBag.h
+SortedBagIterator.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedBag/SortedBagIterator.h
+vector
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedBag/SortedBag.h
+iostream
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedBag/SortedBagIterator.h
+SortedBag.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/DSA/A5 - BST SortedBag/SortedBag.h
+
