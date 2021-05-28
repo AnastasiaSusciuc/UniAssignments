@@ -1,0 +1,3 @@
+C:/Users/susci/Desktop/2nd sem/GA/untitled/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/susci/Desktop/2nd sem/GA/untitled/out/build/x64-Debug/CMakeFiles/untitled.dir
+C:/Users/susci/Desktop/2nd sem/GA/untitled/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
