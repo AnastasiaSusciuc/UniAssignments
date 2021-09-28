@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+        int a2b = open("a2b", O_RDONLY);
+        int b2a = open("b2a", O_WRONLY);
+        int b2c = open("b2c", O_WRONLY);
+
+        char s[1000];
+
+        int freq[27];
+        for (int i = 0; i < 26; i++)
+                freq[i] = 0;
+
+        while(1)
+        {
+                int len;
+
+                if(read(a2b, &len, sizeof(int)) <= 0) {
+                         break;
+                }
+
+                if (len < 0)
+                        break;
+
+                read(a2b, s, len);
+
+                 for (int i = 0; i < len; i++)
+                {
+                        freq[s[i]-'a']++;
+                }
+        }
+        close(a2b);
+
+        printf("B: FREQ: \n");
+        for (int i = 0; i < 25; i++)
+                printf("%d ", freq[i]);
+
+        write(b2a, &freq, 26*sizeof(int));
+        close(b2a);
+
+        write(b2c, &freq, 26*sizeof(int));
+        close(b2c);
+
+
+        return 0;
+}

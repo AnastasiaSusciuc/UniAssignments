@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET"
+CMAKE_SOURCE_DIR = "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/A1___DynamicVector_SET.dir/depend.make
@@ -79,86 +79,86 @@ include CMakeFiles/A1___DynamicVector_SET.dir/flags.make
 CMakeFiles/A1___DynamicVector_SET.dir/App.cpp.obj: CMakeFiles/A1___DynamicVector_SET.dir/flags.make
 CMakeFiles/A1___DynamicVector_SET.dir/App.cpp.obj: CMakeFiles/A1___DynamicVector_SET.dir/includes_CXX.rsp
 CMakeFiles/A1___DynamicVector_SET.dir/App.cpp.obj: ../App.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/A1___DynamicVector_SET.dir/App.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A1___DynamicVector_SET.dir\App.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\App.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/A1___DynamicVector_SET.dir/App.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A1___DynamicVector_SET.dir\App.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\App.cpp"
 
 CMakeFiles/A1___DynamicVector_SET.dir/App.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A1___DynamicVector_SET.dir/App.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\App.cpp" > CMakeFiles\A1___DynamicVector_SET.dir\App.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\App.cpp" > CMakeFiles\A1___DynamicVector_SET.dir\App.cpp.i
 
 CMakeFiles/A1___DynamicVector_SET.dir/App.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A1___DynamicVector_SET.dir/App.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\App.cpp" -o CMakeFiles\A1___DynamicVector_SET.dir\App.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\App.cpp" -o CMakeFiles\A1___DynamicVector_SET.dir\App.cpp.s
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/ExtendedTest/ExtendedTest.cpp.obj: CMakeFiles/A1___DynamicVector_SET.dir/flags.make
 CMakeFiles/A1___DynamicVector_SET.dir/src/ExtendedTest/ExtendedTest.cpp.obj: CMakeFiles/A1___DynamicVector_SET.dir/includes_CXX.rsp
 CMakeFiles/A1___DynamicVector_SET.dir/src/ExtendedTest/ExtendedTest.cpp.obj: ../src/ExtendedTest/ExtendedTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/A1___DynamicVector_SET.dir/src/ExtendedTest/ExtendedTest.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A1___DynamicVector_SET.dir\src\ExtendedTest\ExtendedTest.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\ExtendedTest\ExtendedTest.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/A1___DynamicVector_SET.dir/src/ExtendedTest/ExtendedTest.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A1___DynamicVector_SET.dir\src\ExtendedTest\ExtendedTest.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\ExtendedTest\ExtendedTest.cpp"
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/ExtendedTest/ExtendedTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A1___DynamicVector_SET.dir/src/ExtendedTest/ExtendedTest.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\ExtendedTest\ExtendedTest.cpp" > CMakeFiles\A1___DynamicVector_SET.dir\src\ExtendedTest\ExtendedTest.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\ExtendedTest\ExtendedTest.cpp" > CMakeFiles\A1___DynamicVector_SET.dir\src\ExtendedTest\ExtendedTest.cpp.i
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/ExtendedTest/ExtendedTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A1___DynamicVector_SET.dir/src/ExtendedTest/ExtendedTest.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\ExtendedTest\ExtendedTest.cpp" -o CMakeFiles\A1___DynamicVector_SET.dir\src\ExtendedTest\ExtendedTest.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\ExtendedTest\ExtendedTest.cpp" -o CMakeFiles\A1___DynamicVector_SET.dir\src\ExtendedTest\ExtendedTest.cpp.s
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/Set/Set.cpp.obj: CMakeFiles/A1___DynamicVector_SET.dir/flags.make
 CMakeFiles/A1___DynamicVector_SET.dir/src/Set/Set.cpp.obj: CMakeFiles/A1___DynamicVector_SET.dir/includes_CXX.rsp
 CMakeFiles/A1___DynamicVector_SET.dir/src/Set/Set.cpp.obj: ../src/Set/Set.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/A1___DynamicVector_SET.dir/src/Set/Set.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A1___DynamicVector_SET.dir\src\Set\Set.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\Set\Set.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/A1___DynamicVector_SET.dir/src/Set/Set.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A1___DynamicVector_SET.dir\src\Set\Set.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\Set\Set.cpp"
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/Set/Set.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A1___DynamicVector_SET.dir/src/Set/Set.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\Set\Set.cpp" > CMakeFiles\A1___DynamicVector_SET.dir\src\Set\Set.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\Set\Set.cpp" > CMakeFiles\A1___DynamicVector_SET.dir\src\Set\Set.cpp.i
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/Set/Set.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A1___DynamicVector_SET.dir/src/Set/Set.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\Set\Set.cpp" -o CMakeFiles\A1___DynamicVector_SET.dir\src\Set\Set.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\Set\Set.cpp" -o CMakeFiles\A1___DynamicVector_SET.dir\src\Set\Set.cpp.s
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/SetIterator/SetIterator.cpp.obj: CMakeFiles/A1___DynamicVector_SET.dir/flags.make
 CMakeFiles/A1___DynamicVector_SET.dir/src/SetIterator/SetIterator.cpp.obj: CMakeFiles/A1___DynamicVector_SET.dir/includes_CXX.rsp
 CMakeFiles/A1___DynamicVector_SET.dir/src/SetIterator/SetIterator.cpp.obj: ../src/SetIterator/SetIterator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/A1___DynamicVector_SET.dir/src/SetIterator/SetIterator.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A1___DynamicVector_SET.dir\src\SetIterator\SetIterator.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\SetIterator\SetIterator.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/A1___DynamicVector_SET.dir/src/SetIterator/SetIterator.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A1___DynamicVector_SET.dir\src\SetIterator\SetIterator.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\SetIterator\SetIterator.cpp"
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/SetIterator/SetIterator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A1___DynamicVector_SET.dir/src/SetIterator/SetIterator.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\SetIterator\SetIterator.cpp" > CMakeFiles\A1___DynamicVector_SET.dir\src\SetIterator\SetIterator.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\SetIterator\SetIterator.cpp" > CMakeFiles\A1___DynamicVector_SET.dir\src\SetIterator\SetIterator.cpp.i
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/SetIterator/SetIterator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A1___DynamicVector_SET.dir/src/SetIterator/SetIterator.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\SetIterator\SetIterator.cpp" -o CMakeFiles\A1___DynamicVector_SET.dir\src\SetIterator\SetIterator.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\SetIterator\SetIterator.cpp" -o CMakeFiles\A1___DynamicVector_SET.dir\src\SetIterator\SetIterator.cpp.s
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/ShortTest/ShortTest.cpp.obj: CMakeFiles/A1___DynamicVector_SET.dir/flags.make
 CMakeFiles/A1___DynamicVector_SET.dir/src/ShortTest/ShortTest.cpp.obj: CMakeFiles/A1___DynamicVector_SET.dir/includes_CXX.rsp
 CMakeFiles/A1___DynamicVector_SET.dir/src/ShortTest/ShortTest.cpp.obj: ../src/ShortTest/ShortTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/A1___DynamicVector_SET.dir/src/ShortTest/ShortTest.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A1___DynamicVector_SET.dir\src\ShortTest\ShortTest.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\ShortTest\ShortTest.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/A1___DynamicVector_SET.dir/src/ShortTest/ShortTest.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A1___DynamicVector_SET.dir\src\ShortTest\ShortTest.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\ShortTest\ShortTest.cpp"
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/ShortTest/ShortTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A1___DynamicVector_SET.dir/src/ShortTest/ShortTest.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\ShortTest\ShortTest.cpp" > CMakeFiles\A1___DynamicVector_SET.dir\src\ShortTest\ShortTest.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\ShortTest\ShortTest.cpp" > CMakeFiles\A1___DynamicVector_SET.dir\src\ShortTest\ShortTest.cpp.i
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/ShortTest/ShortTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A1___DynamicVector_SET.dir/src/ShortTest/ShortTest.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\ShortTest\ShortTest.cpp" -o CMakeFiles\A1___DynamicVector_SET.dir\src\ShortTest\ShortTest.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\ShortTest\ShortTest.cpp" -o CMakeFiles\A1___DynamicVector_SET.dir\src\ShortTest\ShortTest.cpp.s
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/Set/set_v2.cpp.obj: CMakeFiles/A1___DynamicVector_SET.dir/flags.make
 CMakeFiles/A1___DynamicVector_SET.dir/src/Set/set_v2.cpp.obj: CMakeFiles/A1___DynamicVector_SET.dir/includes_CXX.rsp
 CMakeFiles/A1___DynamicVector_SET.dir/src/Set/set_v2.cpp.obj: ../src/Set/set_v2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/A1___DynamicVector_SET.dir/src/Set/set_v2.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A1___DynamicVector_SET.dir\src\Set\set_v2.cpp.obj -c "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\Set\set_v2.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/A1___DynamicVector_SET.dir/src/Set/set_v2.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\A1___DynamicVector_SET.dir\src\Set\set_v2.cpp.obj -c "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\Set\set_v2.cpp"
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/Set/set_v2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A1___DynamicVector_SET.dir/src/Set/set_v2.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\Set\set_v2.cpp" > CMakeFiles\A1___DynamicVector_SET.dir\src\Set\set_v2.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\Set\set_v2.cpp" > CMakeFiles\A1___DynamicVector_SET.dir\src\Set\set_v2.cpp.i
 
 CMakeFiles/A1___DynamicVector_SET.dir/src/Set/set_v2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A1___DynamicVector_SET.dir/src/Set/set_v2.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\src\Set\set_v2.cpp" -o CMakeFiles\A1___DynamicVector_SET.dir\src\Set\set_v2.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\src\Set\set_v2.cpp" -o CMakeFiles\A1___DynamicVector_SET.dir\src\Set\set_v2.cpp.s
 
 # Object files for target A1___DynamicVector_SET
 A1___DynamicVector_SET_OBJECTS = \
@@ -182,7 +182,7 @@ A1___DynamicVector_SET.exe: CMakeFiles/A1___DynamicVector_SET.dir/build.make
 A1___DynamicVector_SET.exe: CMakeFiles/A1___DynamicVector_SET.dir/linklibs.rsp
 A1___DynamicVector_SET.exe: CMakeFiles/A1___DynamicVector_SET.dir/objects1.rsp
 A1___DynamicVector_SET.exe: CMakeFiles/A1___DynamicVector_SET.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable A1___DynamicVector_SET.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable A1___DynamicVector_SET.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\A1___DynamicVector_SET.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -195,6 +195,6 @@ CMakeFiles/A1___DynamicVector_SET.dir/clean:
 .PHONY : CMakeFiles/A1___DynamicVector_SET.dir/clean
 
 CMakeFiles/A1___DynamicVector_SET.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET" "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET" "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug" "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug" "C:\Users\susci\Desktop\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles\A1___DynamicVector_SET.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET" "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET" "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug" "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug" "C:\Users\susci\Desktop\UniAssignments\2nd sem\DSA\A1 - DynamicVector SET\cmake-build-debug\CMakeFiles\A1___DynamicVector_SET.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/A1___DynamicVector_SET.dir/depend
 

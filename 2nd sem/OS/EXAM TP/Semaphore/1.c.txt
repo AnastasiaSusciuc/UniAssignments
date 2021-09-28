@@ -1,0 +1,117 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <string.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <time.h>
+#include <sys/ipc.h>
+#include <sys/sem.h>
+#include <semaphore.h>
+
+struct ceva{
+        int number;
+        char* string;
+};
+
+int semid;
+int m7[1000], mn7[1000], cnt7, cntn7, nr_str;
+char* glb_str[100];
+pthread_mutex_t mtx = PTHREAD_MUTEX_INITIALIZER;
+
+void* f(void* a)
+{
+        sem_wait((sem_t*)&semid);
+
+        struct ceva altceva = *((struct ceva*)(a));
+
+        pthread_mutex_lock(&mtx);
+
+        glb_str[nr_str] = (char*) malloc(sizeof(char)*(strlen(altceva.string)+1));
+
+        strcpy(glb_str[nr_str++], altceva.string);
+
+        if (altceva.number % 7 == 0)
+        {
+                m7[cnt7++] = altceva.number;
+        }
+        else
+        {
+                mn7[cntn7++] = altceva.number;
+        }
+
+        pthread_mutex_unlock(&mtx);
+        sleep(2);
+        printf("AICI\n");
+
+        sem_post((sem_t*)&semid);
+
+        return NULL;
+}
+
+int main(int argc, char** argv)
+{
+        if (argc != 2)
+        {
+                printf("Invalid data!\n");
+                return 1;
+        }
+
+        key_t key = 2222;
+        semid = semget(key, 1, IPC_CREAT | 0666);
+
+        if (semid < 0)
+        {
+                perror("semget error!");
+                exit(1);
+        }
+        sem_init((sem_t*)&semid, 0, 4);
+        int n, i;
+        n = atoi(argv[1]);
+
+        pthread_t* thrs = (pthread_t*) malloc(n*sizeof(pthread_t));
+        struct ceva* arr = (struct ceva*) malloc(n*sizeof(struct ceva));
+
+        for (i = 0; i < n; i++)
+        {
+                arr[i].string = (char*) malloc(100*sizeof(char));
+
+                printf("Introduce the number: ");
+                scanf("%d", &arr[i].number);
+                printf("Introduce the string: ");
+                scanf("%s", arr[i].string);
+        }
+
+        for (i = 0; i < n; i++)
+        {
+                pthread_create(&thrs[i], NULL, f, (void*)&arr[i]);
+        }
+
+
+        for (i = 0; i < n; i++)
+                pthread_join(thrs[i], NULL);
+
+        for (i = 0; i < n; i++)
+                free(arr[i].string);
+
+        printf("Numbers multiples of 7: ");
+        for (i = 0; i < cnt7; i++)
+                printf("%d ", m7[i]);
+
+        printf("\nNumbers not multiple of 7: ");
+        for (i = 0; i < cntn7; i++)
+                printf("%d ", mn7[i]);
+
+        printf("\n the strings: \n");
+        for (i = 0; i < nr_str; i++)
+        {
+                printf("%s\n", glb_str[i]);
+                free(glb_str[i]);
+        }
+
+        sem_destroy((sem_t*)&semid);
+        free(arr);
+        free(thrs);
+
+        return 0;
+}

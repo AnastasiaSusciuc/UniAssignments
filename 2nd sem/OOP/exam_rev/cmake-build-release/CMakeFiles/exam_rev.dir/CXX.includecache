@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/exam_rev/Programmer.cpp
+Programmer.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/exam_rev/Programmer.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/exam_rev/Programmer.h
+string
+-
+

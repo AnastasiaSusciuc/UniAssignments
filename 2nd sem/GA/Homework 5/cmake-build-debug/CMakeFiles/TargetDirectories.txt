@@ -1,0 +1,3 @@
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 5/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 5/cmake-build-debug/CMakeFiles/c__.dir
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 5/cmake-build-debug/CMakeFiles/rebuild_cache.dir

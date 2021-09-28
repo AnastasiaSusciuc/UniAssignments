@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 5/Externals/external_functions.cpp
+external_functions.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 5/Externals/external_functions.h
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 5/Externals/external_functions.h
+../Graphs/DirectedGraph.h
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 5/Graphs/DirectedGraph.h
+string
+-
+algorithm
+-
+iostream
+-
+fstream
+-
+random
+-
+queue
+-
+stack
+-
+bitset
+-
+
+C:/Users/susci/Desktop/UniAssignments/2nd sem/GA/Homework 5/Graphs/DirectedGraph.h
+map
+-
+vector
+-
+

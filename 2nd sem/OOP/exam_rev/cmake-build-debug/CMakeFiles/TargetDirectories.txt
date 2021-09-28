@@ -1,0 +1,4 @@
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/exam_rev/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/exam_rev/cmake-build-debug/CMakeFiles/exam_rev.dir
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/exam_rev/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/susci/Desktop/UniAssignments/2nd sem/OOP/exam_rev/cmake-build-debug/CMakeFiles/exam_rev_autogen.dir

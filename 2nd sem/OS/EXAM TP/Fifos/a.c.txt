@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+        char s[1000];
+        int a2b = open("a2b", O_WRONLY);
+        int b2a = open("b2a", O_RDONLY);
+
+        while (1)
+        {
+                scanf("%s", s);
+
+                // printf("S: *%s*\n", s);
+
+                if (strcmp(s, "X") == 0 || strcmp(s, "x") == 0)
+                {
+                        int minus = -1;
+                        write(a2b, &minus, sizeof(int));
+                        // printf("ok!\n");
+                        break;
+                }
+                int len = strlen(s)+1;
+                // printf("LEN: %d\n", len);
+
+                write(a2b, &len, sizeof(int));
+                write(a2b, s, len);
+
+        }
+        close(a2b);
+
+        int freq[30];
+        read(b2a, &freq, 26*sizeof(int));
+
+        printf("A: freq is:\n");
+        for (int i = 0; i < 26; i++)
+                printf("%d ", freq[i]);
+
+
+        return 0;
+}

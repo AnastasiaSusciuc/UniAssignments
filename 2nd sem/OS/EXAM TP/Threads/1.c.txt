@@ -1,0 +1,88 @@
+#include <stdio.h>
+#include <pthread.h>
+#include <stdlib.h>
+
+typedef struct{
+        char* str;
+        int thr_id;
+}send;
+
+int v[26];
+pthread_mutex_t mtx[26];
+
+
+void* worker(void* a)
+{
+        send primit = *((send*)a);
+
+        for (int i = 0; primit.str[i] != 0; i++)
+        {
+                pthread_mutex_lock(&mtx[primit.str[i]-'a']);
+                if(v[primit.str[i]-'a'] == 0)
+                        printf("Thread %d changed first fr[%d]\n", primit.thr_id, (primit.str[i]-'a'));
+
+                v[primit.str[i]-'a']++;
+                pthread_mutex_unlock(&mtx[primit.str[i]-'a']);
+        }
+
+        // pthread_mutex_lock(&mtx[0]);
+        //      printf("THREAD %d with %s \n", primit.thr_id, primit.str);
+        // pthread_mutex_unlock(&mtx[0]);
+
+        return NULL;
+}
+
+int main(int argc, char** argv)
+{
+        for (int i = 0; i < 26; i++)
+        {
+                v[i] = 0;
+                pthread_mutex_init(&mtx[i], NULL);
+        }
+
+        int N;
+        N = atoi(argv[1]);
+
+        char** strings;
+
+        strings = (char**) malloc(sizeof(char*)*N);
+
+        for (int i = 0; i < N; i++)
+        {
+                printf("Insert string %d: ", i);
+                strings[i] = (char*) malloc(sizeof(char)*100);
+                scanf("%s", strings[i]);
+        }
+
+        pthread_t* thr = (pthread_t*) malloc(sizeof(pthread_t)*N);
+
+        send* thri = (send*)malloc(sizeof(send)*N);
+
+        for (int i = 0; i < N; i++)
+        {
+                thri[i].thr_id = i;
+                thri[i].str = strings[i];
+                printf("A: %d %s\n", thri[i].thr_id, thri[i].str);
+
+                pthread_create(&thr[i], NULL, worker, (void*)&thri[i]);
+        }
+
+        for (int i = 0; i < N; i++)
+                pthread_join(thr[i], NULL);
+
+        for (int i = 0; i < 26; i++)
+                pthread_mutex_destroy(&mtx[i]);
+
+        for (int i = 0; i < N; i++)
+                free(strings[i]);
+
+        free(strings);
+        free(thr);
+        free(thri);
+
+        printf("The frequency is:\n");
+        for (int i = 0; i < 26; i++)
+                printf("%d ", v[i]);
+        printf("\n");
+        return 0;
+}

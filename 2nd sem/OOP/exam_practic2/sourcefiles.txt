@@ -1,0 +1,5 @@
+s1;revised;Nelu;Tudor Tise
+s2;not_revised;Ionel;Octa Trifan
+s3;not_revised;Buica;Mark Szabo
+s4;revised;Dani;Ani Susciuc
+s5;not_revised;King Arthur;Gabi Mircea

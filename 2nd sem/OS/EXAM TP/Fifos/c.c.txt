@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+        int b2c = open("b2c", O_RDONLY);
+        int freq[30];
+        printf("C started\n");
+
+        read(b2c, &freq, 26*sizeof(int));
+        printf("C: freq:\n");
+
+        for (int i = 0; i < 25; i++)
+                printf("%d ", freq[i]);
+
+
+        int sum = 0;
+        for (int i = 0; i < 26; i++)
+                sum += freq[i];
+
+        printf("C: sum is %d\n", sum);
+
+        close(b2c);
+        return 0;
+}

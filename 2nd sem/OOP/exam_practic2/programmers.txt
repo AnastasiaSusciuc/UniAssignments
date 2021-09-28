@@ -1,0 +1,5 @@
+Tudor Tise;2;5
+Octa Trifan;1;10
+Mark Szabo;4;12
+Ani Susciuc;21321;3213213
+Gabi Mircea;0;0

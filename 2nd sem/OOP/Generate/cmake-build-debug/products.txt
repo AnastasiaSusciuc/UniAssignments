@@ -1,0 +1,4 @@
+Drinks,Water,6
+Drinks,Orange juice,2
+Dairy,Iaurt,1
+Sweets,Chocolate,3
